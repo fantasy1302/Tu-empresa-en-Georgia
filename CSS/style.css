@@ -12,7 +12,10 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+.topnav {
+    display: none;
 }
 .main-hero {
     z-index: 2;
@@ -31,7 +34,7 @@ transform: translateY(-25%);
 }
 .main-image img {
     max-width: 300px;
-    padding: 4em;
+    padding: 0.4em 4em 0 4em;
 }
 .main-image {
     min-width: 500px;
@@ -42,6 +45,11 @@ h1 {
     z-index: -2;
 position: relative;
 }
+h2 {
+    font-size: 52px;
+    opacity: 1;
+    color: black;
+}
 header {
     z-index: 2;
     position: relative;
@@ -51,9 +59,9 @@ header {
 }
 .wrapper {
     max-width: 1200px;
-    margin:0 auto;
-    top: 0;
-    position: absolute;
+margin: 0.3em 2.5em;
+top: 0;
+position: absolute;
 }
 .main-navigation-ul li{
     display: inline;
@@ -79,6 +87,61 @@ header {
 background-color: black;
 color: white;
 margin-right: 10px;
+}
+.customers {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    margin-top: 4em;
+}
+.customers-info {
+    padding-left: 4em;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.img-row-1 {
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: baseline;
+}
+.img-row-2 {
+    flex-wrap: nowrap;
+display: flex;
+}
+.customers-img {
+    display: flex;
+    padding: 1;
+    min-width: 50%;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    align-content: flex-start
+  }
+.customers-image-1 {
+    width: 278px;
+height: 199px;
+}
+.customers-image-2 {
+    width: 200px;
+    height: 264px;
+}
+.customers-image-3 {
+    width: 310px;
+    height: 220px;
+}
+.customers-image-4 {
+    width: 330px;
+}
+.customers-image-5 {
+    width: 376px;
+}
+
+.image-brd {
+    border-radius: 14px;
+    margin:9px;
 }
 .dynamic {
     z-index: -1;
@@ -107,17 +170,24 @@ margin-right: 10px;
     100%{background-position:33% 0%}
     }
 
-    @media only screen and (max-width: 480px) {
+    @media  (max-width: 480px) {
         .main-image {
             display: none;
         }
-
+        .topnav {
+            display: inline;
+        }
+        .wrapper {
+            max-width: 100%;
+        }
+        header {
+            display: none;
+        }
         .main-hero {
             z-index: 2;
             position: relative;
             padding-left: 2rem;
             display: flex;
-            top: -11em;
             padding-right: 2rem;
         }
 
@@ -127,4 +197,5 @@ margin-right: 10px;
         }
        .main-navigation-ul{ font-size: 13px;
 padding-top: 5px;}
+
     }
