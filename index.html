@@ -2,11 +2,11 @@
 <html>
 <head>
   <link rel="stylesheet" href="CSS/style.css">
-  <style>
-  </style>
+<script src="JS/Gradient.js"></script>
   <title>Tu empresa en Georgia</title>
 </head>
 <body>
+  <canvas id="gradient-canvas" style="width:100vw;height:60vh"></canvas>  
   <div class="wrapper">
   <header>
     <i class="fas fa-font-awesome-logo-full    "></i>
@@ -21,8 +21,6 @@
     </nav>
     <button class="btn sign-in">Sign in</button>
   </header>
-  <div class="dynamic">
-  </div>
     <div class="main-hero">
       <div class="main-info">
         <h1>Tax Law and Expat Services in Georgia</h1>
@@ -33,5 +31,9 @@
       <div class="main-image"><img src="images/main-iph.png" alt=""></div>
     </div>
 </div>
+<script>
+  var gradient = new Gradient()
+  gradient.initGradient('#gradient-canvas');
+</script>
 </body>
 </html>

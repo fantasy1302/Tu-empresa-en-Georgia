@@ -2,17 +2,32 @@
 * {
     font-family: "Roboto",sans-serif;
 }
+#gradient-canvas {
+    --gradient-color-1: #6ec3f4;
+    --gradient-color-2: #3a3aff;
+    --gradient-color-3: #ff61ab;
+    --gradient-color-4: #E63946;
+}
 body {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 .main-hero {
     z-index: 2;
 position: relative;
 padding-left: 4rem;
 display: flex;
-top:-15em;
+}
+#gradient-canvas {
+    opacity: 0.9;
+    width: 100vw;
+height: 100vh;
+rotate: -13deg;
+scale: 1.7;
+translate: 6;
+transform: translateY(-25%);
 }
 .main-image img {
     max-width: 300px;
@@ -24,6 +39,8 @@ top:-15em;
 h1 {
     font-size: 94px;
     opacity: 0.7;
+    z-index: -2;
+position: relative;
 }
 header {
     z-index: 2;
@@ -35,6 +52,8 @@ header {
 .wrapper {
     max-width: 1200px;
     margin:0 auto;
+    top: 0;
+    position: absolute;
 }
 .main-navigation-ul li{
     display: inline;
@@ -69,15 +88,8 @@ margin-right: 10px;
     transform: rotate(71deg) translate(-47%,8px);
     skewY: 100deg;
     scale: 6;
-    background: linear-gradient(328deg, #ffcb57 25%, #a960ee, #ff333d, #90e0ff, #635bff, #5d69e3),
-                linear-gradient(90deg, rgba(169,96,238,1) 0%, rgba(255,203,87,1) 35%, rgba(255,51,61,1) 100%); 
-      background-size: auto;
-    background-size: 1200% 1200%;
-    -webkit-animation: AnimationName 12s ease infinite;
-    -moz-animation: AnimationName 12s ease infinite;
-    animation: AnimationName 12s ease infinite;
   }
-    }
+    
     
     @-webkit-keyframes AnimationName {
     0%{background-position:33% 0%}
