@@ -2,11 +2,29 @@
 <html>
 <head>
   <link rel="stylesheet" href="CSS/style.css">
-<script src="JS/Gradient.js"></script>
+<!-- <script src="JS/Gradient.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js" > </script> 
   <title>Tu empresa en Georgia</title>
+  <style>
+  #gradient-canvas {
+--gradient-color-1: #a960ee;
+--gradient-color-2: #90e0ff;
+--gradient-color-3: #ff333d;
+--gradient-color-4: #ffcb57;
+--gradient-color-5: #356AF9;
+}
+</style>
 </head>
+<canvas class="canvas-item" id="gradient-canvas">
 <body>
-  <canvas id="gradient-canvas" style="width:100vw;height:60vh"></canvas>  
+
+    <style>
+    .canvas-item{
+      height:100%;
+      width:100%;
+    }
+    </style>
+      
   <div class="wrapper">
   <header>
     <i class="fas fa-font-awesome-logo-full    "></i>
@@ -51,9 +69,9 @@
       </div>
     </div>
 </div>
-<script>
+<script> 
   var gradient = new Gradient()
   gradient.initGradient('#gradient-canvas');
-</script>
+  </script> 
 </body>
 </html>
