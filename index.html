@@ -1,30 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="CSS/style.css">
-<!-- <script src="JS/Gradient.js"></script> -->
-<script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js" > </script> 
+  <link rel="stylesheet" href="CSS/style.css"> -->
+<script src="JS/Gradient.js"></script>
+ <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js" > </script>  
   <title>Tu empresa en Georgia</title>
-  <style>
-  #gradient-canvas {
---gradient-color-1: #a960ee;
---gradient-color-2: #90e0ff;
---gradient-color-3: #ff333d;
---gradient-color-4: #ffcb57;
---gradient-color-5: #356AF9;
-}
-</style>
 </head>
-<canvas class="canvas-item" id="gradient-canvas">
+<canvas class="canvas-item" id="gradient-canvas"></canvas>
 <body>
-
-    <style>
-    .canvas-item{
-      height:100%;
-      width:100%;
-    }
-    </style>
-      
   <div class="wrapper">
   <header>
     <i class="fas fa-font-awesome-logo-full    "></i>
@@ -41,12 +24,12 @@
   </header>
     <div class="main-hero">
       <div class="main-info">
-        <h1>Tax Law and Expat Services in Georgia</h1>
+        <h1>Tax Law <br> and Expat Services in <span>Georgia</span></h1>
         <h3>Tax | Legal | Accounting | Real Estate | Relocation</h3>
         <p>Managed By Expats for Expats. With a Local Experts Who Understand Your Needs. We speak your language.</p>
         <div><button class="btn products">Products ></button><button class="btn">Contact us ></button></div>
       </div>
-      <div class="main-image"><img src="images/mobilephone01.png" alt=""></div>
+      <div class="main-image"><img src="images/map.svg" alt=""></div>
     </div>
     <div class="customers">
       <div class="customers-info">
@@ -68,10 +51,14 @@
         </div>
       </div>
     </div>
+   
 </div>
-<script> 
+
+<script src="main.js"></script>
+ <script> 
   var gradient = new Gradient()
   gradient.initGradient('#gradient-canvas');
   </script> 
+
 </body>
 </html>
