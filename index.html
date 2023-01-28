@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="CSS/style.css"> -->
+  <link rel="stylesheet" href="CSS/style.css">
 <script src="JS/Gradient.js"></script>
  <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js" > </script>  
-  <title>Tu empresa en Georgia</title>
+ <script src="https://kit.fontawesome.com/976373c9a5.js" crossorigin="anonymous"></script>
+  <title>Tu Empresa En Georgia</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <canvas class="canvas-item" id="gradient-canvas"></canvas>
 <body>
   <div class="wrapper">
   <header>
-    <i class="fas fa-font-awesome-logo-full    "></i>
+    <a href="#"><img src="img/logo.png" alt=""></a>
     <nav class="main-navigation">
       <ul class="main-navigation-ul">
           <li>Home</li>
@@ -20,22 +22,44 @@
           <li>Blog</li>
       </ul>
     </nav>
+    <nav class="navigation-mobile">
+      <button id="sized" class="menu" aria-label="menu-button">
+          <i class="fa-solid fa-bars"></i>
+      </button>
+      <div id="myModal" class="modal">
+          <div class="modal-content animated           zoomIn">
+              <div class="modal-header">
+                  <span class="close">×</span>
+              </div>
+              <div class="modal-body nav">
+                  <ul>
+                  <li><a href="https://clini.io/">Home</a></li>
+          <li><a href="https://clini.io/services/">Services</a></li>
+          <li><a href="https://clini.io/faq/">FAQ</a></li>
+          <li><a href="https://clini.io/contact/">Contact</a></li>
+          <li><a href="https://clini.io/shop-page/">Shop</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
     <button class="btn sign-in">Sign in</button>
   </header>
     <div class="main-hero">
       <div class="main-info">
         <h1>Tax Law <br> and Expat Services in <span>Georgia</span></h1>
-        <h3>Tax | Legal | Accounting | Real Estate | Relocation</h3>
+        <h4>Tax | Legal | Accounting | Real Estate | Relocation</h4>
         <p>Managed By Expats for Expats. With a Local Experts Who Understand Your Needs. We speak your language.</p>
         <div><button class="btn products">Products ></button><button class="btn">Contact us ></button></div>
       </div>
-      <div class="main-image"><img src="images/map.png" alt=""></div>
+      <div class="main-image"><img src="" alt=""></div>
     </div>
+    <div class="info-blocks">
     <div class="customers">
       <div class="customers-info">
         <h2>Our customers are building the future</h2>
         <p>Your Company in Georgia has developed a complete service infrastructure in the Republic of Georgia to cover the needs of more than 300 customers.</p>
-        <button class="btn products">Meet success stories ></button>
+        <button class="btn products">Meet success stories</button>
       </div>
       <div class="customers-img">
         <div class="img-row-1">
@@ -51,13 +75,110 @@
         </div>
       </div>
     </div>
-   
+    <div class="why-georgia"> 
+      <div class="why-georgia-text">
+        <h4 class="why-georgia-preheader">Why Georgia</h4>
+        <h3 class="why-georgia-header">Join the expat community with the greatest growth potential in Europe</h3>
+        <p class="why-georgia-text"></pc>
+      </div>
+      <div class="why-georgia-cards">
+        <div class="why-georgia-card">
+          <h4 class="why-georgia-card-header">1% |</h4>
+          <p class="why-georgia-card-text">Taxes for some activities as an Individual Entrepreneur with special status of Small Business. Up to 500.000 georgian lari turnover / year. After that, you will be paying 3% tax.</p>
+        </div>
+        <div class="why-georgia-card">
+          <h4 class="why-georgia-card-header"> 0%  |</h4>
+          <p class="why-georgia-card-text">Taxes on worlwide capital gains as a particular and reinvested earnings as LLC</p>
+        </div>
+        <div class="why-georgia-card">
+          <h4 class="why-georgia-card-header">20% |</h4>
+          <p class="why-georgia-card-text">Taxes on distributed profits</p>
+        </div>
+        <div class="why-georgia-card">
+          <h4 class="why-georgia-card-header">+10M$ |</h4>
+          <p class="why-georgia-card-text">Turnover volume of our LLC and Individual Entrepreneur customers declared in Georgia.</p>
+        </div>  
+      </div>
+    </div>
+  </div>
+<footer>
+<div class="footer-text">
+  <div class="footer-text column">
+    
+    <p>© 2023 Tu Empresa En Georgia, Inc. </p>
+  </div>
+  <div class="footer-text column">
+    <ul>
+      <li>Products</li>
+      <li>Atlas</li>
+      <li>Billing</li>
+      <li>Capital</li>
+      <li>Checkout</li>
+      <li>Climate</li>
+      <li>Connect</li>
+      <li>Corporate Card</li>
+      <li>Data Pipeline</li>
+    </ul>
+  </div>
+  <div class="footer-text column">
+    <ul>
+      <li>Products</li>
+      <li>Atlas</li>
+      <li>Billing</li>
+      <li>Capital</li>
+      <li>Checkout</li>
+      <li>Climate</li>
+      <li>Connect</li>
+      <li>Corporate Card</li>
+      <li>Data Pipeline</li>
+    </ul>
+  </div>
+  <div class="footer-text column">
+    <ul>
+      <li>Products</li>
+      <li>Atlas</li>
+      <li>Billing</li>
+      <li>Capital</li>
+      <li>Checkout</li>
+      <li>Climate</li>
+      <li>Connect</li>
+      <li>Corporate Card</li>
+      <li>Data Pipeline</li>
+    </ul>
+  </div>
 </div>
-
+</footer>
+</div>
 <script src="main.js"></script>
  <script> 
   var gradient = new Gradient()
   gradient.initGradient('#gradient-canvas');
+   // Get Modal
+   var modal = document.getElementById('myModal');
+
+// Get pseudoelement to open Modal
+var btn = document.getElementById("sized");
+
+// Get the <span> element to close Modal
+var span = document.getElementsByClassName("close")[0];
+
+// When user clicks button, open Modal
+btn.onclick = function () {
+    modal.style.display = "block";
+};
+
+// When user clicks Close (x), close Modal
+span.onclick = function () {
+    modal.style.display = "none";
+};
+
+// When user clicks anywhere outside of the Modal, close Modal
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+   
   </script> 
 
 </body>
