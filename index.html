@@ -1,209 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <link rel="stylesheet" href="CSS/style.css">
-<script src="JS/Gradient.js"></script>
- <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js" > </script>  
- <script src="https://kit.fontawesome.com/976373c9a5.js" crossorigin="anonymous"></script>
+  <!-- <script src="JS/Gradient.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js"> </script>
+  <script src="https://kit.fontawesome.com/976373c9a5.js" crossorigin="anonymous"></script>
   <title>Tu Empresa En Georgia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <canvas class="canvas-item" id="gradient-canvas"></canvas>
+
 <body>
   <div class="wrapper">
-  <header>
-  <a class="link-logo" href=""><img class="logo" src="images/logo.png" alt=""></a>
-    <nav class="main-navigation">
-      <ul class="main-navigation-ul">
+    <header>
+      <a class="link-logo" href=""><img class="logo" src="images/logo.png" alt=""></a>
+      <nav class="main-navigation">
+        <ul class="main-navigation-ul">
           <li>Home</li>
           <li>Products</li>
           <li>Help</li>
           <li>Wiki</li>
           <li>Blog</li>
-      </ul>
-    </nav>
-    
-    <nav class="navigation-mobile">
-      <button id="sized" class="menu" aria-label="menu-button">
+        </ul>
+      </nav>
+
+      <nav class="navigation-mobile">
+        <button id="sized" class="menu" aria-label="menu-button">
           <i class="fa-solid fa-bars"></i>
-      </button>
-      <div id="myModal" class="modal">
+        </button>
+        <div id="myModal" class="modal">
           <div class="modal-content animated           zoomIn">
-              <div class="modal-header">
-                  <span class="close">×</span>
-              </div>
-              <div class="modal-body nav">
-                  <ul>
-                  <li><a href="https://clini.io/">Home</a></li>
-          <li><a href="https://clini.io/services/">Services</a></li>
-          <li><a href="https://clini.io/faq/">FAQ</a></li>
-          <li><a href="https://clini.io/contact/">Contact</a></li>
-          <li><a href="https://clini.io/shop-page/">Shop</a></li>
-                  </ul>
-              </div>
+            <div class="modal-header">
+              <span class="close">×</span>
+            </div>
+            <div class="modal-body nav">
+              <ul>
+                <li><a href="https://clini.io/">Home</a></li>
+                <li><a href="https://clini.io/services/">Services</a></li>
+                <li><a href="https://clini.io/faq/">FAQ</a></li>
+                <li><a href="https://clini.io/contact/">Contact</a></li>
+                <li><a href="https://clini.io/shop-page/">Shop</a></li>
+              </ul>
+            </div>
           </div>
-      </div>
-  </nav>
-    <button class="btn sign-in">Sign in 
-       <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-    <g fill-rule="evenodd">
-        <path class="HoverArrow__linePath" d="M0 5h7"></path>
-        <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path> 
-    </g>
-  </svg>
-    </button>
-  </header>
+        </div>
+      </nav>
+      <button class="btn sign-in">Sign in
+        <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+          <g fill-rule="evenodd">
+            <path class="HoverArrow__linePath" d="M0 5h7"></path>
+            <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+          </g>
+        </svg>
+      </button>
+    </header>
     <div class="main-hero">
       <div class="main-info">
         <h1>Tax Law and <br> Expat Services<br> in <span>Georgia</span></h1>
         <h4>Tax | Legal | Accounting | Real Estate | Relocation</h4>
         <p>Managed By Expats for Expats. With a Local Experts Who Understand Your Needs. We speak your language.</p>
-        <div class="hero-buttons"><button class="btn products">Products     <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-          <g fill-rule="evenodd">
-              <path class="HoverArrow__linePath" d="M0 5h7"></path>
-              <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path> 
-          </g>
-        </svg></button><button class="btn">Contact us     <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-          <g fill-rule="evenodd">
-              <path class="HoverArrow__linePath" d="M0 5h7"></path>
-              <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path> 
-          </g>
-        </svg>
-        </button></div>
+        <div class="hero-buttons"><button class="btn products">Products <svg class="HoverArrow" width="10" height="10"
+              viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg></button><button class="btn">Contact us <svg class="HoverArrow" width="10" height="10"
+              viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg>
+          </button></div>
       </div>
       <div class="main-image"><img src="" alt=""></div>
     </div>
     <div class="info-blocks">
-    <div class="customers">
-      <div class="customers-info">
-        <h2>Our customers are building the future</h2>
-        <p>Your Company in Georgia has developed a complete service infrastructure in the Republic of Georgia to cover the needs of more than 300 customers.</p>
-        <button class="btn products">Meet success stories     <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
-          <g fill-rule="evenodd">
-              <path class="HoverArrow__linePath" d="M0 5h7"></path>
-              <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path> 
-          </g>
-        </svg></button>
+      <div class="customers">
+        <div class="customers-info">
+          <h2>Our customers are building the future</h2>
+          <p>Your Company in Georgia has developed a complete service infrastructure in the Republic of Georgia to cover
+            the needs of more than 300 customers.</p>
+          <button class="btn products">Meet success stories <svg class="HoverArrow" width="10" height="10"
+              viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg></button>
+        </div>
+        <div class="customers-img">
+          <div class="img-row-1">
+            <img class="customers-image-1 image-brd" src="Images/customers-1.png" alt="">
+            <img class="customers-image-2 image-brd" src="Images/customers-3.png" alt="">
+            <img class="customers-image-4 image-brd" src="Images/customers-4.png" alt="">
+          </div>
+          <div class="img-row-2">
+            <img class="customers-image-3 image-brd" src="Images/customers-2.png" alt="">
+            <img class="customers-image-5 image-brd" src="Images/customers-5.webp" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+        </div>
       </div>
-      <div class="customers-img">
-        <div class="img-row-1">
-        <img class="customers-image-1 image-brd" src="Images/customers-1.png" alt="">
-        <img class="customers-image-2 image-brd" src="Images/customers-3.png" alt="">
-        <img class="customers-image-4 image-brd" src="Images/customers-4.png" alt="">
+      <div class="why-georgia">
+        <div class="why-georgia-text">
+          <h4 class="why-georgia-preheader">Why Georgia</h4>
+          <h3 class="why-georgia-header">Join the expat community with the greatest growth potential in Europe</h3>
+          <p class="why-georgia-text">
+            </pc>
         </div>
-        <div class="img-row-2">
-        <img class="customers-image-3 image-brd" src="Images/customers-2.png" alt="">
-        <img class="customers-image-5 image-brd" src="Images/customers-5.webp" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <div class="why-georgia-cards">
+          <div class="why-georgia-card">
+            <h4 class="why-georgia-card-header">1% |</h4>
+            <p class="why-georgia-card-text">Taxes for some activities as an Individual Entrepreneur with special status
+              of Small Business. Up to 500.000 georgian lari turnover / year. After that, you will be paying 3% tax.</p>
+          </div>
+          <div class="why-georgia-card">
+            <h4 class="why-georgia-card-header"> 0% |</h4>
+            <p class="why-georgia-card-text">Taxes on worlwide capital gains as a particular and reinvested earnings as
+              LLC</p>
+          </div>
+          <div class="why-georgia-card">
+            <h4 class="why-georgia-card-header">20% |</h4>
+            <p class="why-georgia-card-text">Taxes on distributed profits</p>
+          </div>
+          <div class="why-georgia-card">
+            <h4 class="why-georgia-card-header">+10M$ |</h4>
+            <p class="why-georgia-card-text">Turnover volume of our LLC and Individual Entrepreneur customers declared
+              in Georgia.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="why-georgia"> 
-      <div class="why-georgia-text">
-        <h4 class="why-georgia-preheader">Why Georgia</h4>
-        <h3 class="why-georgia-header">Join the expat community with the greatest growth potential in Europe</h3>
-        <p class="why-georgia-text"></pc>
-      </div>
-      <div class="why-georgia-cards">
-        <div class="why-georgia-card">
-          <h4 class="why-georgia-card-header">1% |</h4>
-          <p class="why-georgia-card-text">Taxes for some activities as an Individual Entrepreneur with special status of Small Business. Up to 500.000 georgian lari turnover / year. After that, you will be paying 3% tax.</p>
-        </div>
-        <div class="why-georgia-card">
-          <h4 class="why-georgia-card-header"> 0%  |</h4>
-          <p class="why-georgia-card-text">Taxes on worlwide capital gains as a particular and reinvested earnings as LLC</p>
-        </div>
-        <div class="why-georgia-card">
-          <h4 class="why-georgia-card-header">20% |</h4>
-          <p class="why-georgia-card-text">Taxes on distributed profits</p>
-        </div>
-        <div class="why-georgia-card">
-          <h4 class="why-georgia-card-header">+10M$ |</h4>
-          <p class="why-georgia-card-text">Turnover volume of our LLC and Individual Entrepreneur customers declared in Georgia.</p>
-        </div>  
-      </div>
-    </div>
-  </div>
-<footer>
-<div class="footer-text">
-  <div class="footer-text column">
     
-    <p>© 2023 Tu Empresa En Georgia, Inc. </p>
+    <footer>
+      <div class="footer-text">
+        <div class=" f-column">
+          <div>
+            <p><svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+
+                <path
+                  d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01"
+                  fill="#0A2540" fill-rule="evenodd"></path>
+
+
+              </svg>Geogia</p>
+            <p>
+              <svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+                <path
+                  d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z"
+                  fill="#0A2540" fill-rule="evenodd"></path>
+
+              </svg>English(United States)</p>
+          </div>
+
+          <p>© 2023 Tu Empresa En Georgia, Inc. </p>
+        </div>
+        <div class="footer-text column">
+          <ul>
+            <li><span class="footer-title">Products</span></li>
+            <li>Atlas</li>
+            <li>Billing</li>
+            <li>Capital</li>
+            <li>Checkout</li>
+            <li>Climate</li>
+            <li>Connect</li>
+            <li>Corporate Card</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+        <div class="footer-text column">
+          <ul>
+            <li><span class="footer-title">Products</span></li>
+            <li>Atlas</li>
+            <li>Billing</li>
+            <li>Capital</li>
+            <li>Checkout</li>
+            <li>Climate</li>
+            <li>Connect</li>
+            <li>Corporate Card</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+        <div class="footer-text column">
+          <ul>
+            <li><span class="footer-title">Products</span></li>
+            <li>Atlas</li>
+            <li>Billing</li>
+            <li>Capital</li>
+            <li>Checkout</li>
+            <li>Climate</li>
+            <li>Connect</li>
+            <li>Corporate Card</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </div>
-  <div class="footer-text column">
-    <ul>
-      <li>Products</li>
-      <li>Atlas</li>
-      <li>Billing</li>
-      <li>Capital</li>
-      <li>Checkout</li>
-      <li>Climate</li>
-      <li>Connect</li>
-      <li>Corporate Card</li>
-      <li>Data Pipeline</li>
-    </ul>
   </div>
-  <div class="footer-text column">
-    <ul>
-      <li>Products</li>
-      <li>Atlas</li>
-      <li>Billing</li>
-      <li>Capital</li>
-      <li>Checkout</li>
-      <li>Climate</li>
-      <li>Connect</li>
-      <li>Corporate Card</li>
-      <li>Data Pipeline</li>
-    </ul>
-  </div>
-  <div class="footer-text column">
-    <ul>
-      <li>Products</li>
-      <li>Atlas</li>
-      <li>Billing</li>
-      <li>Capital</li>
-      <li>Checkout</li>
-      <li>Climate</li>
-      <li>Connect</li>
-      <li>Corporate Card</li>
-      <li>Data Pipeline</li>
-    </ul>
-  </div>
-</div>
-</footer>
-</div>
-<script src="main.js"></script>
- <script> 
-  var gradient = new Gradient()
-  gradient.initGradient('#gradient-canvas');
-   // Get Modal
-   var modal = document.getElementById('myModal');
+  <script src="main.js"></script>
+  <script>
+    var gradient = new Gradient()
+    gradient.initGradient('#gradient-canvas');
+    // Get Modal
+    var modal = document.getElementById('myModal');
 
-// Get pseudoelement to open Modal
-var btn = document.getElementById("sized");
+    // Get pseudoelement to open Modal
+    var btn = document.getElementById("sized");
 
-// Get the <span> element to close Modal
-var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element to close Modal
+    var span = document.getElementsByClassName("close")[0];
 
-// When user clicks button, open Modal
-btn.onclick = function () {
-    modal.style.display = "block";
-};
+    // When user clicks button, open Modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
 
-// When user clicks Close (x), close Modal
-span.onclick = function () {
-    modal.style.display = "none";
-};
+    // When user clicks Close (x), close Modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
 
-// When user clicks anywhere outside of the Modal, close Modal
-window.onclick = function (event) {
-    if (event.target == modal) {
+    // When user clicks anywhere outside of the Modal, close Modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
         modal.style.display = "none";
-    }
-};
-   
-  </script> 
+      }
+    };
+  </script>
 
 </body>
+
 </html>

@@ -48,7 +48,15 @@ opacity: 1;
     padding-left: 5rem;
     display: flex;
 }
-
+.f-column {
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+}
+.column {
+    max-width: 25%;
+}
 #gradient-canvas {
     position: absolute;
     width: 100%;
@@ -304,23 +312,38 @@ align-items: center;
 }
 footer ul {
     list-style: none;
+    padding-left: 1em;
 }
+
 footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 8em;
+    max-width: 1200px;
+width: 100%;
+padding-left: 4em;
+padding-bottom: 6em;
 }
+.f-column > div:nth-child(1) > p:nth-child(1) > svg:nth-child(1) {
+    padding-right: 8px;}
+    .f-column > div:nth-child(1) > p:nth-child(2) > svg:nth-child(1) {
+        padding-right: 8px;
+    }
 .footer-text {
     flex-direction: row;
 display: flex;
-justify-content: center;
-padding-left: 2em;
+
 width: 100%;
 }
+.footer-title {
+    font-weight: 425;
+}
+
 footer li {
     font-weight: normal;
     line-height: 2;
+    color: rgb(10, 37, 64);
 }
 .dynamic {
     z-index: -1;
