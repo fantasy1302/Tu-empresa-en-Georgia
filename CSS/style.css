@@ -83,6 +83,10 @@ p {
     font-weight: normal;
     line-height: 1.4;
 }
+.why-georgia-card-text {
+color: #c7c6c6;
+font-weight: normal;
+line-height: 1.4;}
 h1 {
     font-size: 85px;
     z-index: -2;
@@ -178,6 +182,7 @@ header {
     fill:none;
     stroke:currentColor
   }
+  .vanta-canvas {transform: skewY(-5deg);}
   .HoverArrow__linePath {
     opacity:var(--arrowLineOpacity);
     transition:opacity 150ms cubic-bezier(0.215,0.61,0.355,1);)
@@ -226,6 +231,15 @@ align-items: center;
 
 .navigation-mobile {
     display: none;
+}
+.why-georgia-header {
+    color: white;
+}
+.why-georgia-preheader {
+    color:rgb(0, 212, 255);
+}
+.why-georgia-card-header {
+    color: white;
 }
 .btn {
     border-radius: 25px;
@@ -338,9 +352,7 @@ align-items: center;
 .why-georgia {
 
 }
-.one {
-    margin-bottom: 3em;
-}
+
 .why-georgia-cards {
     display: flex;
     gap: 2em;
@@ -354,6 +366,7 @@ align-items: center;
 }
 .info-blocks {
     max-width: 1080px;
+    padding-top: 5em;
 }
 footer ul {
     list-style: none;
@@ -364,17 +377,19 @@ footer ul {
     position: relative;
 display: flex;
 justify-content: center;
+margin-bottom: 1em;
+height: 600px;
 }
 footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 8em;
-    max-width: 1200px;
-width: 100%;
-padding-left: 4em;
-position:relative;
-padding-bottom: 6em;
+    margin-top: 3em;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 4em;
+    position: relative;
+    padding-bottom: 0;
 }
 
 .f-column > div:nth-child(1) > p:nth-child(1) > svg:nth-child(1) {
@@ -397,6 +412,16 @@ footer li {
     font-weight: normal;
     line-height: 2;
     color: rgb(10, 37, 64);
+}
+.footer-bg {
+    background: #f6f9fc;
+    clip-path: polygon(0 31%, 100% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 149%;
+    padding-top: -12em;
+    margin-top: -9em;
 }
 .dynamic {
     z-index: -1;
