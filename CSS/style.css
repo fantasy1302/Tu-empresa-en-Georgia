@@ -39,7 +39,7 @@ justify-content: center;
 }
 .logo {
     max-width: 50px;
-opacity: 0.4;
+opacity: 1;
 }
 
 .main-hero {
@@ -51,8 +51,8 @@ opacity: 0.4;
 
 #gradient-canvas {
     position: absolute;
-    width: 100vw;
-    height: 58.5vh;
+    width: 100%;
+    height: 405px;
     rotate: -13deg;
     scale: 1.7;
     translate: 6;
@@ -88,6 +88,7 @@ h1 {
     margin: 30em;
     
 }
+
 span h1{
     opacity: none;
 }
