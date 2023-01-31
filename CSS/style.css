@@ -45,7 +45,7 @@ opacity: 1;
 .main-hero {
     z-index: 2;
     position: relative;
-    padding-left: 5rem;
+    max-width: 1080px;
     display: flex;
 }
 .f-column {
@@ -75,7 +75,7 @@ margin-right: -8em;
 }
 
 .main-image {
-    min-width: 500px;
+    min-width: 474px;
 }
 
 p {
@@ -88,7 +88,7 @@ h1 {
     z-index: -2;
     position: relative;
     margin-bottom: 0.4em;
-    margin-top: 1.9em;
+    margin-top: 1.8em;
     color: black;
     line-height: 1.1;
 }
@@ -106,6 +106,50 @@ h2 {
     color: black;
 }
 
+.line {
+    height: 40px;
+    width: 100vw;
+    transform: skewY(-5deg);
+    display: flex;
+    justify-content: space-between;
+}
+.line-long-left {
+    height: 40px;
+    background: #7a73ff;
+    width: 13%;
+    position: absolute;
+    float: left;
+    opacity: 0.9;
+    z-index: 2;
+}
+.line-short-left {
+    background: #80e9ff;
+    height: 40px;
+    width: 8%;
+    position: relative;
+    margin-top: -1em;
+    opacity: 0.7;
+    float: left;
+    z-index: 0;
+}
+.line-long-right{
+    height: 40px;
+background: #7a73ff;
+width: 7%;
+position: absolute;
+float: right;
+opacity: 0.9;
+right: 0;
+}
+.line-short-right{
+    background: #80e9ff;
+height: 40px;
+width: 13%;
+position: relative;
+margin-top: -1em;
+opacity: 0.7;
+float: left;
+}
 h3 {
     font-size: 40px;
 }
@@ -119,6 +163,7 @@ header {
     padding: 8px 10px 10px 18px;
     align-items: center;
 }
+
 .HoverArrow {
     --arrowSpacing:5px;
     --arrowHoverTransition:150ms cubic-bezier(0.215,0.61,0.355,1);
@@ -154,7 +199,7 @@ text-decoration: none;
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0em 1em;
     top: 0;
     position: relative;
@@ -234,7 +279,7 @@ align-items: center;
 }
 
 .customers-info {
-    padding-left: 4em;
+
     min-width: 50%;
     display: flex;
     flex-direction: column;
@@ -291,7 +336,10 @@ align-items: center;
     margin: 9px;
 }
 .why-georgia {
-    padding-left: 4em;
+
+}
+.one {
+    margin-bottom: 3em;
 }
 .why-georgia-cards {
     display: flex;
@@ -305,16 +353,18 @@ align-items: center;
     max-width: 50%;
 }
 .info-blocks {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 4em;
+    max-width: 1080px;
 }
 footer ul {
     list-style: none;
     padding-left: 1em;
 }
-
+#globe-canvas {
+    width: 100%;
+    position: relative;
+display: flex;
+justify-content: center;
+}
 footer {
     display: flex;
     justify-content: center;
@@ -323,8 +373,10 @@ footer {
     max-width: 1200px;
 width: 100%;
 padding-left: 4em;
+position:relative;
 padding-bottom: 6em;
 }
+
 .f-column > div:nth-child(1) > p:nth-child(1) > svg:nth-child(1) {
     padding-right: 8px;}
     .f-column > div:nth-child(1) > p:nth-child(2) > svg:nth-child(1) {
@@ -336,6 +388,7 @@ display: flex;
 
 width: 100%;
 }
+
 .footer-title {
     font-weight: 425;
 }

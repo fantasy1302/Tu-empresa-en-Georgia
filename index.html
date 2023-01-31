@@ -6,6 +6,8 @@
   <!-- <script src="JS/Gradient.js"></script> -->
   <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js"> </script>
   <script src="https://kit.fontawesome.com/976373c9a5.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js" integrity="sha512-cfeQlKIIaFDUyrmXLF3uv1DSprgNRSSptQF6lyPPmsnXhR2M8qtQ4B6pMQJE3BePiGHRefNCVO4u5/FUSzMkbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Tu Empresa En Georgia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -78,8 +80,7 @@
       </div>
       <div class="main-image"><img src="" alt=""></div>
     </div>
-    <div class="info-blocks">
-      <div class="customers">
+      <div class="customers info-blocks">
         <div class="customers-info">
           <h2>Our customers are building the future</h2>
           <p>Your Company in Georgia has developed a complete service infrastructure in the Republic of Georgia to cover
@@ -106,7 +107,11 @@
           </div>
         </div>
       </div>
-      <div class="why-georgia">
+      <div class="line one"> 
+        <div class="line-long-left"></div>
+        <div class="line-short-left"></div> 
+      </div>
+      <div id="globe-canvas">      <div class="why-georgia info-blocks">
         <div class="why-georgia-text">
           <h4 class="why-georgia-preheader">Why Georgia</h4>
           <h3 class="why-georgia-header">Join the expat community with the greatest growth potential in Europe</h3>
@@ -134,8 +139,13 @@
               in Georgia.</p>
           </div>
         </div>
-      </div>
-    
+      </div> </div>
+  <div class="line"> 
+    <div class="line-long-left"></div>
+    <div class="line-short-left"></div>
+    <div class="line-long-right"></div>
+    <div class="line-short-right"></div>
+  </div>
     <footer>
       <div class="footer-text">
         <div class=" f-column">
@@ -200,8 +210,6 @@
         </div>
       </div>
     </footer>
-  </div>
-  </div>
   <script src="main.js"></script>
   <script>
     var gradient = new Gradient()
@@ -232,7 +240,21 @@
       }
     };
   </script>
-
+<script>
+VANTA.GLOBE({
+  el: "#globe-canvas",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3f82ff,
+  size: 3.0,
+  backgroundColor: 0xb0850
+})
+</script>
 </body>
 
 </html>
