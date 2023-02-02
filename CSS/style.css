@@ -20,6 +20,153 @@
     transform: translate(8px, 0);
     opacity: 1;
   }
+  .col-md-offset-2 {
+    margin-left: 1em;
+  } 
+ 
+
+  .testimonials-section {
+    background: #2B6EEA;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+  padding: 0;
+  position: relative;
+  width: 1080px;
+  height:  360px;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+
+}
+.block-with-logos {
+    margin-bottom: 4em;
+}
+.testimonial {
+    height: 100%;
+display: none;
+flex-direction: row;
+}
+
+.ct-active {
+    display: flex;
+
+}
+.testimonials-section-bg {
+    opacity: 0.2;
+    position: absolute;
+    width: 47%;
+    mask-image: linear-gradient(to right, transparent 1%, black 60%);
+    right: 0;
+    height: 100%;
+    border-radius: 0px 10px 0px 0px;
+    transition: all 0.9s ease;
+}
+.testimonials-text-block {
+    height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 48px 0 48px 48px;
+max-width: 50%;
+}
+.client-name {
+    font-size: 15px;
+}
+.testimonials-logo-block {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 36px 19px;
+    width: 50%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.sub-testimonials-section {
+    position: relative;
+}
+.testimonials-text-block  p {
+    color: white;
+
+    
+}
+
+
+.testimonials-container {
+    height: 100%;
+display: flex;
+flex-direction: row;
+
+}
+.testimonials-dots {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 2px;
+list-style: none;
+}
+.dot {
+background: lightgray;
+width: 24px;
+border: none;
+height: 2px;
+display: block;
+cursor: pointer;
+border-radius: 2px;
+margin-right: 4px;
+}
+.dot-active {
+    background: white;
+}
+.testimonials-container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Images/man-cafe.jpg');
+}
+#testimonial {
+	padding: 30px 0;
+  text-align: center;
+}
+#testimonial .item {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#testimonial .item p {
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    text-align: left;
+    color: white;
+  }
+  
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: white;
+    width: 10px;
+    border-radius: 2px;
+    height: 5px;
+    width: 17px;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    width: 17px;
+    height: 5px;
+    margin: 5px 7px;
+    background: lightgray;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+  }
+hr {
+    height: 3px;
+    width: 60px;
+    position: relative;
+    background: #a5a5a5;
+    border: 0;
+    margin-bottom: 30px;
+}
   .tail {
     transform: translate(-8px, 0);
     opacity: 0;
@@ -39,7 +186,7 @@ justify-content: center;
 }
 
 .nav-icons {
-    width: 50px;
+    width: 35px;
 }
 
 .logo {
@@ -297,6 +444,7 @@ align-items: center;
     justify-content: start;
     flex-direction: row;
     margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 .customers-info {
@@ -491,12 +639,49 @@ footer li {
         max-width: 100%;
         padding-top: 2em;
       }
+      .logo {
+        max-width: 35px;
+        opacity: 1;
+      }
       .customers {
         display: flex;
         justify-content: start;
         flex-direction: column;
         margin-top: 2em;
+        margin-left: 4em;
       }
+      p {
+        color: gray;
+        font-weight: normal;
+        line-height: 1.4;
+        width: 82%;
+      }
+      h3 {
+        font-size: 35px;
+      }
+      .why-georgia-text {
+        max-width: 100%;
+      }
+      .why-georgia-cards {
+        display: flex;
+        gap: 2em;
+        flex-direction: column;
+      }
+      .why-georgia-card {
+        max-width: 100%;
+      }
+      .vanta-canvas {
+        height: 1000px;
+        width: 100%;
+      }
+      .footer-bg {display: none;}
+      .footer-text {
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      .why-georgia {margin-left: 4em;}
     hr {
         display: block;
         -webkit-margin-before: 0.5em;
@@ -670,7 +855,8 @@ justify-content: end;
     }
 
     .wrapper {
-        max-width: 90%;
+        max-width: 100%;
+        overflow: hidden;
     }
     .main-navigation {
         display: none;
@@ -681,8 +867,13 @@ justify-content: end;
         position: relative;
         padding-left: 1rem;
         display: flex;
-        margin-top: 6.3em;
+        margin-top: 12.3em;
     }
+    h2 {
+        font-size: 35px;
+        opacity: 1;
+        color: black;
+      }
 
     h1 {
         font-size: 48px;
@@ -696,6 +887,9 @@ justify-content: end;
     .main-navigation-ul {
         font-size: 13px;
         padding-top: 5px;
+    }
+    .main-info {
+        margin-left: 1em;
     }
     .sign-in {display: none;}
     header {margin-top: 1.6em;}
