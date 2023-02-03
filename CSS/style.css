@@ -466,7 +466,124 @@ align-items: center;
     flex-wrap: nowrap;
     display: flex;
 }
+.follow-channel {
+    position: relative;
+width: 1080px;
+height: 360px;
+margin-top: 4em;
+display: flex;
+}
+.follow-channel-texts {
+    max-width:65%;
+}
+.fig-1 {
+    width: 184px;
+background: rgb(128, 233, 255);
+height: 120px;
+border-radius: 9px;
+position: absolute;
+}
+.fig-2 {
+    width: 270px;
+    background: rgb(0, 0, 238);
+    height: 120px;
+    border-radius: 9px;
+    height: 175px;
+    opacity: 0.6;
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 3em;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.follow-channel-images {
+    margin-left: 5em;
+}
+.fig-2-circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+  }
+  .VideosGraphic__playIcon {
+    margin-left: 1em;
+margin-top: 0.8em;
+fill:rgb(0, 72, 229);
+  }
+  .VideosGraphic__playBar {
 
+    width: calc(100% - 16px);
+height: 2px;
+left: 8px;
+bottom: 12px;
+background-color: #fff;
+border-radius: 1px;
+position: absolute;
+  }
+  .VideosGraphic__playBar::after, .VideosGraphic__playBar::before {
+    content: "";
+    position: absolute;
+    background-color: var(--blendIntersection);
+  }
+  .VideosGraphic__playBar::before {
+
+    width: 40%;
+    height: 100%;
+    left: 0;
+    border-radius: 1px;
+
+}
+.VideosGraphic__playBar::after {
+    width: 8px;
+    height: 8px;
+    left: calc(40% - 4px);
+    top: calc(50% - 4px);
+    border-radius: 50%;
+  }
+  .VideosGraphic__playBar::after, .VideosGraphic__playBar::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 72, 229);
+  }
+
+.VideosGraphic__playBar::before {
+  content: "";
+  position: absolute;
+  background-color: #0048e5;
+}
+.f-ch-btn {
+    background: rgb(2, 188, 245);
+    color: white;
+    padding: 8px 13px;
+    font-size: 15px;
+  }
+.nav-dots {
+    z-index: 999999;
+}
+.products-animated {
+    display: flex;
+width: 1080px;
+margin-top: 4em;
+}
+.products-animated-text {
+    width: 65%;
+}
+.products-animated-animation {
+    position: relative;
+width: 412px;
+height: 368px;
+padding-left: 32px;
+}
+.bi-fulscreen {
+    color: white;
+position: absolute;
+right: 0;
+top: 0;
+padding: 10px;
+font-weight: bold;
+
+}
 .customers-img {
     display: flex;
     padding: 1;
@@ -534,6 +651,78 @@ display: flex;
 justify-content: center;
 margin-bottom: 1em;
 height: 600px;
+}
+.BankAnimation__rowContainer {
+    height: 100%;
+overflow: hidden;
+border-radius: 500px 0 0 500px;
+padding: 64px 0;
+background: linear-gradient(90deg,rgba(108,140,171,.2) -13%,hsla(0,0%,100%,0) 19%);
+transform: translateZ(0);
+}
+@keyframes moveHorizontally {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+.BankAnimation__pillRow {
+    display: inline-flex;
+gap: 18px;
+white-space: nowrap;
+height: 50px;
+width: 100%;
+align-items: center;
+animation: moveHorizontally 20s linear infinite;
+}
+.BankAnimation__pill {
+
+    padding: 0 10px;
+border-radius: 50px;
+letter-spacing: -.1px;
+display: flex;
+gap: 5px;
+align-items: center;
+opacity: .8;
+}
+
+.BankAnimation__pill--green {
+    color: #15be53;
+    background-color: #dcf5e5;
+  }
+
+.BankAnimation__pill--cyan {
+  color: #00c4c4;
+  background-color: #d9f6f6;
+}
+
+.products-animated-animation {
+    width: 40%;
+}
+.products-features-cards {
+    display: flex;
+}
+.products-features {
+    width: 1080px;
+}
+.ft-i {
+    width:41px;
+}
+
+.pre-footer {  display: flex;
+    width: 1080px;
+    margin-bottom: 11em;
+    gap: 7em;
+  }
+  .pre-footer-btn-section {
+    display: flex;
+    gap: 1em;
+  }
+.pre-footer-text {
+    width: 40%;
+    
 }
 footer {
     display: flex;
