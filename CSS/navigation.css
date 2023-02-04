@@ -775,13 +775,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
-    left: 0;
-    top: 10px;
-    right: 0;
     z-index: 500;
     height: 50px;
-    -webkit-perspective: 2000px;
-    perspective: 2000px;
 }
 .globalNav ul {
     padding: 0;
