@@ -25,7 +25,7 @@
   } 
  
 .main-info {
-    margin-left: 4em;
+    margin-left: 7.3em;
 }
 
   .testimonials-section {
@@ -227,10 +227,11 @@ width: 100%;
 }
 
 .main-image img {
-    max-width: 900px;
+    max-width: 600px;
     position: absolute;
     margin-right: -8em;
-    padding-top: 8em;
+    padding-top: 6em;
+    
   }
    
 
@@ -240,9 +241,14 @@ width: 100%;
 }
 
 p {
-    color: gray;
+    color: #435465;
     font-weight: normal;
-    line-height: 1.4;
+    line-height: 1.55556;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.main-info p {
+    width: 65%;
 }
 .why-georgia-card-text {
 color: #c7c6c6;
@@ -253,22 +259,27 @@ h1 {
     z-index: -2;
     position: relative;
     margin-bottom: 0.4em;
-    margin-top: 1.8em;
+    margin-top: 2.5em;
     color: black;
     line-height: 1.1;
+    opacity: 0.75;
 }
 .mapps {
     margin: 30em;
     
 }
+.customers 
 
 span h1{
     opacity: none;
 }
 h2 {
-    font-size: 52px;
+    font-size: 56px;
     opacity: 1;
-    color: black;
+    color: #0a2540;
+    width: 63%;
+    line-height: 68px;
+    margin-bottom: 0.25em;
 }
 
 .line {
@@ -401,12 +412,13 @@ text-decoration: none;
     border: none;
     color: black;
     background-color: white;
-    font-size: 1em;
-    font-weight: 400;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
 }
 .hero-buttons {
     display: flex;
@@ -434,10 +446,12 @@ align-items: center;
 }
 
 .products {
-    padding: 6px 15px 6px 16px;
-    background-color: black;
+    padding: 6px 12px 9px 16px;
+    background-color: rgb(10, 37, 64);
     color: white;
     margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .customers {
@@ -447,25 +461,39 @@ align-items: center;
     margin-top: 4em;
     margin-bottom: 7em;
 }
+.customers-btn {
+    padding: 6px 12px 8px 16px;
+background-color: rgb(99, 91, 255);
+color: white;
+margin-right: 10px;
+}
+.customers-info p {
+    width: 65%;
+    padding-bottom: 1em;
+    line-height: 1.5555555;
+    font-size: 18px;
+    color: #435465;
+}
 
 .customers-info {
-    margin-left: 4em;
-    min-width: 50%;
+    margin-left: 7.3em;
+    min-width: 40%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
 }
 
 .img-row-1 {
     flex-wrap: nowrap;
     display: flex;
     align-items: baseline;
+    margin-left: 10px;
 }
 
 .img-row-2 {
     flex-wrap: nowrap;
     display: flex;
+    margin-left: 6.7em;
 }
 .follow-channel {
     position: relative;
@@ -476,7 +504,7 @@ align-items: center;
 }
 .follow-channel-texts {
     max-width: 55%;
-margin-left: 4em;
+margin-left: 7.3em;
 }
 .fig-1 {
     width: 184px;
@@ -500,7 +528,7 @@ justify-content: center;
 align-items: center;
 }
 .follow-channel-images {
-    margin-left: 5em;
+    margin-left: 4em;
 }
 .fig-2-circle {
     background-color: white;
@@ -559,6 +587,7 @@ position: absolute;
     color: white;
     padding: 8px 13px;
     font-size: 15px;
+    
   }
 .nav-dots {
     z-index: 999999;
@@ -571,7 +600,7 @@ margin-bottom: 7em;
 }
 .products-animated-text {
     width: 65%;
-margin-left: 4em;
+margin-left: 7.3em;
 }
 .products-animated-animation {
     position: relative;
@@ -591,7 +620,7 @@ font-weight: bold;
 }
 .customers-img {
     display: flex;
-    padding: 1;
+    padding-top: 2em;
     min-width: 50%;
     flex-direction: row;
     align-items: baseline;
@@ -600,48 +629,98 @@ font-weight: bold;
 }
 
 .customers-image-1 {
-    width: 278px;
-    height: 199px;
+    width: 304px;
+    height: 208px;
 }
 
 .customers-image-2 {
-    width: 200px;
-    height: 264px;
+    width: 216px;
+    height: 292px;
 }
 
 .customers-image-3 {
-    width: 310px;
-    height: 220px;
+    width: 304px;
+    height: 216px;
 }
 
 .customers-image-4 {
-    width: 330px;
+    width: 304px;
+    height: 208px;
 }
 
 .customers-image-5 {
-    width: 376px;
+    width: 375px;
+    height: 300px;
 }
 
 .image-brd {
-    border-radius: 14px;
-    margin: 9px;
+    border-radius:8px;
+    margin-right: 25px;
 }
 .why-georgia {
 
 }
-
+.customers-card-img {
+    width: 60px;
+    border-radius: 50%;
+}
+.customers-card-img-2 {
+position: absolute;
+margin-left: 0;
+border: 2px solid white;
+z-index: 0;
+}
+.customers-card-image-5 {
+    position: absolute;
+    right: 0;
+    margin-top: 19.2em;
+    margin-right: -9.9em;
+}
+.customers-card-img-3 {
+position: relative;
+margin-left: 2em;
+z-index: 2;
+border: 2px solid white;
+}
 .why-georgia-cards {
     display: flex;
     gap: 2em;
-    margin-left: 4em;
+    margin-left: 7.3em;
 }
 .why-georgia-card {
 
     max-width: 25%;
 }
+.customers-card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 10px;
+    width: 380px;
+    height: 120px;
+    padding-left: 20px;
+    
+}
+.customers-card-text {
+    width: 40%;
+}
+.customers-card-text p {
+    color: black;
+font-weight: 500;
+font-size: 15px;
+}
+.customers-card-images {
+    margin-left: 3em;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
 .why-georgia-text {
     max-width: 50%;
-    margin-left: 4em;
+    margin-left: 7.3em;
 }
 .info-blocks {
     padding-top: 5em;
@@ -709,15 +788,18 @@ opacity: .8;
 }
 .products-features-cards {
     display: flex;
-    margin-left: 4em;
+    margin-left: 7.3em;
     margin-right: 4em;
+}
+.products-features-card {
+    margin: 1em;
 }
 .products-features {
     width: 100%;
     margin-bottom: 10em;
 }
 .products-features-text {
-    margin-left: 4em;
+    margin-left: 7.3em;
 }
 .ft-i {
     width:41px;
@@ -729,11 +811,19 @@ opacity: .8;
     gap: 4em;
     margin-top: 4em;
   }
+  .customers-card-btn {
+    color: #635bff;
+    padding: 0;
+    font-size: 15px;
+    font-weight: normal;
+    
+  }
   .pf-card-1 {
     width: 20%;
   }
   .pf-card-2 {
     width: 20%;
+    padding-right: 3em;
   }
   .pre-footer-btn-section {
     display: flex;
@@ -741,7 +831,7 @@ opacity: .8;
   }
 .pre-footer-text {
     width: 40%;
-    margin-left: 4em;
+    margin-left: 7.3em;
 }
 footer {
     display: flex;
@@ -762,7 +852,7 @@ footer {
 .footer-text {
     flex-direction: row;
 display: flex;
-padding-left: 4em;
+padding-left: 7.3em;
 width: 100%;
 }
 
@@ -855,10 +945,10 @@ footer li {
         justify-content: start;
         flex-direction: column;
         margin-top: 2em;
-        margin-left: 4em;
+        margin-left: 7.3em;
       }
       p {
-        color: gray;
+        color: #435465;
         font-weight: normal;
         line-height: 1.4;
         width: 82%;
