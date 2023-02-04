@@ -76,6 +76,9 @@ max-width: 50%;
 .testi {
     display: flex;
 justify-content: center;
+margin-top: 6em;
+margin-bottom: 6em;
+
 }
 .client-name {
     font-size: 15px;
@@ -442,7 +445,7 @@ align-items: center;
     justify-content: start;
     flex-direction: row;
     margin-top: 4em;
-    margin-bottom: 4em;
+    margin-bottom: 7em;
 }
 
 .customers-info {
@@ -564,6 +567,7 @@ position: absolute;
     display: flex;
     width: 100%;
 margin-top: 4em;
+margin-bottom: 7em;
 }
 .products-animated-text {
     width: 65%;
@@ -710,6 +714,7 @@ opacity: .8;
 }
 .products-features {
     width: 100%;
+    margin-bottom: 10em;
 }
 .products-features-text {
     margin-left: 4em;
@@ -720,8 +725,9 @@ opacity: .8;
 
 .pre-footer {  display: flex;
     width: 100%;
-    margin-bottom: 11em;
+    margin-bottom: 14em;
     gap: 4em;
+    margin-top: 4em;
   }
   .pf-card-1 {
     width: 20%;
