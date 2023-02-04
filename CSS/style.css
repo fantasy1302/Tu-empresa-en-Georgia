@@ -357,6 +357,7 @@ text-decoration: none;
 
 .wrapper {
     max-width: 100%;
+    position: absolute;
 }
 .main-navigation {
     padding-left: 15px;
