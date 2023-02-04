@@ -24,6 +24,9 @@
     margin-left: 1em;
   } 
  
+.main-info {
+    margin-left: 4em;
+}
 
   .testimonials-section {
     background: #2B6EEA;
@@ -69,6 +72,10 @@ justify-content: center;
 flex-direction: column;
 padding: 48px 0 48px 48px;
 max-width: 50%;
+}
+.testi {
+    display: flex;
+justify-content: center;
 }
 .client-name {
     font-size: 15px;
@@ -195,7 +202,6 @@ opacity: 1;
 .main-hero {
     z-index: 2;
     position: relative;
-    max-width: 1080px;
     display: flex;
 }
 .f-column {
@@ -440,7 +446,7 @@ align-items: center;
 }
 
 .customers-info {
-
+    margin-left: 4em;
     min-width: 50%;
     display: flex;
     flex-direction: column;
@@ -620,6 +626,7 @@ font-weight: bold;
 .why-georgia-cards {
     display: flex;
     gap: 2em;
+    margin-left: 4em;
 }
 .why-georgia-card {
 
@@ -627,9 +634,9 @@ font-weight: bold;
 }
 .why-georgia-text {
     max-width: 50%;
+    margin-left: 4em;
 }
 .info-blocks {
-    max-width: 1080px;
     padding-top: 5em;
 }
 footer ul {
