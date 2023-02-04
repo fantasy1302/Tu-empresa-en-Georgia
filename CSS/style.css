@@ -466,13 +466,14 @@ align-items: center;
 }
 .follow-channel {
     position: relative;
-width: 1080px;
-height: 360px;
-margin-top: 4em;
-display: flex;
+    width: 100%;
+    height: 360px;
+    margin-top: 4em;
+    display: flex;
 }
 .follow-channel-texts {
-    max-width:65%;
+    max-width: 55%;
+margin-left: 4em;
 }
 .fig-1 {
     width: 184px;
@@ -561,16 +562,18 @@ position: absolute;
 }
 .products-animated {
     display: flex;
-width: 1080px;
+    width: 100%;
 margin-top: 4em;
 }
 .products-animated-text {
     width: 65%;
+margin-left: 4em;
 }
 .products-animated-animation {
     position: relative;
 width: 412px;
 height: 368px;
+
 padding-left: 32px;
 }
 .bi-fulscreen {
@@ -702,18 +705,29 @@ opacity: .8;
 }
 .products-features-cards {
     display: flex;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 .products-features {
-    width: 1080px;
+    width: 100%;
+}
+.products-features-text {
+    margin-left: 4em;
 }
 .ft-i {
     width:41px;
 }
 
 .pre-footer {  display: flex;
-    width: 1080px;
+    width: 100%;
     margin-bottom: 11em;
-    gap: 7em;
+    gap: 4em;
+  }
+  .pf-card-1 {
+    width: 20%;
+  }
+  .pf-card-2 {
+    width: 20%;
   }
   .pre-footer-btn-section {
     display: flex;
@@ -721,7 +735,7 @@ opacity: .8;
   }
 .pre-footer-text {
     width: 40%;
-    
+    margin-left: 4em;
 }
 footer {
     display: flex;
@@ -730,7 +744,6 @@ footer {
     margin-top: 3em;
     max-width: 100%;
     width: 100%;
-    padding-left: 4em;
     position: relative;
     padding-bottom: 0;
 }
@@ -743,7 +756,7 @@ footer {
 .footer-text {
     flex-direction: row;
 display: flex;
-
+padding-left: 4em;
 width: 100%;
 }
 
