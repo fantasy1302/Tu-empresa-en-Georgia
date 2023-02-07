@@ -36,7 +36,7 @@
   padding: 0;
   position: relative;
   width: 1080px;
-  height:  360px;
+  min-height: 360px;
   margin-top: 4em;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ flex-direction: row;
 display: flex;
 justify-content: center;
 flex-direction: column;
-padding: 48px 0 48px 48px;
+padding: 10px 0 48px 48px;
 max-width: 50%;
 }
 .testi {
@@ -97,8 +97,9 @@ margin-bottom: 6em;
     position: relative;
 }
 .testimonials-text-block  p {
-    color: white;
-
+    color: #fff;
+    padding-left: 1em;
+    padding-right: 2em;
     
 }
 
@@ -212,9 +213,20 @@ opacity: 1;
 flex-direction: column;
 justify-content: space-between;
 width: 100%;
+padding: 30px;
 }
 .column {
     max-width: 25%;
+}
+.line-globe {
+    height: 40px;
+width: 100vw;
+transform: skewY(-8deg);
+display: flex;
+justify-content: space-between;
+position: absolute;
+margin-top: 3em;
+align-items: start;
 }
 #gradient-canvas {
     position: absolute;
@@ -251,18 +263,23 @@ p {
     width: 65%;
 }
 .why-georgia-card-text {
-color: #c7c6c6;
-font-weight: normal;
-line-height: 1.4;}
+    color: #adbdcc;
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: 15px;
+}
 h1 {
-    font-size: 85px;
-    z-index: -2;
-    position: relative;
-    margin-bottom: 0.4em;
-    margin-top: 2.5em;
-    color: black;
-    line-height: 1.1;
-    opacity: 0.75;
+    font-size: 75px;
+z-index: -2;
+position: relative;
+margin-bottom: 0.4em;
+margin-top: 2.6em;
+color: black;
+line-height: 1.1;
+opacity: 0.75;
+z-index: 2;
+color: #3a3a3a;
+opacity: .99;
 }
 .mapps {
     margin: 30em;
@@ -288,6 +305,7 @@ h2 {
     transform: skewY(-5deg);
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0.55em;
 }
 .line-long-left {
     height: 40px;
@@ -297,37 +315,40 @@ h2 {
     float: left;
     opacity: 0.9;
     z-index: 2;
+    margin-top: 0em;
 }
 .line-short-left {
     background: #80e9ff;
     height: 40px;
     width: 8%;
     position: relative;
-    margin-top: -1em;
+    margin-top: -2em;
     opacity: 0.7;
     float: left;
     z-index: 0;
 }
 .line-long-right{
     height: 40px;
-background: #7a73ff;
-width: 7%;
-position: absolute;
-float: right;
-opacity: 0.9;
-right: 0;
+    background: #7a73ff;
+    width: 7%;
+    position: absolute;
+    float: right;
+    opacity: 0.8;
+    right: 0;
+    z-index: 1;
 }
 .line-short-right{
     background: #80e9ff;
 height: 40px;
 width: 13%;
 position: relative;
-margin-top: -1em;
+margin-top: -1.77em;
 opacity: 0.7;
 float: left;
 }
 h3 {
     font-size: 40px;
+    color: rgb(10, 37, 64);
 }
 header {
     z-index: 2;
@@ -354,7 +375,10 @@ header {
     fill:none;
     stroke:currentColor
   }
-  .vanta-canvas {transform: skewY(-5deg);}
+  .vanta-canvas {
+    clip-path:polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    height: 876px;
+}
   .HoverArrow__linePath {
     opacity:var(--arrowLineOpacity);
     transition:opacity 150ms cubic-bezier(0.215,0.61,0.355,1);)
@@ -399,13 +423,22 @@ text-decoration: none;
     display: none;
 }
 .why-georgia-header {
-    color: white;
+    color: #fff;
+}
+.globe-slash {
+    color: rgb(0, 212, 255);
+    font-weight: 200;
 }
 .why-georgia-preheader {
     color:rgb(0, 212, 255);
+    font-size: 18px;
 }
 .why-georgia-card-header {
     color: white;
+    font-size: 24px;
+    line-height: 1.3333;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 .btn {
     border-radius: 25px;
@@ -431,7 +464,7 @@ text-decoration: none;
 
 .sign-in {
     padding: 7px 15px 7px 16px;
-    background-color: hsla(0,0%,100%,0.2);
+    background-color: transparent;
     margin: 10px;
     font-size: 15px;
     opacity: 1;
@@ -442,7 +475,8 @@ justify-content: center;
 align-items: center;
 }
 .sign-in:hover {
-    background-color: rgba(255, 255,255, 0.4)
+    background-color: transparent;
+    color: white;
 }
 
 .products {
@@ -497,10 +531,13 @@ margin-right: 10px;
 }
 .follow-channel {
     position: relative;
-    width: 100%;
+    width: 1080px;
     height: 360px;
     margin-top: 4em;
     display: flex;
+}
+.pf-card-2 > svg:nth-child(1) > use:nth-child(3) {
+    opacity: 0.7;
 }
 .follow-channel-texts {
     max-width: 55%;
@@ -528,7 +565,8 @@ justify-content: center;
 align-items: center;
 }
 .follow-channel-images {
-    margin-left: 4em;
+
+    margin-left: 9em;
 }
 .fig-2-circle {
     background-color: white;
@@ -599,8 +637,9 @@ margin-top: 4em;
 margin-bottom: 7em;
 }
 .products-animated-text {
-    width: 65%;
+    width: 37%;
 margin-left: 7.3em;
+margin-right: 9em;
 }
 .products-animated-animation {
     position: relative;
@@ -686,6 +725,7 @@ border: 2px solid white;
     display: flex;
     gap: 2em;
     margin-left: 7.3em;
+    margin-right: 7.3em;
 }
 .why-georgia-card {
 
@@ -719,11 +759,11 @@ justify-content: center;
 align-items: center;
 }
 .why-georgia-text {
-    max-width: 50%;
+    max-width: 41%;
     margin-left: 7.3em;
 }
 .info-blocks {
-    padding-top: 5em;
+    padding-top: 6em;
 }
 footer ul {
     list-style: none;
@@ -732,10 +772,11 @@ footer ul {
 #globe-canvas {
     width: 100%;
     position: relative;
-display: flex;
-justify-content: center;
-margin-bottom: 1em;
-height: 600px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    height: 876px;
+    align-items: center;
 }
 .BankAnimation__rowContainer {
     height: 100%;
@@ -751,6 +792,36 @@ transform: translateZ(0);
     }
     to {
       transform: translateX(-100%);
+    }
+  }
+  @keyframes iconMovement {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(45deg);
+
+    }
+  }
+  .tag-move {
+    animation: iconMovement 1.3s ease-in-out infinite alternate;
+    opacity: 0.9;
+  }
+  .code-move {
+    animation: codeMovement 1.3s  infinite alternate;
+    opacity: 0.9;
+  }
+  @keyframes codeMovement {
+    0% {
+        transform: translateX(5%);
+        transform: translateY(5%);
+        
+    }
+    50% {
+      
+    }
+    100% {
+    
     }
   }
 .BankAnimation__pillRow {
@@ -790,6 +861,8 @@ opacity: .8;
     display: flex;
     margin-left: 7.3em;
     margin-right: 4em;
+    max-width: 1080px;
+    text-align: left;
 }
 .products-features-card {
     margin: 1em;
@@ -801,15 +874,103 @@ opacity: .8;
 .products-features-text {
     margin-left: 7.3em;
 }
+.products-features-body-text {
+    color: rgb(66, 84, 102);
+    font-size: 14px;
+line-height: 1.6;
+}
+.BankAnimation__stripeCircle {
+    width: 101px;
+    height: 101px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    left: 0;
+    z-index: 1;
+    transform: translateX(140%);
+}
+.BankAnimation__customer {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f6f9fc;
+    z-index: 9999;
+  }
+  .BankAnimation__connection::after {
+    content: "";
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #00c4c4;
+    -webkit-animation: connectionMovement 1.3s ease-in-out infinite alternate;
+    animation: connectionMovement 1.3s ease-in-out infinite alternate;
+  }
+ .customers-to-us {
+    position: relative;
+display: flex;
+flex-direction: row;
+width: 20%;
+justify-content: center;
+align-items: center;
+ }
+  .BankAnimation__connection {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 48px;
+    height: 2px;
+    border-radius: 100px;
+    background-color: #d7f3f4;
+    overflow: hidden;
+    position: relative;
+  }
+.features-title {
+    font-size: 15px;
+    font-weight: 425;
+    color:rgb(10, 37, 64);
+}
+.products-features-text h4 {
+    color:rgb(0, 196, 196);
+}
+.products-features-text h3 {
+    width: 55%;
+}
+.started-btn {
+    color: rgb(99, 91, 255);
+}
+.ready-title {
+    color: rgb(10, 37, 64);
+font-size: 15px;
+font-weight: 500;
+margin-bottom: 0.5em;
+margin-top: 0;
+}
+.ready-text {
+    font-size: 15px;
+    margin-bottom: 0.6em;
+}
+.ready-mn-title {
+    font-size: 40px;
+}
 .ft-i {
     width:41px;
 }
 
 .pre-footer {  display: flex;
-    width: 100%;
+    width: 1080px;
     margin-bottom: 14em;
     gap: 4em;
     margin-top: 4em;
+    justify-content: center;
+    align-items: center;
   }
   .customers-card-btn {
     color: #635bff;
@@ -823,7 +984,6 @@ opacity: .8;
   }
   .pf-card-2 {
     width: 20%;
-    padding-right: 3em;
   }
   .pre-footer-btn-section {
     display: flex;
@@ -864,6 +1024,7 @@ footer li {
     font-weight: normal;
     line-height: 2;
     color: rgb(10, 37, 64);
+    font-size: 15px;
 }
 .footer-bg {
     background: #f6f9fc;
@@ -874,6 +1035,9 @@ footer li {
     height: 149%;
     padding-top: -12em;
     margin-top: -9em;
+}
+.f-column p {
+    font-size: 15px;
 }
 .dynamic {
     z-index: -1;
@@ -932,9 +1096,146 @@ footer li {
     .main-image {
         display: none;
     }
+    * {
+        box-sizing: border-box;
+    }
     .info-blocks {
         max-width: 100%;
         padding-top: 2em;
+      }
+      .products-features {
+        width: 100%;
+        margin-bottom: 1em;
+        padding: 15px;
+      }
+      .products-features-text {
+        margin-left: 1em;
+      }
+      .products-features-body-text {
+        width: 100%;
+      }
+      .products-animated {
+        display: flex;
+        width: 100%;
+        margin-top: 4em;
+        margin-bottom: 7em;
+        flex-wrap: wrap;
+      }
+      .products-animated-text {
+        width: 100%;
+        margin-left: 0em;
+        margin-right: 0em;
+        padding: 30px;
+      }
+      .customers-to-us {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 3em;
+      }
+      .products-animated-animation {
+        position: relative;
+        width: 80%;
+        height: 368px;
+        padding-left: 32px;
+      }
+
+      .testi {
+        display: flex;
+        justify-content: center;
+        margin-top: 6em;
+        margin-bottom: 6em;
+        padding: 15px;
+      }
+      .testimonials-section {
+        background: #2B6EEA;
+        color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 10px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        min-height: 360px;
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+      }
+      .testimonials-section-bg {
+        opacity: 0.2;
+        position: absolute;
+        width: 100%;
+        mask-image: linear-gradient(to top, transparent 20%, black 60%);
+        right: 0;   
+        border-radius: 0px 10px 0px 0px;
+        transition: all 0.9s ease;
+        height: 20%;
+      }
+      .why-georgia-card-text {
+        color: #adbdcc;
+        font-weight: normal;
+        line-height: 1.6;
+        font-size: 15px;
+        width: 100%;
+      }
+      .testimonials-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .testimonials-text-block {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0 48px 48px;
+        width: 100%;
+        order: 2;
+      }
+
+      .testimonials-text-block p {
+      
+          color: #fff;
+          padding-left: 0em;
+          padding-right: 0em;
+      
+      }
+      .testimonials-logo-block {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 36px 19px;
+        width: 100%;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+      }
+      .BankAnimation__stripeCircle {
+        width: 101px;
+        height: 101px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        left: 0;
+        z-index: 1;
+        transform: translateX(95%);
+      }
+      .products-features-text h3 {
+        width: 100%;
+      }
+      .products-features-cards {
+        display: flex;
+        max-width: 100%;
+        text-align: left;
+        flex-wrap: wrap;
+        margin: 0;
       }
       .logo {
         max-width: 35px;
@@ -945,8 +1246,37 @@ footer li {
         justify-content: start;
         flex-direction: column;
         margin-top: 2em;
-        margin-left: 7.3em;
+        margin-left: 0em;
       }
+      .customers-info {
+        margin-left: 0em;
+        min-width: 100%;
+        padding: 30px;
+    }
+    .customers-card-image-5 {
+        display: none;
+    }
+    .customers-card-text {
+        width: 46%;
+      }
+      .customers-card-image-5 {
+        display: none;
+      }
+      .customers-image-1 {
+        width: 211px;
+        height: 161px;
+      }
+      .customers-image-2 {
+        width: 146px;
+        height: 204px;
+      }
+      .customers-image-3 {
+        width: 239px;
+        height: 159px;
+      }
+        .customers-info h2 {
+            width: 100%;
+        }
       p {
         color: #435465;
         font-weight: normal;
@@ -958,11 +1288,36 @@ footer li {
       }
       .why-georgia-text {
         max-width: 100%;
+        padding: 30px;
+        margin-left: 0em;
+        margin-top: 0em;
       }
+      .customers-img {
+        padding-left: 1em;
+      }
+      .img-row-2 {
+        flex-wrap: nowrap;
+        display: flex;
+        margin-left: 6.7em;
+        width: 100%;
+        justify-content: end;
+      }
+      .testimonial {
+  flex-direction: column;
+}
+.testimonials-text-block {
+    max-width: 100%;
+}
       .why-georgia-cards {
         display: flex;
-        gap: 2em;
+        gap: 0.1em;
         flex-direction: column;
+        margin-left: 0em;
+margin-right: 0em;
+padding: 30px;
+      }
+      .why-georgia-card-header {
+        margin-top: 0;
       }
       .why-georgia-card {
         max-width: 100%;
@@ -977,8 +1332,13 @@ footer li {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
+        padding: 15px;
       }
-      .why-georgia {margin-left: 4em;}
+      .why-georgia-header {
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .why-georgia {margin-left: 0em;}
     hr {
         display: block;
         -webkit-margin-before: 0.5em;
@@ -1088,7 +1448,10 @@ justify-content: end;
         padding: 2px 16px;
         background-color: white;
     }
-
+    .fa-bars {padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: rgb(255, 255, 255);
+        border-radius: 19px;}
     .modal-footer {
         padding: 2px 16px;
         background-color: white;
@@ -1188,7 +1551,55 @@ justify-content: end;
     .main-info {
         margin-left: 1em;
     }
+    #globe-canvas {
+        height: 1200px;
+    }
     .sign-in {display: none;}
     header {margin-top: 1.6em;}
+    .pre-footer {
+        display: flex;
+        width: 100%;
+        margin-bottom: 5em;
+        gap: 4em;
+        margin-top: 1em;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2em;
+      }
+      .f-column svg {
+        width: 25px;
+      }
+      .pre-footer-text {
+        width: 100%;
+        margin-left: 0em;
+      }
+      .pf-card-1, .pf-card-2 {
+        width: 100%;
+      }
+      .follow-channel-texts {
+        max-width: 100%;
+        margin-left: 1em;
+      }
+      .line-globe {
+        height: 40px;
+        width: 100vw;
+        transform: skewY(-8deg);
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: 0em;
+        align-items: start;
+      }
+      .vanta-canvas {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);}
+      .follow-channel {
+        position: relative;
+        width: 100%;
+        margin-top: 4em;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1em;
+      }
 
 }

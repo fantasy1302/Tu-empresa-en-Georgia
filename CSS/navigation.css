@@ -348,6 +348,23 @@
     margin: 0 5px 0 0;
     position: relative;
 }
+@keyframes connectionMovement {
+    0% {
+        transform: translateX(50%);
+        width: 15%;
+    }
+    50% {
+        width: 35%;
+        transform: translateX(70%);
+    }
+    100% {
+        width: 35%;
+        transform: translateX(100%);
+    }
+  }
+  pricingIconTag {
+    animation: iconMovement 1.3s ease-in-out infinite alternate;
+  }
 .common-ButtonGroup {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1061,7 +1078,7 @@
 }
 .globalNav .linkTitle {
     margin: 0;
-    color: #6772e5;
+    color: rgb(10, 37, 64);
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;
@@ -1213,21 +1230,7 @@
 .globalNav .prodsubGroup .linkSub {
     margin: 0 0 0 10px;
 }
-.globalNav .item-subscriptions .linkTitle {
-    color: #24b47e;
-}
-.globalNav .item-connect .linkTitle {
-    color: #3297d3;
-}
-.globalNav .item-relay .linkTitle {
-    color: #e25950;
-}
-.globalNav .item-atlas .linkTitle {
-    color: #e39f48;
-}
-.globalNav .item-radar .linkTitle {
-    color: #b76ac4;
-}
+
 .globalNav .item-radar .new-badge {
     background: #b76ac4;
 }
@@ -1294,7 +1297,6 @@
 }
 .globalNav .navSection.mobile .rootLink {
     cursor: pointer;
-    width: 50px;
     height: 50px;
     position: relative;
 }
