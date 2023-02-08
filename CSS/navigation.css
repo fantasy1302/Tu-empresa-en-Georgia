@@ -72,12 +72,12 @@
     src: url(/fonts/sourcecodepro-ss/SourceCodePro-Bold.woff2) format('woff2'), url(/fonts/sourcecodepro-ss/SourceCodePro-Bold.woff) format('woff');
 }
 .container, .container-fluid, .container-lg, .container-wide, .container-xl {
-    margin: 0 auto;
+    margin: 0 4.5em;
     padding: 0 20px;
     width: 100%;
 }
 .container, .container-lg {
-    max-width: 1040px;
+    max-width: 1080px;
 }
 .container-wide, .container-xl {
     max-width: 1160px;
@@ -96,6 +96,13 @@
         line-height: 70px;
    }
 }
+@media (max-width:600px) {
+    .globalNav {
+        width: 100%;
+      }
+      .container-lg, .container-wide, .container-xl {
+        margin: 0 auto;
+}}
 .common-PageTitle {
     font-weight: 400;
     font-size: 34px;

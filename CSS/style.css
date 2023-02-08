@@ -14,6 +14,7 @@
     --gradient-color-5: #356AF9;
     --gradient-color-6:#0048e5;
     --gradient-color-7:#635bff;
+    --gradient-color-8:#90e0ff;
 }
 .canvas-item{
     height:100%;
@@ -1709,7 +1710,7 @@ justify-content: end;
 }
 
 }
-@media (min-width:1080px) {
+/* @media (min-width:1080px) {
     #gradient-canvas {
         overflow: hidden;
         clip-path: polygon(100% 0%, 100% 0, 100% 60%, 0 100%, 0 100%, 0 0);
@@ -1727,11 +1728,11 @@ justify-content: end;
       .globalNav {
         width: 90%;
       }
-      .main-hero-section,.customers-info, .info-blocks,.testimonials-section,.products-animated-section,.products-features-sectiion,.follow-channel-section,.pre-footer-container,.footer-text {
+      /* .main-hero-section,.customers-info, .info-blocks,.testimonials-section,.products-animated-section,.products-features-sectiion,.follow-channel-section,.pre-footer-container,.footer-text {
         padding-left: 2em;
-      }
+      } */
       .testimonials-section {
         margin: 2rem;
       }
       .products-features-sectiion {margin-left: 0;}
-    }
+    } */
