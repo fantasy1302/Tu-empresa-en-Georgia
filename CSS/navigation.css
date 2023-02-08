@@ -74,7 +74,7 @@
 .container, .container-fluid, .container-lg, .container-wide, .container-xl {
     margin: 0 4.5em;
     padding: 0 20px;
-    width: 100%;
+    width: 1080px;
 }
 .container, .container-lg {
     max-width: 1080px;
@@ -802,6 +802,7 @@
     position: absolute;
     z-index: 500;
     height: 50px;
+    justify-content: center;
 }
 .globalNav ul {
     padding: 0;
