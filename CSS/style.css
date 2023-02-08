@@ -1708,7 +1708,7 @@ justify-content: end;
 }
 
 }
-/* @media (min-width:1080px) {
+@media (min-width:1080px) {
     #gradient-canvas {
         overflow: hidden;
         clip-path: polygon(100% 0%, 100% 0, 100% 60%, 0 100%, 0 100%, 0 0);
@@ -1733,4 +1733,4 @@ justify-content: end;
         margin: 2rem;
       }
       .products-features-sectiion {margin-left: 0;}
-    } */
+    }
