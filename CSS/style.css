@@ -1709,3 +1709,29 @@ justify-content: end;
 }
 
 }
+@media (min-width:1080px) {
+    #gradient-canvas {
+        overflow: hidden;
+        clip-path: polygon(100% 0%, 100% 0, 100% 60%, 0 100%, 0 100%, 0 0);
+        height: 58vh;
+        transform: none;
+        transform: none;
+        rotate: none;
+        width: 100%;
+        scale: 1;
+        position: absolute;
+      }
+      .wrapper {
+        overflow: hidden;
+      }
+      .globalNav {
+        width: 90%;
+      }
+      .main-hero-section,.customers-info, .info-blocks,.testimonials-section,.products-animated-section,.products-features-sectiion,.follow-channel-section,.pre-footer-container,.footer-text {
+        padding-left: 2em;
+      }
+      .testimonials-section {
+        margin: 2rem;
+      }
+      .products-features-sectiion {margin-left: 0;}
+    }
