@@ -1694,7 +1694,7 @@ justify-content: end;
           }
           .follow-channel-section {
             width: 100%;
-            
+            margin-left: 0;
             display: flex;}
             .pre-footer-container {
                 width: 100%;
