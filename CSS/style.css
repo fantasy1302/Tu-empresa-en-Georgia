@@ -25,7 +25,7 @@
   } 
  
 .main-info {
-    margin-left: 7.3em;
+   
 }
 
   .testimonials-section {
@@ -206,6 +206,12 @@ opacity: 1;
 .main-hero {
     z-index: 2;
     position: relative;
+    display: flex;
+    width: 100%;
+justify-content: center;
+}
+.main-hero-section {
+    width:1080px;
     display: flex;
 }
 .f-column {
@@ -490,10 +496,17 @@ align-items: center;
 
 .customers {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: row;
     margin-top: 4em;
     margin-bottom: 7em;
+    width: 100%;
+    align-items: center;
+    
+}
+.customers-section {
+    width: 1080px;
+display: flex;
 }
 .customers-btn {
     padding: 6px 12px 8px 16px;
@@ -510,7 +523,6 @@ margin-right: 10px;
 }
 
 .customers-info {
-    margin-left: 7.3em;
     min-width: 40%;
     display: flex;
     flex-direction: column;
@@ -641,13 +653,14 @@ position: absolute;
 .products-animated {
     display: flex;
     width: 100%;
-margin-top: 4em;
-margin-bottom: 7em;
+    margin-top: 4em;
+    margin-bottom: 7em;
+    justify-content: center;
+    align-items: center;
 }
 .products-animated-text {
     width: 37%;
-margin-left: 7.3em;
-margin-right: 9em;
+    margin-right: 10em;
 }
 .products-animated-animation {
     position: relative;
@@ -718,9 +731,7 @@ border: 2px solid white;
 z-index: 0;
 }
 .customers-card-image-5 {
-    position: absolute;
-    right: 0;
-    margin-top: 19.2em;
+    margin-top: -9em;
     margin-right: -9.9em;
 }
 .customers-card-img-3 {
@@ -732,8 +743,6 @@ border: 2px solid white;
 .why-georgia-cards {
     display: flex;
     gap: 2em;
-    margin-left: 7.3em;
-    margin-right: 7.3em;
 }
 .why-georgia-card {
 
@@ -768,10 +777,11 @@ align-items: center;
 }
 .why-georgia-text {
     max-width: 41%;
-    margin-left: 7.3em;
+
 }
 .info-blocks {
     padding-top: 6em;
+    width: 1080px;
 }
 footer ul {
     list-style: none;
@@ -818,6 +828,13 @@ transform: translateZ(0);
   .code-move {
     animation: codeMovement 1.3s  infinite alternate;
     opacity: 0.9;
+  }
+  .products-animated-section {
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7.3em;
   }
   @keyframes codeMovement {
     0% {
@@ -867,20 +884,31 @@ opacity: .8;
 }
 .products-features-cards {
     display: flex;
-    margin-left: 7.3em;
     margin-right: 4em;
     max-width: 1080px;
     text-align: left;
 }
+
 .products-features-card {
     margin: 1em;
 }
 .products-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-bottom: 10em;
+margin-bottom: 10em;
+}
+.products-features-sectiion {
+    width: 1080px;
+    justify-content: start;
+    display: flex;
+    align-items: baseline;
+    margin-left: 7.3em;
+    flex-direction: column;
 }
 .products-features-text {
-    margin-left: 7.3em;
+ 
 }
 .products-features-body-text {
     color: rgb(66, 84, 102);
