@@ -967,10 +967,10 @@ margin-top: 0;
 .pre-footer {  display: flex;
     width: 1080px;
     margin-bottom: 14em;
-    gap: 4em;
+    gap: 6em;
     margin-top: 4em;
-    justify-content: center;
     align-items: center;
+    margin-left: 7.3em;
   }
   .customers-card-btn {
     color: #635bff;
@@ -991,7 +991,6 @@ margin-top: 0;
   }
 .pre-footer-text {
     width: 40%;
-    margin-left: 7.3em;
 }
 footer {
     display: flex;
@@ -1012,7 +1011,6 @@ footer {
 .footer-text {
     flex-direction: row;
     display: flex;
-    padding-left: 7.3em;
     width: 1080px;
     gap: 5em;
 }
