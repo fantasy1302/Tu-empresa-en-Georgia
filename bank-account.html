@@ -1,0 +1,693 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.jsdelivr.net/gh/videsigns/webflow-tools@main/webgl-gradient.js"> </script>
+  <script src="https://kit.fontawesome.com/976373c9a5.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js" integrity="sha512-cfeQlKIIaFDUyrmXLF3uv1DSprgNRSSptQF6lyPPmsnXhR2M8qtQ4B6pMQJE3BePiGHRefNCVO4u5/FUSzMkbQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="JS/script.js"></script>
+  <link rel="stylesheet" href="CSS/navigation.css">
+  <link rel="stylesheet" href="CSS/min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Bank Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+</head>
+<body>
+  <header class="globalNav noDropdownTransition">
+
+
+    <div class="container-lg">
+      <ul class="navRoot">
+
+
+        <li class="navSection logo">
+          <a href=""><img class="logo" src="Images/logo.png" alt=""></a>
+        </li>
+
+        <li class="navSection primary">
+          <a class="rootLink item-products  colorize" data-dropdown="">
+            Home
+          </a>
+          <a class="rootLink item-products hasDropdown colorize" data-dropdown="products">
+            Products
+          </a>
+          <a class="rootLink item-developers hasDropdown colorize" data-dropdown="developers">
+            Help
+          </a>
+          <a class="rootLink item-company hasDropdown colorize" data-dropdown="company">
+            Wiki
+          </a>
+          <a class="rootLink item-company hasDropdown colorize" data-dropdown="company">
+            Blog
+          </a>
+        </li>
+
+        <li class="navSection secondary">
+
+          <button class="rootLink item-dashboard colorize  btn sign-in" data-adroll-segment="submit_two" href="">Sign
+            in <svg class="HoverArrow" width="10" height="10"
+            viewBox="0 0 10 10" aria-hidden="true">
+            <g fill-rule="evenodd">
+              <path class="HoverArrow__linePath" d="M0 5h7"></path>
+              <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+            </g>
+          </svg></button>
+        </li>
+
+
+
+        <li class="navSection mobile">
+          <a class="rootLink item-mobileMenu colorize">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <div class="popup">
+            <div class="popupContainer">
+              <a class="popupCloseButton">Close</a>
+              <div class="mobileProducts">
+                <h4>Products</h4>
+                <div class="mobileProductsList">
+                  <ul>
+                    <li><a class="linkContainer " href="">
+                        <img class="nav-icons" src="Images/ba.png" alt=""> Bank Account
+                      </a></li>
+                    <li><a class="linkContainer " href="">
+                        <img class="nav-icons" src="Images/re.png" alt=""> Residency
+                      </a></li>
+                    <li><a class="linkContainer" href="">
+                        <img class="nav-icons" src="Images/company.png" alt=""> Create Your Company
+                      </a></li>
+                  </ul>
+                  <ul>
+                    <li><a class="linkContainer" href="">
+                        <img class="nav-icons" src="Images/ie.png" alt=""> Individual Entrepreneur
+                      </a></li>
+                    <li><a class="linkContainer" href="">
+                        <img class="nav-icons" src="Images/tax.png" alt=""> Tax Certificate and HNWI
+                      </a></li>
+                    <li><a class="linkContainer" href="">
+                        <img class="nav-icons" src="Images/relocation.png" alt=""> Relocation
+                      </a></li>
+                    <li><a class="linkContainer" href="">
+                        <img class="nav-icons" src="Images/consultation.png" alt=""> Consultation
+                      </a></li>
+                    <li><a class="linkContainer" href="">
+                        <img class="nav-icons" src="Images/re.png" alt=""> Real Estate
+                        <span class="new-badge">New</span>
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mobileSecondaryNav">
+                <ul>
+                  <li>
+                    <a class="item-pricing" href="" data-analytics-action="pricing" data-action-source="mobile-nav">
+                      Pricing
+                    </a>
+                  </li>
+                  <li><a class="item-workswith" href="">Work with Us</a></li>
+                  <li><a class="item-gallery" href="">Customers</a></li>
+                  <li><a class="item-documentation" href="">Documentation</a></li>
+                </ul>
+                <ul>
+                  <li><a class="item-about" href="">About Us</a></li>
+                  <li><a class="item-jobs" href="">Jobs</a></li>
+                  <li><a class="item-blog" href="">Blog</a></li>
+                </ul>
+              </div>
+              <button class="btn sign-in" data-adroll-segment="submit_two" href="">Sign in</button>
+            </div>
+          </div>
+        </li>
+
+
+      </ul>
+    </div>
+
+
+
+    <div class="dropdownRoot">
+      <div class="dropdownBackground" style="transform: translateX(452px) scaleX(0.707692) scaleY(1.1075);">
+        <div class="alternateBackground" style="transform: translateY(255.53px);"></div>
+      </div>
+      <div class="dropdownArrow" style="transform: translateX(636px) rotate(45deg);"></div>
+      <div class="dropdownContainer" style="transform: translateX(452px); width: 368px; height: 443px;">
+
+        <div class="dropdownSection left" data-dropdown="products">
+          <div class="dropdownContent">
+
+            <div class="linkGroup">
+              <ul class="productsGroup">
+                <li><a class="linkContainer item-payments" href="#">
+                    <img class="nav-icons" src="Images/ba.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Bank Account</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci eu ante
+                        feugiat eleifend. </p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-subscriptions" href="">
+                    <img class="nav-icons" src="Images/residency.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Residency</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-connect" href="">
+                    <img class="nav-icons" src="Images/company.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Create your Company</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-relay" href="">
+                    <img class="nav-icons" src="Images/ie.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Individual Entrepreneur</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-atlas" href="">
+                    <img class="nav-icons" src="Images/tax.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Tax Certificate and HNWI</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-radar" href="">
+                    <img class="nav-icons" src="Images/accounting.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Accounting</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-radar" href="">
+                    <img class="nav-icons" src="Images/relocation.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Relocation</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-radar" href="">
+                    <img class="nav-icons" src="Images/consultation.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Consultation</h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non orci eu ante
+                        feugiat eleifend. </p>
+                    </div>
+                  </a></li>
+                <li><a class="linkContainer item-radar" href="">
+                    <img class="nav-icons" src="Images/re.png" alt="">
+                    <div class="productLinkContent">
+                      <h3 class="linkTitle">Real Estate <span class="new-badge">New</span></h3>
+                      <p class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                  </a></li>
+              </ul>
+            </div>
+
+            <ul class="linkGroup linkList prodsubGroup">
+              <li>
+                <a class="linkContainer item-pricing" href="" data-analytics-action="pricing" data-action-source="nav">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path fill="#6772E5" class="hover-fillDark"
+                        d="M15.998 6.98c0 .24-.083.458-.217.635a1.373 1.373 0 0 1-.187.24l-7.736 7.742c-.534.534-1.4.534-1.934 0L1.41 11.08a1.37 1.37 0 0 1 0-1.935l7.736-7.743c.15-.15.33-.255.52-.32a.918.918 0 0 1 .16-.048c.136-.03.275-.034.412-.02l4.192.002c.867 0 1.57.665 1.57 1.486l-.002 4.48zm-2.366-3.62a1.254 1.254 0 0 0-1.772 1.77 1.254 1.254 0 0 0 1.772-1.77z">
+                      </path>
+                      <path fill="#87BBFD" class="hover-fillLight"
+                        d="M5.143 10.396l3.253-3.254c.2-.2.523-.2.722 0l.723.723c.2.2.2.524.003.723L6.59 11.842c-.2.2-.524.2-.724 0l-.723-.724a.51.51 0 0 1 0-.723z">
+                      </path>
+                    </svg>Pricing</h3>
+                </a>
+              </li>
+              <li><a class="linkContainer item-workswith" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path class="hover-fillLight" fill="#87BBFD"
+                        d="M15.998 12.495a1.03 1.03 0 0 1-.595.908L8.93 16.395a1.018 1.018 0 0 1-.86 0l-6.473-2.992a1.03 1.03 0 0 1-.594-.908V4.51c.006-.2.07-.39.18-.55L8.5 7.338l7.32-3.38c.108.16.172.35.178.55v7.984z">
+                      </path>
+                      <path class="hover-fillDark" fill="#6772E5"
+                        d="M15.998 12.495a1.03 1.03 0 0 1-.595.908L8.93 16.395a1.026 1.026 0 0 1-.43.095V7.34l7.32-3.38c.11.16.173.35.18.55v7.984z">
+                      </path>
+                      <path class="hover-fillLight" fill="#87BBFD"
+                        d="M8.5 5C6.567 5 5 4.228 5 3.275v-1.15h.098c.36.768 1.742 1.34 3.402 1.34 1.66.002 3.043-.572 3.402-1.34H12v1.15C12 4.228 10.433 5 8.5 5z">
+                      </path>
+                    </svg>Works with Us</h3>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="dropdownSection active" data-dropdown="developers">
+          <div class="dropdownContent">
+
+            <div class="linkGroup documentationGroup">
+              <a class="linkContainer withIcon item-documentation" href="">
+                <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                    <path fill="#87BBFD" class="hover-fillLight"
+                      d="M.945 1.998h3.632C6.744 1.998 8.5 3.005 8.5 4.83v11.583c-.512 0-1.015-.337-1.33-.59-1.03-.828-3.057-.828-5.222-.828H.945A.944.944 0 0 1 0 14.052V2.944C0 2.422.423 2 .945 2z">
+                    </path>
+                    <path fill="#6772E5" class="hover-fillDark"
+                      d="M16.055 1.998h-3.632C10.257 1.998 8.5 3.005 8.5 4.83v11.583c.512 0 1.015-.337 1.33-.59 1.03-.828 3.057-.828 5.222-.828h1.003A.944.944 0 0 0 17 14.05V2.945A.944.944 0 0 0 16.055 2z">
+                    </path>
+                  </svg>Lorem ipsum</h3>
+                <span class="linkSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+              </a>
+              <div class="documentationArticles">
+                <ul>
+                  <li>
+                    <h4>Lorem ipsum</h4>
+                  </li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+                <ul>
+                  <li>
+                    <h4>Lorem ipsum</h4>
+                  </li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <ul class="linkGroup linkList developersGroup">
+              <li><a class="linkContainer item-apiReference" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path d="M2 15h13M2 11h13M2 7h13M2 3h13" fill="none" stroke="#6772e5" class="hover-strokeDark"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>Lorem ipsum.</h3>
+                </a></li>
+              <li><a class="linkContainer item-apiStatus" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path d="M1 9h2.95l3-6.5 3 12 3-5.45L16 9" fill="none" stroke="#6772e5" class="hover-strokeDark"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>Lorem ipsum.</h3>
+                </a></li>
+              <li><a class="linkContainer item-openSource" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path fill="#6772E5" class="hover-fillDark"
+                        d="M8.5 17a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17zM6.987 6.078a.684.684 0 0 0-.968-.968L3.116 8.012a.684.684 0 0 0 0 .967l2.9 2.9a.684.684 0 0 0 .97-.967l-2.42-2.418 2.42-2.42zm6.996 1.95L11.08 5.123a.684.684 0 0 0-.966.968l2.418 2.42-2.418 2.417a.684.684 0 0 0 .967.967l2.904-2.902a.684.684 0 0 0 0-.966z">
+                      </path>
+                    </svg>Lorem ipsum.</h3>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="dropdownSection right" data-dropdown="company">
+          <div class="dropdownContent">
+
+            <ul class="linkGroup linkList companyGroup">
+              <li><a class="linkContainer item-about" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path fill="#6772E5" class="hover-fillDark"
+                        d="M8.5 17a8.5 8.5 0 1 1 0-17 8.5 8.5 0 0 1 0 17zm.178-10.89c.76 0 1.726.278 2.486.69V4.443c-.828-.33-1.656-.502-2.484-.502-2.028 0-3.41 1.06-3.41 2.83 0 2.77 3.8 2.32 3.8 3.513 0 .462-.37.612-.93.612-.827 0-1.867-.366-2.706-.823v2.388c.93.4 1.843.592 2.705.592 2.077 0 3.48-1.027 3.48-2.827 0-2.98-3.82-2.447-3.82-3.572-.003-.39.352-.542.877-.542z">
+                      </path>
+                    </svg>Lorem ipsum</h3>
+                </a></li>
+              <li><a class="linkContainer item-customers" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path fill="#87BBFD" class="hover-fillLight"
+                        d="M2 16a1 1 0 0 1-1-1V9a4 4 0 0 1 8 0v7H2zm3-9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"></path>
+                      <path fill="#6772E5" class="hover-fillDark"
+                        d="M15 16H9a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h.55a2.5 2.5 0 0 1 4.9 0H15a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1z">
+                      </path>
+                      <path fill="#87BBFD" class="hover-fillLight" d="M11 12h2v4h-2v-4z"></path>
+                    </svg>Lorem ipsum</h3>
+                </a></li>
+              <li><a class="linkContainer item-jobs" href="">
+                  <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                      <path fill="#6772E5" class="hover-fillDark"
+                        d="M1.5 4h14c.828 0 1.5.67 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5h-14A1.5 1.5 0 0 1 0 13.5v-8C0 4.67.67 4 1.5 4z">
+                      </path>
+                      <path fill="#87BBFD" class="hover-fillLight" d="M13 15V4h2v11h-2zM2 4h2v11H2V4z"></path>
+                      <path fill="#6772E5" class="hover-fillDark"
+                        d="M11.5 3.5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1V4H4v-.5A2.5 2.5 0 0 1 6.5 1h4A2.5 2.5 0 0 1 13 3.5V4h-1.5v-.5z">
+                      </path>
+                    </svg>Lorem ipsum</h3>
+                </a></li>
+            </ul>
+
+            <div class="linkGroup blogGroup">
+              <a class="linkContainer withIcon item-blog" href="">
+                <h3 class="linkTitle linkIcon"><svg width="17" height="17">
+                    <path fill="#87BBFD" class="hover-fillLight"
+                      d="M1 4h4.5v11H1.75A1.75 1.75 0 0 1 0 13.25V5a1 1 0 0 1 1-1z"></path>
+                    <path fill="#6772E5" class="hover-fillDark"
+                      d="M14 15H2v-.025a2.243 2.243 0 0 0 2-2.225V3a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v9a3 3 0 0 1-3 3zm1-11H6v3h9V4z">
+                    </path>
+                  </svg>Lorem ipsum.</h3>
+              </a>
+              <ul class="blogPosts">
+                <li><a href="">
+                    <span class="title ">Lorem ipsum dolor sit amet.</span>
+
+                  </a></li>
+                <li><a href="">
+                    <span class="title ">Lorem ipsum dolor sit amet.</span>
+
+                  </a></li>
+                <li><a href="">
+                    <span class="title ">Lorem ipsum dolor sit amet.</span>
+
+                  </a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <div class="wrapper">
+    <div class="ba-post-header">
+      <div class="ba-post-header-container">
+        <div class="ba-post-header-img">
+          <img src="Images/ba.png" alt="" width="50">
+          <a href="">Issuing</a>
+        </div>
+        <div class="ba-post-header-text">
+          <a href="">Overview</a>
+          <a href="">Pricing</a>
+          <a href="">Docs</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ba-main-hero">
+      <div class="ba-main-hero-section">
+      <div class="ba-main-info">
+        <h1>Create physical and virtual cards for your business</h1>
+        <p>Stripe Issuing allows you to easily create, manage, and scale a commercial card program without any setup fees. Get started in minutes and control every detail of your program, from card design to approving transactions in real time.</p>
+        <div class="ba-hero-buttons"><button class="btn sales">Products <svg class="HoverArrow" width="10" height="10"
+              viewBox="0 0 10 10" aria-hidden="true">
+              <g fill-rule="evenodd">
+                <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+              </g>
+            </svg></button></div>
+      </div>
+      <div class="ba-main-image"><img src="Images/card.svg" alt=""></div>
+    </div>
+  </div>
+  <div class="ba-line-globe">
+    <div class="line-long-left"></div>
+    <div class="line-short-left"></div>
+  </div>
+  <canvas class="canvas-item" id="ba-gradient-canvas"></canvas>
+ 
+
+      <div class="products-features">
+        <div class="products-features-sectiion">
+        <div class="products-features-text">
+          <h4>Pila unificada</h4>
+          <h3>Una mejor experiencia para el usuario y el desarrollador</h3>
+        </div>
+        <div class="products-features-cards">
+          <div class="products-features-card">
+<img class="ft-i" src="Images/ft-1.png" alt="">           
+ <p class="features-title">Fácil integración</p>
+            <p class="products-features-body-text">Usa una única integración de Stripe para conectar las cuentas de los usuarios, mover dinero y crear productos financieros.</p>
+          </div>
+          <div class="products-features-card">
+            <img class="ft-i" src="Images/ft-2.png" alt="">   
+            <p class="features-title">Privacidad y transparencia</p>
+            <p class="products-features-body-text">Gana la confianza de los usuarios al acceder únicamente a los datos que necesitas, y al comunicar qué datos se comparten y con quién.</p>
+          </div>
+          <div class="products-features-card">
+            <img class="ft-i" src="Images/ft-3.png" alt="">   
+            <p class="features-title">Cobertura integral</p>
+            <p class="products-features-body-text">Conecta al instante más del 90 % de las cuentas bancarias estadounidenses y recupera con fiabilidad los datos que los usuarios han aceptado compartir.</p>
+          </div>
+          <div class="products-features-card">
+            <img class="ft-i" src="Images/ft-4.png" alt="">   
+            <p class="features-title">Optimizado para la conversión</p>
+            <p class="products-features-body-text">Reduce los abandono durante el checkout y el resto de procesos al optimizar la verificación de cuentas y el intercambio de datos.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+   
+    <div class="pre-footer">
+      <div class="pre-footer-container">
+      <div class="pre-footer-text">
+        <h3 class="ready-mn-title">Ready to get started?</h3>
+        <p>Explore Stripe Payments, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business. </p>
+        <div class="pre-footer-btn-section"><button type="button" class="btn customers-btn">Start now <svg class="HoverArrow" width="10" height="10"
+          viewBox="0 0 10 10" aria-hidden="true">
+          <g fill-rule="evenodd">
+            <path class="HoverArrow__linePath" d="M0 5h7"></path>
+            <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+          </g>
+        </svg> 
+        </button><button type="button" class="btn started-btn">
+          Contact sales <svg class="HoverArrow" width="10" height="10"
+          viewBox="0 0 10 10" aria-hidden="true">
+          <g fill-rule="evenodd">
+            <path class="HoverArrow__linePath" d="M0 5h7"></path>
+            <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+          </g>
+        </svg></button></div>
+      </div>
+
+      <div class="pf-card-1">
+        <svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="PricingIcon">
+          <defs>
+          <path id="pricingIconTag" class="" d="M41.4 30.38l8.4 8.27A4 4 0 0 1 51 41.5V62a3 3 0 0 1-3 3H32a3 3 0 0 1-3-3V41.5a4 4 0 0 1 1.2-2.85l8.4-8.27a2 2 0 0 1 2.8 0zM40 36a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+          <clipPath id="pricingClipPath">
+            <use href="#pricingIconTag"  style="transform-origin: 40px 39px; transform: rotate(45deg)"></use>
+          </clipPath>
+        </defs>
+            <use class="PricingIcon__tag" href="#pricingIconTag" fill="#7b77fb" style="transform-origin: 40px 39px;" data-js-target-list="PricingIcon.tagFronts"></use>
+            <use href="#pricingIconTag" fill="#84e9fd" class="tag-move" style="transform-origin: 40px 39px; transform: rotate(45deg)" data-js-target-list="PricingIcon.tagBacks"></use>       
+          </svg>
+        <p class="ready-title">Always know what you pay</p>
+        <p class="ready-text">Integrated per-transaction pricing with no hidden fees. </p>
+        <button class="btn started-btn">Pricing details <svg class="HoverArrow" width="10" height="10"
+          viewBox="0 0 10 10" aria-hidden="true">
+          <g fill-rule="evenodd">
+            <path class="HoverArrow__linePath" d="M0 5h7"></path>
+            <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+          </g>
+        </svg>
+        </button>
+      </div>
+      <div class="pf-card-2">
+        <svg class="AnimatedIcon__icon" width="96" height="96" preserveAspectRatio="xMinYMin" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" data-js-controller="CodeFilesIcon">
+          <defs>
+          <path id="codeFilesIconBack" class="code-move"d="M21.13 28h16.74c1.79 0 2.43.19 3.08.53.66.35 1.17.86 1.52 1.52.34.65.53 1.3.53 3.08v24.74c0 1.79-.19 2.43-.53 3.08a3.63 3.63 0 0 1-1.52 1.52c-.65.34-1.3.53-3.08.53H21.13c-1.79 0-2.43-.19-3.08-.53a3.63 3.63 0 0 1-1.52-1.52c-.34-.65-.53-1.3-.53-3.08V33.13c0-1.79.19-2.43.53-3.08.35-.66.86-1.17 1.52-1.52.65-.34 1.3-.53 3.08-.53z"></path>
+          <path id="codeFilesIconFront" d="M45.9536914,33.5342654 C46.6055433,33.8828796 47.1171204,34.3944567 47.4657346,35.0463086 C47.8143488,35.6981604 48,36.3447329 48,38.1277704 L48,62.8722296 C48,64.6552671 47.8143488,65.3018396 47.4657346,65.9536914 C47.1171204,66.6055433 46.6055433,67.1171204 45.9536914,67.4657346 C45.3018396,67.8143488 44.6552671,68 42.8722296,68 L26.1277704,68 C24.3447329,68 23.6981604,67.8143488 23.0463086,67.4657346 C22.3944567,67.1171204 21.8828796,66.6055433 21.5342654,65.9536914 C21.1856512,65.3018396 21,64.6552671 21,62.8722296 C21,52.9574099 21,48 21,48 C21,45 20,41 30,42C30,40 29,33 34.5,33 C34.5,33 37.3333333,33 43,33 C44.7830375,33 45.3018396,33.1856512 45.9536914,33.5342654 " data-js-target-list="CodeFilesIcon.fileFrontPaths" mask="url(#codeFilesCaretMask)"></path>
+          <use id="codeFilesIconCarets" class="code-move"  d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z"></use>
+          <clipPath id="codeFilesClipPath">
+            <use href="#codeFilesIconBack" data-js-target-list="CodeFilesIcon.fileBacks"></use>
+          </clipPath>
+          <mask class="code-move" id="codeFilesCaretMask">
+            <path d="M45.9536914,33.5342654 C46.6055433,33.8828796 47.1171204,34.3944567 47.4657346,35.0463086 C47.8143488,35.6981604 48,36.3447329 48,38.1277704 L48,62.8722296 C48,64.6552671 47.8143488,65.3018396 47.4657346,65.9536914 C47.1171204,66.6055433 46.6055433,67.1171204 45.9536914,67.4657346 C45.3018396,67.8143488 44.6552671,68 42.8722296,68 L26.1277704,68 C24.3447329,68 23.6981604,67.8143488 23.0463086,67.4657346 C22.3944567,67.1171204 21.8828796,66.6055433 21.5342654,65.9536914 C21.1856512,65.3018396 21,64.6552671 21,62.8722296 C21,52.9574099 21,48 21,48 C21,45 20,41 30,42C30,40 29,33 34.5,33 C34.5,33 37.3333333,33 43,33 C44.7830375,33 45.3018396,33.1856512 45.9536914,33.5342654 " data-js-target-list="CodeFilesIcon.fileFrontPaths" fill="white"></path>
+            <path d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z" fill="#000" x="-27" data-js-target-list="CodeFilesIcon.carets"></path>
+            <path d="M37.57 52.3a.5.5 0 0 0-.64.04l-.86.82-.06.07a.5.5 0 0 0 .04.64L39 57l-2.95 3.13-.06.08a.5.5 0 0 0 .08.63l.86.82.07.05a.5.5 0 0 0 .64-.08L42 57l-4.36-4.63zm-5.5.04a.5.5 0 0 0-.7.03L27 57l4.36 4.63c.2.2.51.21.71.03l.86-.82c.2-.19.21-.5.02-.7L30 57l2.95-3.13a.5.5 0 0 0-.02-.71l-.86-.82z" fill="#000" data-js-target-list="CodeFilesIcon.carets"></path>
+          </mask>
+        </defs>
+    
+        <use href="#codeFilesIconBack" class="code-move" fill="#7b77fb" data-js-target-list="CodeFilesIcon.fileBacks"></use>
+        <use href="#codeFilesIconFront"  fill="#84e9fd" data-js-target-list="CodeFilesIcon.fileFronts"></use>
+        <g clip-path="url(#codeFilesClipPath)">
+          <use href="#codeFilesIconFront" fill="#84e9fd" data-js-target-list="CodeFilesIcon.fileFronts"></use>
+        </g>
+        </svg>
+        <p class="ready-title">Start your integration</p>
+        <p class="ready-text">Get up and running with Stripe in as little as 10 minutes. </p>
+        <button class="btn started-btn">API reference <svg class="HoverArrow" width="10" height="10"
+          viewBox="0 0 10 10" aria-hidden="true">
+          <g fill-rule="evenodd">
+            <path class="HoverArrow__linePath" d="M0 5h7"></path>
+            <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+          </g>
+        </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+    <div class="line">
+      <div class="line-long-left"></div>
+      <div class="line-short-left"></div>
+      <div class="line-long-right"></div>
+      <div class="line-short-right"></div>
+    </div>
+    <footer>
+      <div class="footer-bg"> </div>
+      <div class="footer-text">
+        <div class=" f-column">
+          <div>
+            <p><svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+
+                <path
+                  d="M3.54 8.04h4.42v4.43c0 .57.76.75 1.01.24l4.96-9.93a.54.54 0 0 0-.72-.72L3.3 7.03c-.5.25-.33 1.01.24 1.01"
+                  fill="#0A2540" fill-rule="evenodd"></path>
+
+
+              </svg>Geogia</p>
+            <p>
+              <svg class="LocaleControl__triggerIcon" width="16" height="16" viewBox="0 0 16 16">
+                <path
+                  d="M7.5 2C10.91 2 13 4.01 13 6.5c0 2.07-1.45 3.82-3.92 4.34L6.62 13.3a.66.66 0 0 1-1.12-.46v-2.1C3.29 10.12 2 8.45 2 6.5 2 4.01 4.09 2 7.5 2z"
+                  fill="#0A2540" fill-rule="evenodd"></path>
+
+              </svg>English(United States)</p>
+          </div>
+
+          <p>© 2023 Tu Empresa En Georgia, Inc. </p>
+        </div>
+        <div class="footer-text column">
+          <ul>
+            <li><span class="footer-title">Products</span></li>
+            <li>Atlas</li>
+            <li>Billing</li>
+            <li>Capital</li>
+            <li>Checkout</li>
+            <li>Climate</li>
+            <li>Connect</li>
+            <li>Corporate Card</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+        <div class="footer-text column">
+          <ul>
+            <li><span class="footer-title">Products</span></li>
+            <li>Atlas</li>
+            <li>Billing</li>
+            <li>Capital</li>
+            <li>Checkout</li>
+            <li>Climate</li>
+            <li>Connect</li>
+            <li>Corporate Card</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+        <div class="footer-text column">
+          <ul>
+            <li><span class="footer-title">Products</span></li>
+            <li>Atlas</li>
+            <li>Billing</li>
+            <li>Capital</li>
+            <li>Checkout</li>
+            <li>Climate</li>
+            <li>Connect</li>
+            <li>Corporate Card</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+  <script>
+    var gradient = new Gradient()
+    gradient.initGradient('#ba-gradient-canvas');
+    // Get Modal
+    var modal = document.getElementById('myModal');
+
+    // Get pseudoelement to open Modal
+    var btn = document.getElementById("sized");
+
+    // Get the <span> element to close Modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When user clicks button, open Modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When user clicks Close (x), close Modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // When user clicks anywhere outside of the Modal, close Modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+  <script>
+    VANTA.GLOBE({
+      el: "#globe-canvas",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3f82ff,
+      size: 2.2,
+      backgroundColor: 0x0c263f
+    })
+  </script>
+  <script>
+  </script>
+  <script src="JS/slider.js"></script>
+  <script>
+const testimonials = document.querySelectorAll('.testimonial');
+const dots = document.querySelectorAll('.dot');
+const bgImage = document.querySelector('.testimonials-section-bg');
+const bgColor = document.querySelector('.testimonials-section');
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    testimonials.forEach(testimonial => {
+      testimonial.classList.remove('ct-active');
+    });
+    testimonials[index].classList.add('ct-active');
+    dots.forEach(dot => {
+      dot.classList.remove('dot-active');
+    });
+    dot.classList.add('dot-active');
+    switch (index) {
+      case 0:
+        bgImage.style.transition = 'all 0.9s ease';
+        bgImage.src = "Images/man-cafe.jpg";
+        bgColor.style.backgroundColor = '#2B6EEA';
+        bgColor.style.transition = 'all 0.9s ease';
+        break;
+      case 1:
+        bgImage.style.transition = 'all 0.9s ease';
+        bgImage.src = "Images/tech-bg.jpg";
+        bgColor.style.backgroundColor = '#00C4C4';
+        bgColor.style.transition = 'all 0.9s ease';
+        break;
+      case 2:
+        bgImage.style.transition = 'all 0.9s ease';
+        bgImage.src = "Images/bg-3.jpg";
+        bgColor.style.backgroundColor = '#ffcb57';
+        bgColor.style.transition = 'all 0.9s ease';
+        break;
+      case 3:
+        bgImage.style.transition = 'all 0.9s ease';
+        bgImage.src = "Images/bg-4.jpg";
+        bgColor.style.backgroundColor = '#ff333d';
+        bgColor.style.transition = 'all 0.9s ease';
+        break;
+      case 4:
+        bgImage.style.transition = 'all 0.9s ease';
+        bgImage.src = "Images/bg-5.jpg";
+        bgColor.style.backgroundColor = '#a960ee';
+        bgColor.style.transition = 'all 0.9s ease';
+        break;
+    }
+  });
+});
+
+
+  </script>
+</body>
+
+</html>
