@@ -9,8 +9,12 @@ body {
 }
 
 .ba-main-info h1  {
-    font-size: 34px;
-    margin-top: 4em;
+    font-size: 56px;
+    margin-top: 1.25em;
+    line-height: 68px;
+    color: rgb(10, 37, 64);
+    color-scheme: light;
+  }
 }
 
 .ba-main-image {
@@ -38,7 +42,13 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 text-decoration: none;
+margin-top: 1em;
 color: rgb(10, 37, 64);
+}
+.ba-post-header-text {
+    gap: 1em;
+    display: flex;
+  
 }
 .ba-post-header-container a{
     text-decoration: none;
@@ -49,6 +59,11 @@ color: rgb(10, 37, 64);
     display: flex;
 justify-content: center;
 align-items: center;
+gap: 0.8em;
+ }
+ .logo {
+    width: 42px;
+opacity: 1.1;
  }
 .ba-main-image img {
     width: 400px;
@@ -66,6 +81,105 @@ align-items: center;
     margin-top: 7em;
     align-items: start;
   }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+@keyframes color1 { 
+   from {
+fill: #fff;
+   } 
+   to {
+  fill: #fc605c;
+   }
+}
+@keyframes color2 { 
+    from {
+ fill: #fff;
+    } 
+    to {
+   fill: #fcbb40;
+    }
+ }
+ @keyframes color3 { 
+    from {
+ fill: #fff;
+    } 
+    to {
+   fill: #34c648;
+    }
+ }
+.crc-1 { 
+    background: #fff;
+    animation: color1 5s ease-in-out infinite;
+}
+.crc-2 { 
+    background: #fff;
+    animation: color2 3s ease-in-out infinite;
+}
+.crc-3 { 
+    background: #fff;
+    animation: color3 4s ease-in-out infinite;
+}
+.lock {
+    position: absolute;
+    width: 11px;
+    fill: white;
+    height: 11px;
+    margin-left: 6px;
+    animation: lock 2s  infinite;
+}
+
+.lock-head {
+    animation: lock-head 2s infinite;
+    transform-origin: center center;
+}
+@keyframes lock-head {
+    from {
+        transform: rotate(-65deg);
+        scale: 1;
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes lock {
+    from {
+scale: 
+1;
+    }
+    to {
+scale: 1.6;
+    }
+}
+.sales {
+    background-color: rgb(0, 115, 230);
+    padding: 6px 12px 9px 16px;
+    color: white;
+}
+.st3 {
+    position: absolute;
+    margin-top: 17px;
+    width: 30px;
+    transform-origin: center center;
+    animation: rotate 5s linear infinite;
+}
+.ft-animated-section {
+    align-items: left;
+display: flex;
+}
+.ft-animated-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ft-1 {
+    width: 41px;
+}
 @keyframes cardMovement {
     from {
         scale: 0.5;
@@ -89,7 +203,7 @@ justify-content: center;
 
 .ba-main-hero-section {
     display: flex;
-justify-content: center;
+justify-content: start;
 align-items: center;
 width: 1080px;
 }

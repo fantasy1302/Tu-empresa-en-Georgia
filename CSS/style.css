@@ -451,8 +451,6 @@ text-decoration: none;
 .btn {
     border-radius: 25px;
     border: none;
-    color: black;
-    background-color: white;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -979,6 +977,7 @@ align-items: center;
 }
 .started-btn {
     color: rgb(99, 91, 255);
+    background-color: transparent;
 }
 .ready-title {
     color: rgb(10, 37, 64);
