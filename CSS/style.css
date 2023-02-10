@@ -457,8 +457,10 @@ text-decoration: none;
     align-items: center;
     font-size: 15px;
     font-weight: 500;
+    background: transparent;
     cursor: pointer;
-}
+  }
+
 .hero-buttons {
     display: flex;
 }
