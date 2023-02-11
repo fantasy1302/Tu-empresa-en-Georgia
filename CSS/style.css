@@ -203,7 +203,7 @@ body {
 }
 
 .logo {
-    max-width: 50px;
+  width: 35px;
 opacity: 1;
 }
 
@@ -457,7 +457,6 @@ text-decoration: none;
     align-items: center;
     font-size: 15px;
     font-weight: 500;
-    background: transparent;
     cursor: pointer;
   }
 
