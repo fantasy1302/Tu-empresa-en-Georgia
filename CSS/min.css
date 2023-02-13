@@ -306,6 +306,85 @@ margin-right: 4em;
     width: 800px;
     position: absolute;
  }
+ .transaction {
+    margin-bottom: 18em;
+ }
+ .phone {
+    scale:1.8;
+    margin-left: 5em;
+margin-top: 10em;
+ }
+ .face-corners {
+    animation: face-corners-pulse 1.5s linear infinite;
+    transform-origin: center center;
+ }
+ @keyframes face-corners-pulse {
+    from {
+        scale: 1.2;
+        transform: translateY(-0.6em);
+    }
+    to {
+        scale: 1;
+
+    }
+ }
+
+ .phone-border {
+fill: #d3d3d32b;
+ }
+
+.check{
+    animation:checkAnimation 0.5s linear;
+    display: none;
+    transform-origin: center center;
+}
+.table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10em;
+}
+table {
+    width: 100%;
+    background: white;
+border-radius: 4px;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+padding: 32px;
+}
+.american-express {
+    padding: 3px;
+}
+td {
+    vertical-align: middle;
+}
+.cl-1 {
+    width: 30%;
+}
+.table-section {
+    width: 1080px;
+}
+
+ @keyframes checkAnimation {
+
+  from {
+    transform: rotateY(360deg);
+
+
+  }  
+ }
+ .cards-bg {
+    position: absolute;
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+background: #fff;
+width: 100%;
+height: 800px;
+z-index: 0;
+ }
  #banking {
     margin-top: 18em;
+ }
+
+ @media (min-width:600px) {
+    
  }
