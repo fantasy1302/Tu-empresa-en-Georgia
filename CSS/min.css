@@ -35,7 +35,7 @@ body {
     height: 500px;
     clip-path: polygon(0 54%, 100% 0, 100% 32%, 0 86%);
     scale: 1.55;
-    margin-top: 6em;
+    margin-top: 3em;
 }
 
 .ba-post-header {
