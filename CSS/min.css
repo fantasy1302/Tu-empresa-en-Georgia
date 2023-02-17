@@ -730,15 +730,15 @@ table td {
         flex-direction: column;
       }
       .ba-main-hero {
-        display: ;
         flex-direction: column;
         z-index: 1;
-position: relative;
-padding-left: 1rem;
-display: flex;
-margin-top: 3em;
-padding-right: 1rem;
+        position: relative;
+        padding-left: 2em;
+        display: flex;
+        margin-top: 3em;
+        padding-right: 2rem;
       }
+      
       .ba-main-hero-section {
 
         width: 100%;
@@ -760,6 +760,7 @@ padding-right: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 13px;
       }
       .bg-height-cards {
         height: 100%;
@@ -775,9 +776,128 @@ padding-right: 1rem;
         flex-direction: column;
       }
       .cards-sections-images img {
-        width: 500px;
+        width: 406px;
         position: absolute;
+        margin-left: 4em;
       }
       .cards-section-text {
+        padding-right: 2rem;
+padding-left: 2rem;
+margin-top: 2em;
         width: 100%;}
+        .ba-post-header-container {
+            padding-left: 2em;
+padding-right: 1em;
+        }
+        body {
+            background-color: white;
+          }
+          .globalNav {
+            overflow: hidden;
+          }
+          .ba-main-image {
+            width: 100%;
+            margin-top: 2em;
+            display: flex;
+justify-content: center;
+          }
+          .ba-main-image img {
+            padding: 0;
+          }
+          #ba-gradient-canvas {
+            clip-path: polygon(0 43%, 100% 27%, 100% 57%, 0 73%);
+            margin-top: 0;
+          }
+          .phone-section {
+            display: flex;
+            width: 100%;
+            margin-top: 5em;
+            z-index: 1;
+            flex-direction: column;}
+            .pricing-section {
+                width: 100%;
+               padding-left: 2em;
+               padding-right: 2em;
+              }
+              .phone {
+                scale: 1.5;
+                margin-left: 0em;
+
+              }
+              .cards-sections-images {
+                position: relative;
+                display: flex;
+                justify-content: center;
+              }
+              .prices {
+                width: 100%;
+              }
+              .disput {
+                margin-top: 0;
+              }
+              
+              .pricing-row {
+                display: flex;
+flex-wrap: wrap;
+border: solid 1px #d3d3d34d;
+padding: 10px;
+              }
+              .pricing-item:first-child {
+                width: 100%;
+                align-content: center;
+                align-items: left;
+                display: flex;
+                flex-direction: column;
+                border-right: none;
+    
+              }
+              .personaliz {
+                width: 100%;}
+              .checks {
+                flex-wrap: wrap;
+                gap: 0;
+              }
+              .checks > div:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+              }
+              .table-section {
+                width: 100%;}
+                .table {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 12em;
+                    padding-right: 2em;
+                    padding-left: 2em;
+                  }
+                  .bg-height-table {
+  height:1350px;
+  z-index: 2;
+  margin-top: -6em;
+  background: #f6f9fc;
+  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
+}
+table {
+    width: 800px;
+    margin-top: 5em;
+}
+.table-table {
+    overflow-x: auto;
+}
+/* .cl-1 {
+    position: sticky;
+    left: 0;
+    background: #fff;
+  
+} */
+.tableBody::before {
+    position: absolute;
+    left: 6%;
+    height: 630px;}
+    .gray-td::before {
+        left: 8%;
+       
+    }
 }
