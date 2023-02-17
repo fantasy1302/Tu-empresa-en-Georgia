@@ -12,6 +12,7 @@ body {
 
 .ba-main-info h1 {
     font-size: 56px;
+    font-weight: 500;
     margin-top: 1.25em;
     line-height: 68px;
     color: rgb(10, 37, 64);
@@ -792,9 +793,7 @@ padding-right: 1em;
         body {
             background-color: white;
           }
-          .globalNav {
-            overflow: hidden;
-          }
+     
           .ba-main-image {
             width: 100%;
             margin-top: 2em;
