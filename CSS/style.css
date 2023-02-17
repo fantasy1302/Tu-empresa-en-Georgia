@@ -1637,7 +1637,7 @@ justify-content: end;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding: 2em;
+        padding: 1em;
       }
       .f-column svg {
         width: 25px;

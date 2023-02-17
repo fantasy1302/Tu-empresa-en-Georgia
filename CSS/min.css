@@ -12,7 +12,7 @@ body {
 
 .ba-main-info h1 {
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 1.25em;
     line-height: 68px;
     color: rgb(10, 37, 64);
@@ -815,8 +815,8 @@ justify-content: center;
             flex-direction: column;}
             .pricing-section {
                 width: 100%;
-               padding-left: 2em;
-               padding-right: 2em;
+                padding-left: 1em;
+                padding-right: 2em;
               }
               .phone {
                 scale: 1.5;
@@ -898,5 +898,8 @@ table {
     .gray-td::before {
         left: 8%;
        
+    }
+    .pre-footer {
+        padding: 1em;
     }
 }
