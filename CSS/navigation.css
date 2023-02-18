@@ -102,7 +102,15 @@
       }
       .container-lg, .container-wide, .container-xl {
         margin: 0 auto;
-}}
+}
+.globalNav > .container-lg {
+    padding: 0;
+    margin-top: 2em;
+  }
+  .globalNav ul {
+    margin: 0;
+  }
+}
 .common-PageTitle {
     font-weight: 400;
     font-size: 34px;
@@ -432,6 +440,9 @@
     .common-Card {
         padding: 50px;
    }
+}
+.globalNav .rootLink {
+    padding: 0 15px;
 }
 .common-BetaBadge {
     display: inline;
@@ -805,10 +816,7 @@
     height: 50px;
     justify-content: center;
 }
-.globalNav ul {
-    padding: 0;
-    margin: 1rem;
-}
+
 .globalNav li {
     list-style: none;
 }
@@ -822,9 +830,7 @@
 .globalNav a:hover {
     color: #32325d;
 }
-.globalNav > .container-lg {
-    padding: 0;
-}
+
 .globalNav .navRoot {
     position: relative;
 }
@@ -906,7 +912,7 @@
 }
 @media (min-width: 1040px) {
     .globalNav .rootLink {
-        padding: 0 25px;
+        padding: 0 15px;
    }
 }
 
@@ -922,7 +928,7 @@
     transition: color 0.1s ease;
 }
 .globalNav .colorize.active, .globalNav .colorize:hover {
-    color: #32325d;
+    color: #fff;
 }
 .globalNav .hasDropdown {
     cursor: default;
