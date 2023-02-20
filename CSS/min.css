@@ -994,4 +994,7 @@ table td {
     .colorize i {
        background: rgb(0, 115, 230);
     }
+    .credit-card-mockup {
+        height: 250px;
+    }
 }
