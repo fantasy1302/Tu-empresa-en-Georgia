@@ -19,9 +19,9 @@
 }
 
 
-.ba-main-image {
+/* .ba-main-image {
     margin-top: 6em;
-}
+} */
 
 .ba-main-info {
     width: 50%;
@@ -79,8 +79,8 @@
     opacity: 1.1;
 }
 
-.ba-main-image img {
-    width: 400px;
+.ba-main-image svg {
+    width: 450px;
     animation: cardMovement 12.6s ease forwards;
     transform-style: preserve-3d;
     padding: 3em;
@@ -304,6 +304,7 @@
         transform: rotateX(20deg) rotateY(360deg);
     }
 
+
     100% {
         transform: rotateX(20deg) rotateY(360deg);
         scale: 1;
@@ -468,7 +469,7 @@ table {
     position: absolute;
     left: 28%;
     right: 0%;
-    height: 665px;
+    height:804px;
     content: "";
     z-index: -1;
     background: white;
@@ -727,7 +728,7 @@ table td {
 }
 
 .bg-height-table {
-    height: 1420px;
+    height: 1560px;
     z-index: 2;
     margin-top: -7em;
 }
@@ -735,7 +736,9 @@ table td {
 #banking {
     margin-top: 11em;
 }
-
+.mb-1  {
+   visibility: hidden;
+}
 @media (max-width:600px) {
 
     .main-hero-section {
@@ -908,6 +911,31 @@ table td {
         padding-left: 2em;
     }
 
+    .cl-1 {
+        display: none;
+    }
+    .mb-1 {
+        visibility: visible;
+        padding: 20px;
+        position: sticky;
+        left: 0;
+        text-align: left;
+    }
+    .mb-1::before {
+        background: linear-gradient(270deg, #eef3f9, #f7f9fc);
+        position: absolute;
+        left: 3%;
+        right: 0%;
+        height: 62px;
+        content: "";
+        z-index: -1;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: -1.3em;
+      }
+    .gray-td::before {
+       visibility: hidden;
+    }
     .bg-height-table {
         height: 1350px;
         z-index: 2;
@@ -939,8 +967,12 @@ table td {
     .tableBody::before {
         position: absolute;
         left: 6%;
-        height: 630px;
+        height:  970px;
+        margin: -0.5em 0em;
+        width: 90%;
     }
+    .pricing {
+        margin-top: 5em;}
 
     .gray-td::before {
         left: 8%;

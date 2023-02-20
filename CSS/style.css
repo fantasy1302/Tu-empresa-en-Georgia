@@ -5,7 +5,20 @@
   font-weight: 600;
   scroll-behavior: smooth;
 }
-
+:root {
+  --fill-color-lightGreen:#1ef5e9;
+  --fill-color-Green:#01d925;
+  --fill-color-White:#fff;
+}
+.fill-lightGreen {
+  fill: var(--fill-color-lightGreen);
+}
+.fill-Green {
+  fill: var(--fill-color-Green);
+}
+.fill-White {
+  fill: var(--fill-color-White);
+}
 #gradient-canvas {
   --gradient-color-1: #a960ee;
   --gradient-color-2: #635bff;
