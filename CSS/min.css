@@ -938,6 +938,7 @@ table td {
     }
     .bg-height-table {
         height: 1350px;
+        display: none;
         z-index: 2;
         margin-top: -6em;
         background: #f6f9fc;
