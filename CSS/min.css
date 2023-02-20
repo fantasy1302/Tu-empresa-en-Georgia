@@ -906,7 +906,7 @@ table td {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 12em;
+        margin-top: 5em;
         padding-right: 2em;
         padding-left: 2em;
     }
@@ -955,10 +955,10 @@ table td {
     }
 
     .ba-main-info h1 {
-        font-size: 40px;
+        font-size: 27px;
         font-weight: 600;
         margin-top: 1.25em;
-        line-height: 55px;
+        line-height: 40px;
         color: rgb(10, 37, 64);
         color-scheme: light;
     }
