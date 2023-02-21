@@ -18,11 +18,13 @@
     color-scheme: light;
 }
 
+.tbc-logo, .credo-logo, .liberty-logo, .credo-text,.LINE-1,.LINE-2,.LINE-3 {
+    display: none;
+}
 
 /* .ba-main-image {
     margin-top: 6em;
 } */
-
 .ba-main-info {
     width: 50%;
 }
@@ -35,7 +37,7 @@
     height: 500px;
     clip-path: polygon(0 54%, 100% 0, 100% 32%, 0 86%);
     scale: 1.55;
-    margin-top: 3em;
+    margin-top: 0em;
 }
 
 .ba-post-header {
@@ -81,13 +83,21 @@
 
 .ba-main-image svg {
     width: 450px;
-    animation: cardMovement 12.6s ease forwards;
+    animation: cardMovement 14.6s ease forwards;
+    /* -webkit-animation-name: cardMovement;
+    -webkit-animation-duration: 32s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards; */
+    -webkit-transition: 3s;
     transform-style: preserve-3d;
     padding: 3em;
-    scale: 1 transition: transform 0.5s ease-in-out;
+    scale: 1 ;
+    transition: transform 0.5s ease-in-out;
     animation-timing-function: ease-in-out;
+} 
+.safari-b {
+    -webkit-transform: scale(0);
 }
-
 .ba-line-globe {
     height: 40px;
     width: 100vw;
@@ -294,39 +304,45 @@
 }
 
 @keyframes cardMovement {
-    0% {
+    from {
         transform: rotateX(0deg) rotateY(0deg);
         scale: 0.2;
     }
 
-    50% {
+    to {
         scale: 1;
         transform: rotateX(20deg) rotateY(360deg);
     }
 
 
-    100% {
+    to {
         transform: rotateX(20deg) rotateY(360deg);
         scale: 1;
     }
-}
-
-@-webkit-keyframes cardMovement {
-    0% {
-        -webkit-transform: scale(0) rotate3d(0, 0, 0, 0deg);
-
+    to {
+        transform: rotateX(20deg) rotateY(360deg);
+        scale: 1;
+    }
+    to {
+        transform: rotateX(20deg) rotateY(720deg);
+        scale: 1;
     }
 
-    50% {
-        -webkit-transform: scale(1) rotate3d(0, 1, 0, 360deg);
-    }
-
-    100% {
-        -webkit-transform: scale(1) rotate3d(0, 1, 0, 360deg);
-    }
 }
 
 
+
+
+
+    @-webkit-keyframes cardMovement {
+      0%{
+            -webkit-transform:  rotate3d(0, 0, 0, 0deg) scale(0.2);
+        }
+        100%{
+        
+          -webkit-transform:  rotate3d(0, 1, 0, 720deg) scale(1);  
+        }
+    }
 .ba-main-hero-section {
     display: flex;
     justify-content: start;
@@ -360,7 +376,7 @@
 .cards-section {
     display: flex;
     width: 1080px;
-    padding-top: 17em;
+    padding-top: 13em;
     z-index: 9999;
 }
 
@@ -386,7 +402,7 @@
 }
 
 .transaction {
-    margin-bottom: 18em;
+    margin-bottom: 13em;
     margin-top: -23em;
 }
 
@@ -730,11 +746,11 @@ table td {
 .bg-height-table {
     height: 1560px;
     z-index: 2;
-    margin-top: -7em;
+    margin-top: -8em;
 }
 
 #banking {
-    margin-top: 11em;
+    margin-top: 6em;
 }
 .mb-1  {
    visibility: hidden;
