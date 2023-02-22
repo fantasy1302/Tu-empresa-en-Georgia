@@ -49,10 +49,17 @@ const testimonials = document.querySelectorAll('.testimonial');
     });
     var faceId = document.getElementById("Face-ID");
     var check = document.querySelector(".check");
-    faceId.addEventListener("mouseover", function () {
-      faceId.style.display = "none";
-      check.style.display = "flex";
+    
+    window.addEventListener("wheel", function (event) {
+      if (event.deltaY > 0) {
+        faceId.style.display = "none";
+        check.style.display = "flex";
+      } else {
+        faceId.style.display = "flex";
+        check.style.display = "none";
+      }
     });
+    
     VANTA.GLOBE({
       el: "#globe-canvas",
       mouseControls: true,
