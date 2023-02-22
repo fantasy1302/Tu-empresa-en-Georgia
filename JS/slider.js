@@ -49,13 +49,22 @@ const testimonials = document.querySelectorAll('.testimonial');
     });
     var faceId = document.getElementById("Face-ID");
     var check = document.querySelector(".check");
+    var phoneSection = document.querySelector(".phone-section");
     
-    window.addEventListener("wheel", function (event) {
-      if (event.deltaY > 1) {
-        faceId.style.display = "none";
-        check.style.display = "flex";
-      } 
+    window.addEventListener('scroll', function() {
+      var rect = phoneSection.getBoundingClientRect();
+      var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      if (rect.top <= windowHeight && rect.bottom >= 0) {
+        window.addEventListener('wheel', function(event) {
+          if (event.deltaY > 0) {
+            faceId.style.display = "none";
+            check.style.display = "flex";
+          } 
+        });
+      }
     });
+    
+    
     
     VANTA.GLOBE({
       el: "#globe-canvas",
