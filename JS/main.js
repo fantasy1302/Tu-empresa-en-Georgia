@@ -1,3 +1,4 @@
+
 var gradient = new Gradient()
 gradient.initGradient('#gradient-canvas');
 // Get Modal
@@ -37,3 +38,4 @@ VANTA.GLOBE({
     size: 2.2,
     backgroundColor: 0x0c263f
   })
+  

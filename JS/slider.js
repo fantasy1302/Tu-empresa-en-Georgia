@@ -51,13 +51,10 @@ const testimonials = document.querySelectorAll('.testimonial');
     var check = document.querySelector(".check");
     
     window.addEventListener("wheel", function (event) {
-      if (event.deltaY > 0) {
+      if (event.deltaY > 1) {
         faceId.style.display = "none";
         check.style.display = "flex";
-      } else {
-        faceId.style.display = "flex";
-        check.style.display = "none";
-      }
+      } 
     });
     
     VANTA.GLOBE({
@@ -99,3 +96,4 @@ const testimonials = document.querySelectorAll('.testimonial');
         modal.style.display = "none";
       }
     };
+    
