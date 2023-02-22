@@ -28,6 +28,11 @@
 .ba-main-info {
     width: 50%;
 }
+.btn-test {
+    background: rgb(0, 115, 230);
+padding: 11px;
+border-radius: 50%;
+}
 
 #ba-gradient-canvas {
     --gradient-color-1: #45dfff;
@@ -201,11 +206,38 @@
 }
 
 .sales {
-    background-color: rgb(0, 115, 230);
-    padding: 6px 12px 9px 16px;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 116px;
+    height: 40px;
+    display: flex;
+    background: linear-gradient(to left, rgb(0, 115, 230) 50%, black 50%);
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-size: auto;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: 200% 100%;
+    background-position: left bottom;
+    padding: 10px 1px 10px 11px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
     color: white;
 }
-
+.sales:hover {
+    background-position: right bottom;
+    color: white;
+    border: 3px solid black;
+    transition: all .5s ease-out;
+}
+.sales > svg:nth-child(1) {
+    background-color:rgb(0, 115, 230);
+    border-radius: 50%;
+    padding:10px;
+    color: white;
+}
 .st3 {
     position: absolute;
     margin-top: 17px;
