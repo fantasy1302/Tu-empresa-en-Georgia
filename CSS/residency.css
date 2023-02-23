@@ -1,0 +1,40 @@
+#residency-canvas {
+    --gradient-color-1: #ffe85e;
+    --gradient-color-2: #ffa832;
+    --gradient-color-3: #1dcb5d;
+    height: 500px;
+    clip-path: polygon(0 54%, 100% 0, 100% 32%, 0 86%);
+    scale: 1.55;
+    margin-top: 0em;
+  }
+  .residency {
+    background-color:  #15be53;
+    padding: 6px 12px 9px 16px;
+    color: white;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+  }
+
+.ba-post-header a {
+    color: #15be53;
+}
+.fill-Yellow {
+    fill: #ffd848;
+    opacity: 0.9;
+}
+.fill-darkGreen {
+    fill: #15be53;
+    opacity: 0.7;
+}
+.animated-cards-text {
+    width: 50%;
+}
+.animated-cards-block {
+    display: flex;
+    justify-content: space-between;
+}
+.animated-image img{
+    width: 300px;
+}
