@@ -38,3 +38,27 @@
 .animated-image img{
     width: 300px;
 }
+.image__stack {
+    position: relative
+}
+.image__card {
+    width: 400px;
+    position: absolute;
+}
+
+  
+.image__card--pos_1 {
+    top: 40px;
+    right: 40px;
+}
+.image__card--pos_2 {
+    top: 40px;
+    right: 40px;
+}
+.image__card--pos_3 {
+    top: 40px;
+    right: 40px;
+
+}	
+
+

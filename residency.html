@@ -386,7 +386,7 @@
                 </g>
               </svg></button></div>
         </div>
-        <div class="ba-main-image"><img src="Images/card.svg" alt=""></div>
+        <div class="ba-main-image"><img src="Images/card.png" alt=""></div>
       </div>
     </div>
     <canvas class="canvas-item" id="residency-canvas"></canvas>
@@ -573,8 +573,10 @@
             </div>
           </div>
           <div class="animated-cards-img">
-            <div class="animated-image">
-            <img src="Images/card.png" alt="">
+            <div class="image__stack">
+            <img class="image__card image__card--pos_3" src="Images/card_1.png" alt="">
+            <img class="image__card image__card--pos_2" src="Images/card_2.png" alt="">
+            <img class="image__card image__card--pos_1" src="Images/card_3.png" alt="">
           </div>
           </div>
         </div> 
@@ -603,12 +605,12 @@
       </DIV>
     </div>
     <!-- <div class="bg bg-height-table"></div> -->
-    <section class="testi">
-      <div class="testimonials-section" class="text-center">
-        <img src="Images/man-cafe.jpg" class="testimonials-section-bg"></img>
-        <div class="testimonials-container">
-          <div class="testimonial ct-active">
-            <div class="testimonials-text-block">
+    <section class="testimonials">
+      <div class="testimonials__section" class="text-center">
+        <img src="Images/man-cafe.jpg" class="testimonials__section--bg"></img>
+        <div class="testimonials__container">
+          <div class="testimonials__block testimonials--active">
+            <div class="testimonials__text">
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel odio velit. Aenean aliquam est
                 quis
                 turpis efficitur sollicitudin. Integer lacus leo, pulvinar sed enim ut, luctus sagittis est. Nulla in
@@ -616,10 +618,10 @@
                 sapien. Cras nibh massa, placerat vitae ipsum nec, posuere ultricies velit. Praesent vitae hendrerit
                 erat.
                 Nulla finibus neque nec diam tempor ornare."</p>
-              <p class="client-name"><b>Client Name 1</b>, Director ejecutivo de operaciones, Nifty Gateway</>
+              <p class="testimonials__name"><b>Client Name 1</b>, Director ejecutivo de operaciones, Nifty Gateway</>
               </p>
             </div>
-            <div class="testimonials-logo-block">
+            <div class="testimonials__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" fill="white"
                 class="UserLogo variant--Flat TestimonialCard__logo" viewBox="0 0 200 40">
                 <title>Zoom logo</title>
@@ -629,8 +631,8 @@
               </svg>
             </div>
           </div>
-          <div class="testimonial">
-            <div class="testimonials-text-block">
+          <div class="testimonials__block">
+            <div class="testimonials__text">
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel odio velit. Aenean aliquam est
                 quis
                 turpis efficitur sollicitudin. Integer lacus leo, pulvinar sed enim ut, luctus sagittis est. Nulla in
@@ -638,9 +640,9 @@
                 sapien. Cras nibh massa, placerat vitae ipsum nec, posuere ultricies velit. Praesent vitae hendrerit
                 erat.
                 Nulla finibus neque nec diam tempor ornare."</p>
-              <p class="client-name"><b>Client Name 2</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
+              <p class="testimonials__name"><b>Client Name 2</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
             </div>
-            <div class="testimonials-logo-block">
+            <div class="testimonials__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" fill="white"
                 class="UserLogo variant--Flat TestimonialCard__logo" viewBox="0 0 200 40">
                 <path fill="#fff"
@@ -652,8 +654,8 @@
                 <title>NiftyGateway logo</title>
               </svg> </div>
           </div>
-          <div class="testimonial">
-            <div class="testimonials-text-block">
+          <div class="testimonials__block">
+            <div class="testimonials__text">
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel odio velit. Aenean aliquam est
                 quis
                 turpis efficitur sollicitudin. Integer lacus leo, pulvinar sed enim ut, luctus sagittis est. Nulla in
@@ -661,9 +663,9 @@
                 sapien. Cras nibh massa, placerat vitae ipsum nec, posuere ultricies velit. Praesent vitae hendrerit
                 erat.
                 Nulla finibus neque nec diam tempor ornare."</p>
-              <p class="client-name"><b>Client Name 3</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
+              <p class="testimonials__name"><b>Client Name 3</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
             </div>
-            <div class="testimonials-logo-block">
+            <div class="testimonials__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" fill="white"
                 class="UserLogo variant--Flat TestimonialCard__logo" viewBox="0 0 200 40">
                 <path fill="#fff"
@@ -675,8 +677,8 @@
                 <title>NiftyGateway logo</title>
               </svg> </div>
           </div>
-          <div class="testimonial">
-            <div class="testimonials-text-block">
+          <div class="testimonials__block">
+            <div class="testimonials__text">
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel odio velit. Aenean aliquam est
                 quis
                 turpis efficitur sollicitudin. Integer lacus leo, pulvinar sed enim ut, luctus sagittis est. Nulla in
@@ -684,9 +686,9 @@
                 sapien. Cras nibh massa, placerat vitae ipsum nec, posuere ultricies velit. Praesent vitae hendrerit
                 erat.
                 Nulla finibus neque nec diam tempor ornare."</p>
-              <p class="client-name"><b>Client Name 4</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
+              <p class="testimonials__name"><b>Client Name 4</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
             </div>
-            <div class="testimonials-logo-block">
+            <div class="testimonials__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" fill="white"
                 class="UserLogo variant--Flat TestimonialCard__logo" viewBox="0 0 200 40">
                 <path fill="#fff"
@@ -698,8 +700,8 @@
                 <title>NiftyGateway logo</title>
               </svg> </div>
           </div>
-          <div class="testimonial">
-            <div class="testimonials-text-block">
+          <div class="testimonials__block">
+            <div class="testimonials__text">
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel odio velit. Aenean aliquam est
                 quis
                 turpis efficitur sollicitudin. Integer lacus leo, pulvinar sed enim ut, luctus sagittis est. Nulla in
@@ -707,9 +709,9 @@
                 sapien. Cras nibh massa, placerat vitae ipsum nec, posuere ultricies velit. Praesent vitae hendrerit
                 erat.
                 Nulla finibus neque nec diam tempor ornare."</p>
-              <p class="client-name"><b>Client Name 5</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
+              <p class="testimonials__name"><b>Client Name 5</b>, Director ejecutivo de operaciones, Nifty Gateway</p>
             </div>
-            <div class="testimonials-logo-block">
+            <div class="testimonials__logo">
               <svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" fill="white"
                 class="UserLogo variant--Flat TestimonialCard__logo" viewBox="0 0 200 40">
                 <path fill="#fff"
@@ -722,13 +724,13 @@
               </svg> </div>
           </div>
         </div>
-        <nav class="nav-dots">
-          <ul class="testimonials-dots">
-            <li><button class="dot dot-active"></button></li>
-            <li><button class="dot"></button></li>
-            <li><button class="dot"></button></li>
-            <li><button class="dot"></button></li>
-            <li><button class="dot"></button></li>
+        <nav class="testimonials__navigation">
+          <ul class="testimonials__buttons">
+            <li><button class="testimonials__button testimonials__button--active"></button></li>
+            <li><button class="testimonials__button"></button></li>
+            <li><button class="testimonials__button"></button></li>
+            <li><button class="testimonials__button"></button></li>
+            <li><button class="testimonials__button"></button></li>
           </ul>
         </nav>
       </div>
@@ -1621,10 +1623,39 @@
     integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-      var gradient = new Gradient()
-      gradient.initGradient('#residency-canvas');
+const cards = document.querySelectorAll('.image__card');
+let index = 0;
+
+function animateCards() {
+  // Применяем анимацию к текущему элементу
+  const currentCard = cards[index];
+  currentCard.style.transition = 'all 2s ease';
+  currentCard.style.transform = ' translateY(0px) rotateX(0deg)';
+  currentCard.style.opacity = '0.5';
+  currentCard.style.zIndex = '-1';
+
+  // Применяем анимацию к следующему элементу
+  const nextIndex = index === cards.length - 1 ? 0 : index + 1;
+  const nextCard = cards[nextIndex];
+  nextCard.style.transition = 'all 2s ease';
+  nextCard.style.transform = ' translateY(75px) rotateX(-10deg)';
+
+  nextCard.style.opacity = '1';
+  nextCard.style.zIndex = '3';
+
+  // Меняем порядок карточек
+  const parent = currentCard.parentNode;
+  parent.insertBefore(nextCard, currentCard);
+
+  // Обновляем индекс
+  index = nextIndex;
+}
+
+// Запускаем анимацию через каждые 2 секунды
+setInterval(animateCards, 3000);
+
     </script>
   <script src="JS/script.js"></script>
-  <script src="JS/slider.js"></script>
+  <script src="JS/testimonials-main.js"></script>
 </body>
 </html>
