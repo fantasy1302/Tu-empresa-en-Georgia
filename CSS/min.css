@@ -583,19 +583,28 @@ td {
     padding: 3px;
 }
 
-.pricing-section-text h4 {
+.pricing__headerSmall {
     font-size: 18px;
-    color: rgb(0, 115, 230);
     line-height: 1.26;
     font-weight: 500;
 }
-
-.pricing-section-text P {
+.pricing__header--medium {
+    font-size: 26px;
+    line-height: 1.26;
+    font-weight: 500;
+}
+.pricing__text--width {
+    width: 65%;
+}
+.pricing__header--blue {
+    color: rgb(0, 115, 230);
+}
+.pricing__text P {
     color: rgb(66, 84, 102);
     font-size: 17px;
 }
 
-.pricing-section-text h2 {
+.pricing__text h2 {
     font-size: 38px;
     line-height: 1.26;
     font-weight: 500;
@@ -607,7 +616,7 @@ td {
     justify-content: center;
 }
 
-.pricing-section {
+.pricing__section {
     width: 1080px;
     margin-left: 1em;
 }
@@ -719,8 +728,9 @@ td {
 }
 
 .little-checks {
-    padding: 5px;
+    padding: 5px 1px;
     width: 24px;
+    vertical-align: bottom;
 }
 
 .checks p {
@@ -879,7 +889,7 @@ table td {
         flex-direction: column;
     }
 
-    .pricing-section {
+    .pricing__section {
         width: 100%;
         padding-left: 1em;
         padding-right: 2em;
