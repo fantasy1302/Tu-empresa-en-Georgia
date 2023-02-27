@@ -1,0 +1,136 @@
+
+.RowLayout {
+    --rowLayoutGapXSmall: 16px;
+    --rowLayoutGapSmall: 24px;
+    --rowLayoutGapNormal: 32px;
+    --rowLayoutGapMedium: var(--rowLayoutGapNormal);
+    --rowLayoutGapLarge: var(--rowLayoutGapNormal);
+    --rowLayoutGapXLarge: var(--rowLayoutGapNormal);
+    --rowLayoutGap: var(--rowLayoutGapLarge);
+    display: grid;
+    grid: auto/minmax(0,1fr);
+    row-gap: var(--rowLayoutGap);
+    align-items: flex-start;
+  }
+  .IdentityCaptureAnimation {
+    --pictureWidth: 400px;
+    --pictureHeight: 1000px;
+    --identificationWidth: 352;
+    --identificationHeight: 223;
+    --identificationPaddingVertical: 40;
+    --identificationPaddingHorizontal: 24;
+    display: flex;
+    justify-content: center;
+  }
+  .IdentityCaptureAnimation__card.Card {
+    --cardBorderRadius: 20px;
+    position: relative;
+    display: grid;
+    grid: auto 56px/auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: var(--cardBorderRadius);
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3);
+  }
+  .IdentityCaptureAnimation__camera {
+    --cameraWidth: calc(var(--identificationWidth) + var(--identificationPaddingHorizontal)*2);
+    --cameraHeight: calc(var(--identificationHeight) + var(--identificationPaddingVertical)*2);
+    position: relative;
+    padding-bottom: calc(var(--cameraHeight)/var(--cameraWidth)*100%);
+  }
+  .IdentityCaptureAnimation__background::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(0,0,0,.5);
+    content: "";
+  }
+  .IdentityCaptureAnimation__background::after {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: rgba(0,0,0,.5);
+    content: "";
+
+}
+.IdentityCaptureAnimation__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--cardBorderRadius) var(--cardBorderRadius) 0 0;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
+  }
+  .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .IdentityCaptureAnimationPicture {
+    background-attachment: fixed;
+  }
+  .IdentityCaptureAnimationPicture {
+    width: 100%;
+    max-width: 400px;
+    padding-bottom: 400%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 1600px;
+  }
+  .IdentityCaptureAnimation:not([data-js-highlighting]) .IdentityCaptureAnimation__detectionFrame::after {
+    opacity: 0;
+  }
+  .IdentityCaptureAnimation__detectionFrame::after {
+    border-color: #15be53;
+    transition: opacity .25s;
+  }
+  .IdentityCaptureAnimation__detectionFrame::after, .IdentityCaptureAnimation__detectionFrame::before {
+    position: absolute;
+    left: 0;
+    width: 98%;
+    height: 96%;
+    z-index: 1;
+    border: 4px solid #fff;
+      border-top-color: rgb(255, 255, 255);
+      border-right-color: rgb(255, 255, 255);
+      border-bottom-color: rgb(255, 255, 255);
+      border-left-color: rgb(255, 255, 255);
+      border-radius: 24px;
+    content: "";
+  }
+  .IdentityCaptureAnimation__detectionFrame {
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: 13%;
+    bottom: 13%;
+    border-radius: 24px;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
+    z-index: 0;
+  }
+  .IdentityCaptureAnimation__flash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .IdentityCaptureAnimation__label {
+    padding: 8px;
+    text-align: center;
+  }

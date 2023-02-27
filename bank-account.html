@@ -2626,5 +2626,28 @@
   <script src="main.js"></script>
   <script src="JS/slider.js"></script>
   <script src="JS/cards.js"></script>
+  <script>
+var faceId = document.getElementById("Face-ID");
+var check = document.querySelector(".check");
+var phoneSection = document.querySelector(".phone-section");
+
+window.addEventListener('scroll', function() {
+  var rect = phoneSection.getBoundingClientRect();
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  if (rect.top <= windowHeight && rect.bottom >= 0) {
+    window.addEventListener('wheel', function(event) {
+      if (event.deltaY > 0) {
+        faceId.style.display = "none";
+        check.style.display = "flex";
+      } else {
+        faceId.style.display = "flex";
+        check.style.display = "none";
+      }
+    });
+  }
+});
+
+
+  </script>
 </body>
 </html>

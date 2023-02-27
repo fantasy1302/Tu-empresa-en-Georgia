@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="CSS/min.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/residency.css">
+  <link rel="stylesheet" href="CSS/card-block.css">
   <title>Residency</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum">
@@ -586,10 +587,113 @@
                 </g>
               </svg></button>
           </div>
-          <div class="animated-cards-img">
-            <div  class="animated-image">
-            <img src="Images/card_0.png" alt="">
-          </div>
+            <div class="
+            RowLayout
+            SideBySide__rightRowLayout
+          ">
+                <div class="IdentityCaptureAnimation" data-js-controller="IdentityCaptureAnimation">
+                    <div class="
+            Card
+            
+            
+            
+            Card--shadowMedium
+            
+            
+            IdentityCaptureAnimation__card
+          " data-js-target="IdentityCaptureAnimation.card">
+                        <div class="IdentityCaptureAnimation__camera">
+                            <div class="IdentityCaptureAnimation__background">
+                                <div class="IdentityCaptureAnimationPicture IdentityCaptureAnimation__picture"
+                                    style="background-image: url('Images/desk.png'); background-position: 786px center; background-size: 385px 1600px;"
+                                    data-js-target-list="IdentityCaptureAnimation.pictures">
+                                </div>
+                                <div class="
+            Card
+            
+            
+            
+            Card--shadowSmall
+            
+            
+            IdentityCaptureIdentification IdentityCaptureAnimation__identification
+          " data-js-target-list="IdentityCaptureAnimation.identifications">
+                                    <picture class="
+            Picture
+            
+            
+            
+          ">
+        
+        
+        
+        
+        
+                                        <source srcset="Images/desk.png" type="image/webp">
+        
+        
+        
+        
+                                        <img class="Picture__image "
+                                            src="Images/desk.png"
+                                            srcset="Images/desk.png" alt="" loading="lazy" width="352" height="222">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="IdentityCaptureAnimation__detectionFrame"
+                                data-js-target="IdentityCaptureAnimation.detectionFrame">
+                                <div class="IdentityCaptureAnimationPicture IdentityCaptureAnimation__picture"
+                                    style="background-image: url('Images/desk.png'); background-position: 786px center; background-size: 400px 1600px;"
+                                    data-js-target-list="IdentityCaptureAnimation.pictures">
+                                </div>
+                                <div class="
+            Card
+            
+            
+            
+            Card--shadowSmall
+            
+            
+            IdentityCaptureIdentification IdentityCaptureAnimation__identification
+          " data-js-target-list="IdentityCaptureAnimation.identifications">
+                                    <picture class="
+            Picture
+            
+            
+            
+          ">
+        
+        
+        
+        
+        
+                                        <source srcset="Images/desk.png"
+                     type="image/webp">
+        
+        
+        
+        
+                                        <img class="Picture__image "
+                                            src="Images/desk.png"
+                                            srcset="Images/desk.png"
+        
+                " alt="" loading="lazy" width="352" height="222">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="IdentityCaptureAnimation__flash" data-js-target="IdentityCaptureAnimation.flash"></div>
+                        </div>
+                        <div class="IdentityCaptureAnimation__labelContainer">
+                            <div class="IdentityCaptureAnimation__labelMasked">
+                                <div class="IdentityCaptureAnimation__labelList">
+                                    <div class="IdentityCaptureAnimation__label">
+                        Our lawyers will help you to get your georgian legal residency
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
           </div>
         </div>    
         <div class="animated-cards-block">
@@ -623,8 +727,9 @@
           </div>
           
           <div class="animated-cards-img">
-            <div class="animated-image">
-            <img src="Images/card_0.png" alt="">
+            <div class="animated-image-woman">
+              <img src="Images/animated-woman.png" alt="">
+              <!-- <img class="small" src="Images/animated-small.png" alt=""> -->
           </div>
           </div>
         </div>         
@@ -1676,12 +1781,41 @@ window.onload = () => {
     };
 
     setIndex(arrIndexes);
-    setInterval(rotateIndexes, 4500);
+    setInterval(rotateIndexes, 3500);
   });
 };
 
 
 
+    </script>
+    <script>
+var faceId = document.getElementById("Face-ID");
+var text = document.querySelector(".IdentityCaptureAnimation__label");
+var phoneSection = document.querySelector(".animated-cards-block");
+var checkIcon = document.createElement("i");
+var border  = document.querySelector(".IdentityCaptureAnimation__detectionFrame");
+
+window.addEventListener('scroll', function() {
+  var rect = phoneSection.getBoundingClientRect();
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  if (rect.top <= windowHeight && rect.bottom >= 0) {
+    window.addEventListener('wheel', function(event) {
+      if (event.deltaY > 0) {
+        text.innerHTML = "Our lawyers will help you to get your georgian legal residency";
+        border.style.border = "transparent";
+      } else {
+        text.innerHTML = "Congratulations, you are now a legal resident in Georgia!";
+        text.appendChild(checkIcon);
+        text.lastElementChild.classList.add('fa-solid');
+        text.lastElementChild.classList.add('fa-circle-check');
+        text.lastElementChild.style.color = "#0fd20f";
+        text.lastElementChild.style.padding = "3px";
+        border.style.border = "3px solid #0fd20f";
+        border.style.transition = "all 1s ease-in";
+      }
+    });
+  }
+});
     </script>
   <script>
     var gradient = new Gradient()

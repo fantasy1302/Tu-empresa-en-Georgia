@@ -134,7 +134,7 @@
 .pricing__header--small h2 {
     width: 100%;
 }
-.animated-cards__textBlock li {
+.animated-cards__textBlock li {animated-cards__text
     display: flex;
 }
 .text--width {
@@ -150,4 +150,24 @@
 .pricing--bgWhite {
     background-color: #fff;
     padding: 2em 0 2em 0;
+}
+.animated-image {
+    background-image: url(../Images/desk.jpg);
+    background-position: 702.5px center;
+    background-size: 400px 1600px;  
+    background-repeat: ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.animated-cards-img {
+padding: 25px 22px;
+border-radius: 24px;
+}
+.animated-image-woman img{
+    width: 300px;
+border-radius: 24px;
+}
+.small {
+    width: 100px;
 }
