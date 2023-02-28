@@ -134,3 +134,15 @@
     padding: 8px;
     text-align: center;
   }
+  .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {  background-position: 786px center;}
+  @media (max-width:600px) {
+    .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {
+      background-position:24px center;
+    }
+    .image__stack {
+      display: none;
+    }
+    .animated-cards__desc {
+      width: 100%;
+    }
+  }

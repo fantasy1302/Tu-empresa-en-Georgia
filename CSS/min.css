@@ -599,10 +599,6 @@ td {
 .pricing__header--blue {
     color: rgb(0, 115, 230);
 }
-.pricing__text P {
-    color: rgb(66, 84, 102);
-    font-size: 17px;
-}
 
 .pricing__text h2 {
     font-size: 38px;
@@ -728,7 +724,7 @@ td {
 }
 
 .little-checks {
-    padding: 5px 1px;
+    padding: 5px 10px 0px 0px;
     width: 24px;
     vertical-align: bottom;
 }
