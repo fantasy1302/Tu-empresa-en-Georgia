@@ -6,103 +6,113 @@
     clip-path: polygon(0 54%, 100% 0, 100% 32%, 0 86%);
     scale: 1.55;
     margin-top: 0em;
-  }
-  .residency {
-    background-color:  #15be53;
+}
+
+.residency {
+    background-color: #15be53;
     padding: 6px 12px 9px 16px;
     color: white;
     margin-right: 10px;
     font-size: 15px;
     font-weight: 500;
     display: flex;
-  }
+}
+.image__stack {
+    position: relative;
+top: 105px;
+}
 
+.pill__yellow {
+    background-color: #ffe85e;
+    color: #111;
+    opacity: 0.8;
+}
+.pill__green {
+    background-color:#15be53;
+    color: #111;
+    opacity: 0.8;
+}
 .ba-post-header a {
     color: #15be53;
 }
+
 .fill-Yellow {
     fill: #ffd848;
     opacity: 0.9;
 }
+
 .fill-darkGreen {
     fill: #15be53;
     opacity: 0.7;
 }
+
 .animated-cards-text {
     width: 50%;
 }
-.animated-cards__textBlock ul{
+
+.animated-cards__textBlock ul {
     list-style: none;
     padding: 0;
 }
+
 .animated-cards-block {
     display: flex;
     justify-content: space-between;
     margin-top: 5em;
 }
-.animated-image img{
+
+.animated-image img {
     width: 300px;
 }
-.animated-image {
-    /* background-image: url('../Images/desk.jpg');
-    background-position: 702.5px center;
-    background-size: 400px 1600px; */
-}
-.image__stack {
-    position: relative;
-	transform: translateX(-15px);
-    padding: 7em;
-}
+
+
 .image__card {
     width: 300px;
     position: absolute;
 }
 
-.image__stack, .image__card {
-    width: 350px;
-	max-width: 80vw;
-	background: transparent;
-	cursor: pointer;
-}
-.image__stack,.image__card, .hide {
-   
-}
-.image__stack, .image__card:not(.hide) {
-	position: absolute;
-	transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1); 
+
+.image__card:not(.hide) {
+    position: absolute;
+    transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
     right: 35px;
 }
 
-.image__stack, .image__card:not(.hide)[data-slide='0'] {
-	transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
+.image__card:not(.hide)[data-slide='0'] {
+    transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
     z-index: 0;
     transform: translate(0px, 0px) scale(1);
 
 }
-.image__stack, .image__card:not(.hide)[data-slide='1'] {
+
+.image__card:not(.hide)[data-slide='1'] {
     transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
-	transform: translate(-15px, 15px) scale(0.975);
-	z-index: 1;
-	
+    transform: translate(-15px, 15px) scale(0.975);
+    z-index: 1;
+
 }
-.image__stack, .image__card:not(.hide)[data-slide='2'] {
+
+.image__card:not(.hide)[data-slide='2'] {
     transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
     transform: translate(-30px, 30px) scale(0.95);
-	z-index: 2;
+    z-index: 2;
 
 }
-.image__stack, .image__card:not(.hide)[data-slide='3'] {
+
+.image__card:not(.hide)[data-slide='3'] {
     transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
     transform: translate(-45px, 45px) scale(0.925);
-	z-index: 3;
-   
-}
-.image__stack, .image__card:not(.hide)[data-slide='4'] {
-    transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
-    transform: translate(-60px, 60px) scale(0.9);
-	z-index: 4;
+    z-index: 3;
 
 }
+
+.image__card:not(.hide)[data-slide='4'] {
+    transition: all 2.8s cubic-bezier(0.18, 0.98, 0.45, 1);
+    transform: translate(-60px, 60px) scale(0.9);
+    z-index: 4;
+
+}
+
 .image__card--pos_1 {
     top: 70px;
     right: 50px;
@@ -112,11 +122,13 @@
     top: 60px;
     right: 45px;
 }
+
 .image__card--pos_3 {
     top: 50px;
     right: 40px;
 
-}	
+}
+
 .animated-cards__checks {
     font-size: 15px;
     margin: 3px 0px;
@@ -124,135 +136,119 @@
     font-weight: normal;
     line-height: 1.6;
 }
+
 .green--mark {
     color: #15be53;
     font-weight: 450;
 }
+
 .animated-cards {
     margin-top: 5em;
+    display: flex;
 }
+
 .pricing__header--small h2 {
     width: 100%;
 }
+
 .animated-cards__textBlock li {
     display: flex;
 }
+
 .text--width {
     width: 70%;
 }
+
 .pricing__header--green {
     color: #15be53;
     background: transparent;
 }
+
 .animated-cards__desc {
     width: 40%;
 }
+
 .pricing--bgWhite {
     background-color: #fff;
     padding: 2em 0 2em 0;
 }
+
 .animated-image {
     background-image: url(../Images/desk.jpg);
     background-position: 702.5px center;
-    background-size: 400px 1600px;  
+    background-size: 400px 1600px;
     background-repeat: ;
     position: absolute;
     top: 0;
     left: 0;
 }
+
 .animated-cards-img {
-padding: 25px 22px;
-border-radius: 24px;
+    padding: 25px 22px;
+    border-radius: 24px;
+
 }
+
 .animated-image-woman {
     position: relative;
 }
-.animated-image-woman img{
+
+.animated-image-woman img {
     width: 130px;
-border-radius: 24px;
-position: absolute;
-left: -80px;
-top: 380px;
+    border-radius: 24px;
+    position: absolute;
+    left: -55px;
+    top: 295px;
 }
+
 .small {
     width: 100px;
 }
+
 .pricing__text {
     width: 1080px;
 }
+
 .pricing__checks {
     display: flex;
 }
+
 .colmn {
     max-width: 25%;
 }
-.pricing__list li{
+
+.pricing__list li {
     font-size: 15px;
 }
+
 .list__header {
     font-weight: 450;
     font-size: 15px;
 }
+
 .benefits {
     display: flex;
     flex: 1;
 }
+
 .benefits__text {
     font-size: 15px;
 }
+
 .benefits__block {
     width: 50%;
 }
+
 .animated-video {
     width: 300px;
     border-radius: 24px;
 }
+
 .rounded {
     border-radius: 24px;
     overflow: hidden;
 }
+
 .colorize i {
-    background:rgb(21, 190, 83);
-}
-@media (max-width:600px){
-    .pricing__text {
-        width: 100%;
-      }
-      .animated-cards-block {
-        flex-direction: column;
-      }
-      .animated-cards-text {
-        width: 100%;
-      }
-      .animated-image-woman img {
-        left: -15px;
-    }
-    .animated-image-woman {
-        display: flex;
-        justify-content: center;
-    }      
-    .pricing__text {
-        padding-left: 1em;
-        padding-right: 2em;
-        margin-left: 1em;
-        display: flex;
-        flex-direction: column;
-    }
-    .benefits {
-        display: flex;
-        flex: 1;
-        flex-direction: column;}
-        .benefits__block {
-            width: 100%;
-          }
-          .pricing__checks {
-            display: flex;
-            flex-direction: column;
-          }
-          .colmn {
-            max-width: 100%;
-          }
-          h2 {
-            width: 100%;
-          }
+    background: rgb(21, 190, 83);
 }

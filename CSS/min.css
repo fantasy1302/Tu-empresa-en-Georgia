@@ -371,6 +371,7 @@ border-radius: 50%;
     justify-content: start;
     align-items: center;
     width: 1080px;
+    padding: 2em;
 }
 
 .cards-section-text {
@@ -443,10 +444,6 @@ border-radius: 50%;
     scale: 0.8;
     transform-origin: center;
     transform: translateY(1em);
-}
-
-.fa-bars {
-    background-color: rgb(0, 115, 230);
 }
 
 .face-corners {
@@ -614,7 +611,6 @@ td {
 
 .pricing__section {
     width: 1080px;
-    margin-left: 1em;
 }
 
 .checks {
@@ -790,7 +786,9 @@ table td {
         width: 100%;
         flex-direction: column;
     }
-
+    #banking {
+        margin-top: 0em;
+      }
     .ba-main-hero {
         flex-direction: column;
         z-index: 1;
@@ -802,7 +800,7 @@ table td {
     }
 
     .ba-main-hero-section {
-
+        padding: 0;
         width: 100%;
         flex-direction: column;
         display: flex;
@@ -887,8 +885,6 @@ table td {
 
     .pricing__section {
         width: 100%;
-        padding-left: 1em;
-        padding-right: 2em;
     }
 
     .phone {
@@ -1018,15 +1014,12 @@ table td {
         width: 90%;
     }
     .pricing {
-        margin-top: 5em;}
+        margin-top: 0em;
+}
 
     .gray-td::before {
         left: 8%;
 
-    }
-
-    .pre-footer {
-        padding: 1em;
     }
     .little-checks {
         padding: 0;
@@ -1037,8 +1030,8 @@ table td {
     .personaliz {
         border-radius: 8px;
     }
-    .colorize i {
-       background: rgb(0, 115, 230);
+    .mobile__icon--blue {
+       background-color: rgb(0, 115, 230);
     }
     .credit-card-mockup {
         height: 250px;

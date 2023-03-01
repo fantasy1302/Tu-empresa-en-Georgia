@@ -256,8 +256,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  padding: 30px 30px 30px 0px;
 }
 
 .column {
@@ -412,7 +410,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 10px;
   align-items: center;
 }
 
@@ -885,7 +882,7 @@ button:hover .HoverArrow__tipPath {
 
 footer ul {
   list-style: none;
-  padding-left: 1em;
+  padding: 0;
 }
 
 #globe-canvas {
@@ -996,6 +993,7 @@ footer ul {
   display: flex;
   max-width: 1080px;
   text-align: left;
+  padding: 0 1em;
 }
 
 .products-features-card {
@@ -1014,12 +1012,13 @@ footer ul {
   width: 1080px;
   justify-content: start;
   display: flex;
-  align-items: baseline;
-  margin-left: 1em;
+  align-items: baseline;  
   flex-direction: column;
 }
 
-.products-features-text {}
+.products-features-text {
+  padding: 2em;
+}
 
 .products-features-body-text {
   color: rgb(66, 84, 102);
@@ -1131,7 +1130,6 @@ footer ul {
   justify-content: start;
   gap: 4em;
   position: relative;
-  margin-left: 1em;
 }
 
 .pre-footer {
@@ -1193,6 +1191,7 @@ footer {
   display: flex;
   width: 1080px;
   gap: 1em;
+  justify-content: space-between;
 }
 
 .footer-title {
@@ -1273,12 +1272,43 @@ footer li {
     background-position: 33% 0%
   }
 }
+@media (max-width:1130px) {
+  .ba-main-hero-section {
+      padding: 2em;
+  }
+  .ba-post-header-container {
+      padding: 0 2em;
+  }
+  .footer-text {
+      padding: 2em;
+  }
+}
+@media (max-width:1080px) {
+  .footer-text {
+      width: 100%;
 
+  }
+  .testimonials__section {
+      margin: 2em;
+  }
+  .pricing,.products-animated-section, .pre-footer-container {
+      width: 100%;
+      padding: 2em;
+  }
+
+}
 @media (max-width: 600px) {
   .main-image {
     display: none;
   }
-
+  .testimonials__section--bg {
+    width: 100%;
+    height: 50%;
+    mask-image: linear-gradient(to top, transparent 1%, black 60%);
+  }
+.f-column {
+  width: 100%;
+}
   * {
     box-sizing: border-box;
   }
@@ -1291,12 +1321,8 @@ footer li {
   .products-features {
     width: 100%;
     margin-bottom: 1em;
-    padding: 15px;
   }
 
-  .products-features-text {
-    margin-left: 1em;
-  }
 
   .products-features-body-text {
     width: 100%;
@@ -1318,7 +1344,6 @@ footer li {
     width: 100%;
     margin-left: 0em;
     margin-right: 0em;
-    padding: 30px;
   }
 
   .customers-to-us {
@@ -1343,7 +1368,7 @@ footer li {
     justify-content: center;
     margin-top: 0em;
     margin-bottom: 0em;
-    padding: 15px;
+    padding: 2em;
   }
 
   .testimonials-section {
@@ -1558,7 +1583,6 @@ footer li {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    padding: 15px;
   }
 
   .why-georgia-header {
@@ -1681,12 +1705,84 @@ footer li {
   }
 
   .fa-bars {
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
     color: rgb(255, 255, 255);
     border-radius: 19px;
   }
+  .pricing__text {
+    width: 100%;
+}
+.testimonials__section {
+    margin: 0;
+}
+.ba-main-hero-section {
+    padding: 0em;
+  }
+.animated-cards-block {
+    flex-direction: column;
+}
 
+.animated-cards-text {
+    width: 100%;
+}
+
+.animated-image-woman img {
+    left: -15px;
+}
+
+.animated-image-woman {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.benefits__block {
+    width: 100%;
+}
+
+.pricing__checks {
+    display: flex;
+    flex-direction: column;
+}
+
+.colmn {
+    max-width: 100%;
+}
+
+h2 {
+    width: 100%;
+}
+
+#residency-canvas {
+    clip-path: polygon(0 43%, 100% 27%, 100% 57%, 0 73%);
+    margin-top: 0;
+}
+
+.mobile__icon--green {
+    background-color: #1dcb5d;
+}
+
+.image__stack {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+.animated-cards {
+    display: flex;
+    flex-direction: column-reverse;
+}
   .modal-footer {
     padding: 2px 16px;
     background-color: white;
@@ -1832,7 +1928,7 @@ footer li {
   }
 
   .footer-text {
-    padding: 5px;
+    padding: 2em;
   }
 
   .sign-in {
@@ -1895,10 +1991,6 @@ footer li {
     margin-left: 1em;
   }
 
-  .footer-text {
-    gap: 3em;
-  }
-
   .customers-section {
     width: 100%;
     display: flex;
@@ -1914,7 +2006,6 @@ footer li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1em;
     flex-wrap: wrap;
   }
 
@@ -1930,12 +2021,7 @@ footer li {
     justify-content: start;
     gap: 4em;
     position: relative;
-    margin-left: 1em;
     flex-direction: column;
-  }
-
-  .f-column {
-    padding: 30px;
   }
   .testimonials-section {
     margin: 2rem;
@@ -1952,6 +2038,14 @@ footer li {
     justify-content: space-between;
     padding-bottom: 0.55em;
   }
-  
+  .mobile__icon--main{
+    background-color: rgb(255, 255, 255, 0.2);
+  }
 }
 
+@media (max-width:600px) {
+  #residency-canvas {
+    clip-path: polygon(0 43%, 100% 27%, 100% 57%, 0 73%);
+    margin-top: 0;
+  }
+}

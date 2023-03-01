@@ -11,6 +11,7 @@
     grid: auto/minmax(0,1fr);
     row-gap: var(--rowLayoutGap);
     align-items: flex-start;
+    margin-top: 2em;
   }
   .IdentityCaptureAnimation {
     --pictureWidth: 400px;
@@ -101,12 +102,6 @@
     width: 98%;
     height: 96%;
     z-index: 1;
-    border: 4px solid #fff;
-      border-top-color: rgb(255, 255, 255);
-      border-right-color: rgb(255, 255, 255);
-      border-bottom-color: rgb(255, 255, 255);
-      border-left-color: rgb(255, 255, 255);
-      border-radius: 24px;
     content: "";
   }
   .IdentityCaptureAnimation__detectionFrame {
@@ -134,15 +129,19 @@
     padding: 8px;
     text-align: center;
   }
-  .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {  background-position: 786px center;}
+  .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {  
+    background-size: 400px 1600px;
+    background-position: 783px center;
+  }
   @media (max-width:600px) {
     .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {
-      background-position:24px center;
+      background-position: 38px center;
+      background-size: 339px 1600px;
     }
-    .image__stack {
-      display: none;
-    }
+   
     .animated-cards__desc {
       width: 100%;
     }
+  
   }
+
