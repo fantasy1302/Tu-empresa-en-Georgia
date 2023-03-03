@@ -96,6 +96,32 @@
         line-height: 70px;
    }
 }
+@media (max-width: 670px) {
+   
+    .container-lg {
+        margin: 0 2em;
+        padding: 0px 0px;
+        width: 100%;
+      }
+      .navRoot {
+        padding: 0;
+      }
+      .colorize i {
+        padding:10px 16px;
+        border-radius: 24px;
+      }
+      .globalNav {
+        height: 100px;
+      }
+}
+@media (max-width: 1080px) {
+   
+    .container-lg {
+        width: 100%;
+        margin: 0 1em;
+      }
+    
+}
 @media (max-width:600px) {
     .globalNav {
         width: 100%;
@@ -104,8 +130,8 @@
         margin: 0 auto;
 }
 .globalNav > .container-lg {
-    padding: 2em;
-    margin-top: 2em;
+    padding: 0 2em;
+    margin-top: 1em;
   }
   .globalNav ul {
     margin: 0;
@@ -117,6 +143,10 @@
     line-height: 43px;
     color: #32325d;
 }
+.globalNav .rootLink,.globalNav, .rootLink {
+    padding: 0 0px;
+  }
+
 @media (min-width: 670px) {
     .common-PageTitle {
         font-size: 40px;
@@ -441,9 +471,7 @@
         padding: 50px;
    }
 }
-.globalNav .rootLink {
-    padding: 0 15px;
-}
+
 .common-BetaBadge {
     display: inline;
     position: relative;
@@ -813,7 +841,7 @@
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
     z-index: 500;
-    height: 50px;
+    height: auto;
     justify-content: center;
 }
 
@@ -903,7 +931,6 @@
     line-height: 35px;
     font-weight: 500;
     margin: 0;
-    padding: 6px 12px 9px 16px;
 }
 @media (min-width: 670px) {
     .globalNav .rootLink {

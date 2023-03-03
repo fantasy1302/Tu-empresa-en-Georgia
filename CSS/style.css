@@ -64,14 +64,6 @@
   color: forestgreen;
   line-height: 1.1;
 }
-@media not all and (min-resolution:.001dpcm) { 
-  @media {
-    /* Скрыть блок только в Safari */
-    .hero-title--overlay {
-      display: none;
-    }
-  }
-}
 .col-md-offset-2 {
   margin-left: 1em;
 }
@@ -85,7 +77,7 @@
   position: relative;
   width: 1080px;
   min-height: 360px;
-  margin-top: 4em;
+  margin: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -105,6 +97,9 @@
 
 }
 
+.verification {
+  padding: 2em;
+}
 .testimonials__section--bg {
   opacity: 0.2;
   position: absolute;
@@ -459,7 +454,9 @@ header {
   fill: none;
   stroke: currentColor;
 }
-
+.subscription {
+  padding: 2em;
+}
 .vanta-canvas {
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   height: 876px;
@@ -971,7 +968,7 @@ footer ul {
   width: 1080px;
   display: flex;
   justify-content: space-between;
-  margin-left: 1em;
+  padding: 2em;
 }
 
 @keyframes codeMovement {
@@ -1176,6 +1173,7 @@ animation-timing-function: ease-in-out;
   justify-content: start;
   gap: 4em;
   position: relative;
+  padding: 2em;
 }
 
 .pre-footer {
@@ -1330,7 +1328,7 @@ footer li {
   }
 }
 @media (max-width:1080px) {
-  .footer-text {
+  .footer-text,.pricing__section {
       width: 100%;
 
   }
@@ -1339,9 +1337,53 @@ footer li {
   }
   .pricing,.products-animated-section, .pre-footer-container {
       width: 100%;
-      padding: 2em;
   }
 
+}
+@media (max-width:1080px) {
+  .ba-main-hero-section {
+    flex-direction: column;
+  }
+  .ba-main-info {
+    width: 100%;
+  }
+  .animated-cards-block {
+    flex-direction: column;
+  }
+  .animated-cards-text {
+    width: 90%;
+  }
+  .animated-image-woman img {
+    width: 130px;
+    border-radius: 24px;
+    position: relative;
+    top: 150px;
+    height: 130px;
+  }
+  .rouned {
+    width: 100%;
+  }
+  .pricing__text {
+    width: 100%;
+  }
+  .animated-image-woman {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products-animated-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:768px) {
+
+  
 }
 @media (max-width: 600px) {
   .main-image {

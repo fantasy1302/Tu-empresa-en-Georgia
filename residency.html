@@ -603,92 +603,22 @@
                 </g>
               </svg></button>
           </div>
-          <div class="
-            RowLayout
-            SideBySide__rightRowLayout
-          ">
+          <div class="RowLayout SideBySide__rightRowLayout">
             <div class="IdentityCaptureAnimation" data-js-controller="IdentityCaptureAnimation">
-              <div class="
-            Card
-            
-            
-            
-            Card--shadowMedium
-            
-            
-            IdentityCaptureAnimation__card
-          " data-js-target="IdentityCaptureAnimation.card">
+              <div class="Card Card--shadowMedium IdentityCaptureAnimation__card" data-js-target="IdentityCaptureAnimation.card">
                 <div class="IdentityCaptureAnimation__camera">
                   <div class="IdentityCaptureAnimation__background">
-                    <div class="IdentityCaptureAnimationPicture IdentityCaptureAnimation__picture"
-                      style="background-image: url('Images/desk.png');"
-                      data-js-target-list="IdentityCaptureAnimation.pictures">
-                    </div>
-                    <div class="
-            Card
-            
-            
-            
-            Card--shadowSmall
-            
-            
-            IdentityCaptureIdentification IdentityCaptureAnimation__identification
-          " data-js-target-list="IdentityCaptureAnimation.identifications">
-                      <picture class="
-            Picture
-            
-            
-            
-          ">
-
-
-
-
-
-                        <source srcset="Images/desk.png" type="image/webp">
-
-
-
-
-                        <img class="Picture__image " src="Images/desk.png" srcset="Images/desk.png" alt=""
-                          loading="lazy" width="352" height="222">
-                      </picture>
+                    <div class="IdentityCaptureAnimationPicture IdentityCaptureAnimation__picture">
+                      <img src="" alt="">
                     </div>
                   </div>
-                  <div class="IdentityCaptureAnimation__detectionFrame"
-                    data-js-target="IdentityCaptureAnimation.detectionFrame">
-                    <div class="IdentityCaptureAnimationPicture IdentityCaptureAnimation__picture"
-                      style="background-image: url('Images/desk.png');"
-                      data-js-target-list="IdentityCaptureAnimation.pictures">
+                  <div class="IdentityCaptureAnimation__detectionFrame" data-js-target="IdentityCaptureAnimation.detectionFrame">
+                    <div class="IdentityCaptureAnimationPicture IdentityCaptureAnimation__picture" data-js-target-list="IdentityCaptureAnimation.pictures">
                     </div>
-                    <div class="
-            Card
-            
-            
-            
-            Card--shadowSmall
-            
-            
-            IdentityCaptureIdentification IdentityCaptureAnimation__identification
-          " data-js-target-list="IdentityCaptureAnimation.identifications">
-                      <picture class="
-            Picture
-            
-            
-            
-          ">
-
-
-
-
-
-                        <source srcset="Images/desk.png" type="image/webp">
-
-
-
-
-                        <img class="Picture__image " src="Images/desk.png" srcset="Images/desk.png" " alt="" loading="
-                          lazy" width="352" height="222">
+                    <div class="Card Card--shadowSmall IdentityCaptureIdentification IdentityCaptureAnimation__identification" data-js-target-list="IdentityCaptureAnimation.identifications">
+                      <picture class="Picture">
+                        <source srcset="" type="image/webp">
+                        <img class="Picture__image " src="" srcset="Images/desk.png" " alt="" loading="lazy" width="352" height="222">
                       </picture>
                     </div>
                   </div>
@@ -767,7 +697,7 @@
 
 
 
-    <div class="pricing">
+    <div class="verification">
       <div class="pricing__text">
         <h4><span class="green--mark">Qué incluye</span></h4>
         <h2>Gestiona las verificaciones de principio a fin</h2>
@@ -935,7 +865,7 @@
 
 
 
-    <div class="pricing">
+    <div class="subscription">
       <div class="pricing__text">
         <h4><span class="green--mark">Completamente integrado</span></h4>
         <h2>Basado en la red de Stripe</h2>
@@ -2000,16 +1930,21 @@
     var phoneSection = document.querySelector(".animated-cards-block");
     var checkIcon = document.createElement("i");
     var border = document.querySelector(".IdentityCaptureAnimation__detectionFrame");
+    var background = document.querySelector(".IdentityCaptureAnimation__background")
+ 
 
     window.addEventListener('scroll', function () {
       var rect = phoneSection.getBoundingClientRect();
       var windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      if (rect.top <= windowHeight && rect.bottom >= 0) {
+      if (rect.top <= windowHeight >= 0) {
         window.addEventListener('wheel', function (event) {
           if (event.deltaY > 0) {
             text.innerHTML = "Our lawyers will help you to get your georgian legal residency";
             border.style.border = "transparent";
+            border.style.border = "3px solid lightgray";
+            background.style.backgroundColor = "linear-gradient(90deg, rgba(200,204,200,1) 0%, rgba(255,255,255,1) 100%)"
           } else {
+          
             text.innerHTML = "Congratulations, you are now a legal resident in Georgia!";
             text.appendChild(checkIcon);
             text.lastElementChild.classList.add('fa-solid');
@@ -2017,6 +1952,9 @@
             text.lastElementChild.style.color = "#0fd20f";
             text.lastElementChild.style.padding = "3px";
             border.style.border = "3px solid #0fd20f";
+  
+            background.style.backgroundColor = "linear-gradient(90deg, rgba(15,210,15,1) 0%, rgba(240,246,252,1) 100%)"
+
             border.style.transition = "all 1s ease-in";
           }
         });
@@ -2030,5 +1968,4 @@
   <script src="JS/script.js"></script>
   <script src="JS/testimonials-main.js"></script>
 </body>
-
 </html>

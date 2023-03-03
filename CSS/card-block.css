@@ -34,23 +34,15 @@
     box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3);
   }
   .IdentityCaptureAnimation__camera {
-    --cameraWidth: calc(var(--identificationWidth) + var(--identificationPaddingHorizontal)*2);
-    --cameraHeight: calc(var(--identificationHeight) + var(--identificationPaddingVertical)*2);
+    Width: 401px;
+    height: 306px;
     position: relative;
     padding-bottom: calc(var(--cameraHeight)/var(--cameraWidth)*100%);
-  }
-  .IdentityCaptureAnimation__background::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    background: rgba(0,0,0,.5);
-    content: "";
-  }
-  .IdentityCaptureAnimation__background::after {
+    
+  } 
+
+
+  .IdentityCaptureAnimation__background {
 
     position: absolute;
     left: 0;
@@ -59,20 +51,10 @@
     height: 100%;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    background: rgba(0,0,0,.5);
-    content: "";
+    transition: all 2s;
 
 }
-.IdentityCaptureAnimation__background {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--cardBorderRadius) var(--cardBorderRadius) 0 0;
-    overflow: hidden;
-    -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
-  }
+
   .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {
     position: absolute;
     top: 0;
@@ -91,6 +73,10 @@
   }
   .IdentityCaptureAnimation:not([data-js-highlighting]) .IdentityCaptureAnimation__detectionFrame::after {
     opacity: 0;
+  }
+  .IdentityCaptureAnimation__detectionFrame::after {
+    border-color: #fff;
+    transition: opacity .25s;
   }
   .IdentityCaptureAnimation__detectionFrame::after {
     border-color: #15be53;
@@ -114,6 +100,7 @@
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
     z-index: 0;
+    border: 2px solid lightgray;
   }
   .IdentityCaptureAnimation__flash {
     position: absolute;

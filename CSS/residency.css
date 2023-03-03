@@ -7,7 +7,9 @@
     scale: 1.55;
     margin-top: 0em;
 }
-
+.Picture__image {
+    transition: all 2s ease-in;
+}
 .residency {
     background-color: #15be53;
     padding: 6px 12px 9px 16px;
