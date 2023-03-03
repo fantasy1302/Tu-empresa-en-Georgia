@@ -18,7 +18,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
 </head>
-<canvas class="canvas-item" id="gradient-canvas"></canvas>
 <body>
   <header class="globalNav noDropdownTransition">
     <div class="container-lg">
@@ -366,14 +365,16 @@
 
       </div>
     </div>
-  </header>
+</header>
   <div class="wrapper">
     <div class="main-hero mn">
+      <canvas class="canvas-item" id="gradient-canvas"></canvas>
       <div class="main-hero-section">
         <div class="main-info">
-          <h1>Tax Law and <br> Expat Services<br> in <span>Georgia</span></h1>
-          <h4>Tax | Legal | Accounting | Real Estate | Relocation</h4>
-          <p>Managed By Expats for Expats. With a Local Experts Who Understand Your Needs. We speak your language.</p>
+            <h1 class="hero-title">Tax Law and  Expat Services in Georgia</h1>
+            <h1 class="hero-title--overlay" data-attribute="overlay" aria-hidden="true"></h1>
+            <h4>Tax | Legal | Accounting | Real Estate | Relocation</h4>
+            <p>Managed By Expats for Expats. With a Local Experts Who Understand Your Needs. We speak your language.</p>
           <div class="hero-buttons"><button class="btn products">Products <svg class="HoverArrow" width="10" height="10"
                 viewBox="0 0 10 10" aria-hidden="true">
                 <g fill-rule="evenodd">
@@ -1543,6 +1544,22 @@
         </div>
     </footer>
   </div>
+<script>
+  const heroTitle = document.querySelector('.hero-title')
+  const heroTitleOverlay = document.querySelector('.hero-title--overlay')
+
+  heroTitleOverlay.innerText = heroTitle.textContent;
+</script>
+<script>
+  // Проверяем, является ли браузер Safari
+if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
+  // Находим блок, который нужно скрыть
+  var element = document.querySelector('.hero-title--overlay');
+  // Скрываем блок, применяя к нему стиль display: none;
+  element.style.display = 'none';
+}
+
+</script>
 <script src="main.js"></script>
 <script src="JS/globe-main.js"></script>
 <script src="JS/testimonials-main.js"></script>

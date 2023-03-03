@@ -128,6 +128,7 @@
   .IdentityCaptureAnimation__label {
     padding: 8px;
     text-align: center;
+    font-size: 13px;
   }
   .IdentityCaptureAnimation__picture.IdentityCaptureAnimationPicture {  
     background-size: 400px 1600px;
