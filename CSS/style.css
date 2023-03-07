@@ -39,21 +39,44 @@
   transform: translate(8px, 0);
   opacity: 1;
 }
-.hero-title {
-  font-size: 75px;
+.hero__title {
   position: relative;
+  line-height: 1.1;
+  z-index: 2;
+}
+.hero__title--primary {
+  font-size: 75px;
   mix-blend-mode: color-burn;
   -webkit-mix-blend-mode: color-burn;
   margin-bottom: 0.4em;
   margin-top: 2.6em;
-  line-height: 1.1;
-  z-index: 2;
   color: #3a3a3a;
 }
-.main-info {
+.hero__title--secondary {
+  font-size: 56px;
+  font-weight: 600;
+  margin-top: 1.25em;
+  line-height: 68px;
+  color-scheme: light;
+}
+.hero__info {
+  position: relative;
+  width: 50%;
+}
+.main__image {
+  max-width: 640px;
+  position: absolute;
+  margin-right: -8em;
+  padding-top: 6em;
+  z-index: 9999;
+}
+.hero__images {
   position: relative;
 }
-.hero-title--overlay {
+.hero__cards {
+  position: absolute;
+}
+.hero__title--overlay {
   margin-top: 2.6em;
   font-size: 75px;
   position: absolute;
@@ -97,8 +120,10 @@
 
 }
 
-.verification {
+.verification, .subscription {
   padding: 2em;
+  width: 1080px;
+  margin: 0 auto;
 }
 .testimonials__section--bg {
   opacity: 0.2;
@@ -266,7 +291,7 @@ body {
   opacity: 1;
 }
 
-.main-hero {
+.hero {
   z-index: 2;
   position: relative;
   display: flex;
@@ -274,18 +299,18 @@ body {
   justify-content: center;
 }
 
-.main-hero-section {
+.hero__section {
   width: 1080px;
   display: flex;
 }
 
-.f-column {
+.footer__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.column {
+.footer__links {
   max-width: 25%;
 }
 
@@ -308,13 +333,6 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
 }
 
-.main-image img {
-  max-width: 600px;
-  position: absolute;
-  margin-right: -8em;
-  padding-top: 6em;
-
-}
 
 .main-image {
   min-width: 474px;
@@ -326,10 +344,6 @@ p {
   line-height: 1.55556;
   font-size: 18px;
   margin-bottom: 25px;
-}
-
-.main-info p {
-  width: 65%;
 }
 
 .why-georgia-card-text {
@@ -454,9 +468,7 @@ header {
   fill: none;
   stroke: currentColor;
 }
-.subscription {
-  padding: 2em;
-}
+
 .vanta-canvas {
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   height: 876px;
@@ -535,7 +547,7 @@ button:hover .HoverArrow__tipPath {
   margin-bottom: 0;
 }
 
-.btn {
+.button {
   border-radius: 25px;
   border: none;
   display: flex;
@@ -545,10 +557,10 @@ button:hover .HoverArrow__tipPath {
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  
+  padding: 6px 12px 9px 16px;
 }
 
-.hero-buttons {
+.hero__buttons {
   display: flex;
 }
 
@@ -600,7 +612,7 @@ button:hover .HoverArrow__tipPath {
   display: flex;
 }
 
-.customers-btn {
+.customers-button {
   padding: 6px 12px 8px 16px;
   background-color: rgb(99, 91, 255);
   color: white;
@@ -653,7 +665,7 @@ button:hover .HoverArrow__tipPath {
   margin-left: 1em;
 }
 
-.pf-card-2>svg:nth-child(1)>use:nth-child(3) {
+.contact__feature>svg:nth-child(1)>use:nth-child(3) {
   opacity: 0.7;
 }
 
@@ -750,7 +762,7 @@ button:hover .HoverArrow__tipPath {
   background-color: #0048e5;
 }
 
-.f-ch-btn {
+.f-ch-button {
   background: rgb(2, 188, 245);
   color: white;
   padding: 8px 13px;
@@ -1043,11 +1055,11 @@ footer ul {
   display: flex;
   align-items: baseline;  
   flex-direction: column;
+  padding: 2em;
+  margin: 0 auto;
 }
 
-.products-features-text {
-  padding: 2em;
-}
+
 
 .products-features-body-text {
   color: rgb(66, 84, 102);
@@ -1141,12 +1153,12 @@ animation-timing-function: ease-in-out;
   width: 55%;
 }
 
-.started-btn {
+.started-button {
   color: rgb(99, 91, 255);
   background-color: transparent;
 }
 
-.ready-title {
+.contact__title-small {
   color: rgb(10, 37, 64);
   font-size: 15px;
   font-weight: 500;
@@ -1154,12 +1166,12 @@ animation-timing-function: ease-in-out;
   margin-top: 0;
 }
 
-.ready-text {
+.contact__text-small {
   font-size: 15px;
   margin-bottom: 0.6em;
 }
 
-.ready-mn-title {
+.contact__title {
   font-size: 40px;
 }
 
@@ -1167,7 +1179,7 @@ animation-timing-function: ease-in-out;
   width: 41px;
 }
 
-.pre-footer-container {
+.contact__container {
   width: 1080px;
   display: flex;
   justify-content: start;
@@ -1176,7 +1188,7 @@ animation-timing-function: ease-in-out;
   padding: 2em;
 }
 
-.pre-footer {
+.contact {
   display: flex;
   width: 100%;
   margin-bottom: 7em;
@@ -1186,7 +1198,7 @@ animation-timing-function: ease-in-out;
   justify-content: center;
 }
 
-.customers-card-btn {
+.customers-card-button {
   color: #635bff;
   padding: 0;
   font-size: 15px;
@@ -1194,20 +1206,16 @@ animation-timing-function: ease-in-out;
   background: transparent;
 }
 
-.pf-card-1 {
+.contact__feature {
   width: 20%;
 }
 
-.pf-card-2 {
-  width: 20%;
-}
-
-.pre-footer-btn-section {
+.contact__buttons {
   display: flex;
   gap: 1em;
 }
 
-.pre-footer-text {
+.contact__text {
   width: 40%;
 }
 
@@ -1222,23 +1230,24 @@ footer {
   padding-bottom: 0;
 }
 
-.f-column>div:nth-child(1)>p:nth-child(1)>svg:nth-child(1) {
+.footer__info>div:nth-child(1)>p:nth-child(1)>svg:nth-child(1) {
   padding-right: 8px;
 }
 
-.f-column>div:nth-child(1)>p:nth-child(2)>svg:nth-child(1) {
+.footer__info>div:nth-child(1)>p:nth-child(2)>svg:nth-child(1) {
   padding-right: 8px;
 }
 
-.footer-text {
+.footer__text {
   flex-direction: row;
   display: flex;
   width: 1080px;
   gap: 1em;
   justify-content: space-between;
+  padding: 2em;
 }
 
-.footer-title {
+.footer__title {
   font-weight: 425;
 }
 
@@ -1249,7 +1258,7 @@ footer li {
   font-size: 15px;
 }
 
-.footer-bg {
+.footer__bg {
   background: #f6f9fc;
   clip-path: polygon(0 14%, 100% 0, 100% 100%, 0 100%);
   z-index: -1;
@@ -1260,7 +1269,7 @@ footer li {
   margin-top: -9em;
 }
 
-.f-column p {
+.footer__info p {
   font-size: 15px;
 }
 
@@ -1317,34 +1326,34 @@ footer li {
   }
 }
 @media (max-width:1130px) {
-  .ba-main-hero-section {
+  .ba-hero__section {
       padding: 2em;
   }
   .ba-post-header-container {
       padding: 0 2em;
   }
-  .footer-text {
+  .footer__text {
       padding: 2em;
   }
 }
 @media (max-width:1080px) {
-  .footer-text,.pricing__section {
+  .footer__text,.pricing__section, .verification,.subscription {
       width: 100%;
 
   }
   .testimonials__section {
       margin: 2em;
   }
-  .pricing,.products-animated-section, .pre-footer-container {
+  .pricing,.products-animated-section, .contact__container {
       width: 100%;
   }
 
 }
 @media (max-width:1080px) {
-  .ba-main-hero-section {
+  .ba-hero__section {
     flex-direction: column;
   }
-  .ba-main-info {
+  .ba-hero__info {
     width: 100%;
   }
   .animated-cards-block {
@@ -1394,7 +1403,7 @@ footer li {
     height: 50%;
     mask-image: linear-gradient(to top, transparent 1%, black 60%);
   }
-.f-column {
+.footer__info {
   width: 100%;
 }
   * {
@@ -1666,7 +1675,7 @@ footer li {
     width: 100%;
   }
 
-  .footer-text {
+  .footer__text {
     flex-direction: row;
     display: flex;
     width: 100%;
@@ -1803,7 +1812,7 @@ footer li {
 .testimonials__section {
     margin: 0;
 }
-.ba-main-hero-section {
+.ba-hero__section {
     padding: 0em;
   }
 .animated-cards-block {
@@ -1815,7 +1824,9 @@ footer li {
 }
 
 .animated-image-woman img {
-    left: -15px;
+  left: -50px;
+  top: 99px;
+  
 }
 
 .animated-image-woman {
@@ -1910,7 +1921,7 @@ h2 {
     display: none;
   }
 
-  .ready-text {
+  .contact__text-small {
     width: 100%;
   }
 
@@ -1948,7 +1959,7 @@ h2 {
     display: none;
   }
 
-  .main-hero {
+  .hero {
     z-index: 1;
     position: relative;
     padding-left: 1rem;
@@ -1962,11 +1973,11 @@ h2 {
     color: black;
   }
 
-  .main-info h4 {
+  .hero__info h4 {
     font-size: 20px;
   }
 
-  .main-info p {
+  .hero__info p {
     width: 100%;
   }
 
@@ -1982,7 +1993,7 @@ h2 {
     line-height: 1.6;
   }
 
-  .hero-title, .hero-title--overlay {
+  .hero__title, .hero__title--overlay {
     font-size: 48px;
     margin-top: 4em;
   }
@@ -2003,7 +2014,7 @@ h2 {
     padding-top: 5px;
   }
 
-  .main-info {
+  .hero__info {
     margin-left: 1em;
   }
 
@@ -2011,7 +2022,7 @@ h2 {
     height: 1200px;
   }
 
-  .footer-text {
+  .footer__text {
     padding: 2em;
   }
 
@@ -2019,7 +2030,7 @@ h2 {
     display: none;
   }
 
-  .pre-footer {
+  .contact {
     display: flex;
     width: 100%;
     margin-bottom: 5em;
@@ -2028,20 +2039,19 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1em;
   }
 
-  .f-column svg {
+  .footer__info svg {
     width: 25px;
   }
 
-  .pre-footer-text {
+  .contact__text {
     width: 100%;
     margin-left: 0em;
   }
 
-  .pf-card-1,
-  .pf-card-2 {
+  .contact__feature,
+  .contact__feature {
     width: 100%;
   }
 
@@ -2099,7 +2109,7 @@ h2 {
     display: flex;
   }
 
-  .pre-footer-container {
+  .contact__container {
     width: 100%;
     display: flex;
     justify-content: start;

@@ -7,9 +7,7 @@
     scale: 1.55;
     margin-top: 0em;
 }
-.Picture__image {
-    transition: all 2s ease-in;
-}
+
 .residency {
     background-color: #15be53;
     padding: 6px 12px 9px 16px;
@@ -242,13 +240,14 @@ top: 105px;
 }
 
 .animated-video {
-    width: 300px;
-    border-radius: 24px;
+    width: 100%;
+    height: 100%;
 }
 
 .rounded {
     border-radius: 24px;
     overflow: hidden;
+    width: 300px;
 }
 
 .colorize i {

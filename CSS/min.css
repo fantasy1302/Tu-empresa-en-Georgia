@@ -9,7 +9,16 @@
     position: relative;
 }
 
-.ba-main-info h1 {
+.hero__title--co {
+    margin-top: 0;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 68px;
+    color: rgb(10, 37, 64);
+    color-scheme: light;
+    margin-top: 1.2em;
+}
+.hero__title--ba {
     font-size: 56px;
     font-weight: 600;
     margin-top: 1.25em;
@@ -17,7 +26,22 @@
     color: rgb(10, 37, 64);
     color-scheme: light;
 }
-
+.hero__title--re {
+    margin-top: 1.25em;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 68px;
+    color: rgb(10, 37, 64);
+    color-scheme: light;
+}
+.hero__title--ac {
+    margin-top: 0;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 68px;
+    color: rgb(10, 37, 64);
+    color-scheme: light;
+}
 .tbc-logo, .credo-logo, .liberty-logo, .credo-text,.LINE-1,.LINE-2,.LINE-3 {
     display: none;
 }
@@ -25,7 +49,7 @@
 /* .ba-main-image {
     margin-top: 6em;
 } */
-.ba-main-info {
+.hero__info--re {
     width: 50%;
 }
 .btn-test {
@@ -86,7 +110,7 @@ border-radius: 50%;
     opacity: 1.1;
 }
 
-.ba-main-image svg {
+.hero__image svg {
     width: 450px;
     animation: cardMovement 14.6s ease forwards;
     /* -webkit-animation-name: cardMovement;
@@ -100,7 +124,7 @@ border-radius: 50%;
     transition: transform 0.5s ease-in-out;
     animation-timing-function: ease-in-out;
 } 
-.ba-main-image img {
+.hero__image img {
     width: 400px;
     animation: cardMovement 14.6s ease forwards;
     /* -webkit-animation-name: cardMovement;

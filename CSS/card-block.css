@@ -126,10 +126,14 @@
       background-position: 38px center;
       background-size: 339px 1600px;
     }
-   
+    .IdentityCaptureAnimation__camera {
+      width: 100%;
+    }
     .animated-cards__desc {
       width: 100%;
     }
-  
+  .Picture__image  {
+    width: 305px;
+  }
   }
 

@@ -1,0 +1,227 @@
+#consultation-canvas {
+    --gradient-color-1: #90e0ff;
+    --gradient-color-2: #635bff;
+    height: 500px;
+    clip-path: polygon(0 54%, 100% 0, 100% 32%, 0 86%);
+    scale: 1.55;
+    margin-top: 0em;
+}
+.teal--color {
+    color: #1bd9e5;
+}
+.fill--teal {
+    fill: #1bd9e5;
+}
+.fill--violet {
+    fill: #635bff;
+}
+.violet--color {
+    color: #635bff;
+}
+.green--fill {
+    fill: #15be53;
+}
+.pill__teal {
+    background-color: #1bd9e5;
+    color: #111;
+}
+.pill__violet {
+    background-color: #635bff; 
+    color: #111;
+}
+
+.button--consultation {
+    background-color: #635bff;
+    color: #fff;
+}
+.button--consultation-transparent {
+    color: #635bff;
+    background-color: transparent;
+    padding: 0;
+}
+.button--consultation-card {
+    color: #fff;
+    background-color: transparent;
+}
+.post-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.post-header__container {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-top: 1em;
+    color: rgb(10, 37, 64);
+}
+
+.post-header__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+}
+.post-header__links {
+    gap: 1em;
+    display: flex;
+}
+.post-header__links a{
+    text-decoration: none;
+}
+
+.hero__section {
+    display: flex;
+}
+.hero__cards {
+}
+.hero__cards-row {
+    display: flex;
+    height: 390px;
+}
+.hero__card {
+    width: 250px;
+    height: 350px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero__card-header {
+    display: flex;
+    justify-content: space-around;
+    padding: .5em;
+    align-items: center;
+    vertical-align: center;
+}
+.hero__card-button {
+}
+.hero__card--green {
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(0,230,0,0.2), rgba(0,230,0,0.2)),
+    url(../Images/co_card_1.png);
+    position: relative;
+    top: 20px;
+}
+.hero__card--orange {
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
+    url(../Images/co_card_2.png);
+}
+.hero__card--blue{
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
+    url(../Images/co_card_3.png);
+    position: relative;
+    top: 38px;
+}
+.hero__card--lightblue{
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
+    url(../Images/co_card_4.png);
+}
+.hero__card--bluegray{
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
+    url(../Images/co_card_5.png);
+    position: relative;
+    top: -20px;
+}
+.hero__card--gray{
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
+    url(../Images/co_card_6.png);
+    position: relative;
+    top: 20px;
+}
+
+.hero__card-header--logo {
+    padding: 5px;
+}
+.form {
+    width: 100%;
+}
+.form__section {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+}
+.form__inputs {
+    display: flex;
+    flex-direction: column;
+}
+.form__label {
+    padding: 15px;
+    display: flex;
+    justify-content:space-between;
+    min-height: 2em;
+}
+.form__label-button {
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+}
+.form__label-button button{
+   width: 25%;
+}
+input ::placeholder {
+    color: red;
+}
+.form__text {
+    max-width: 50%;
+}
+.form__header {
+}
+.form__description {
+}
+.form__body {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.form__body input,select {
+    background: #f1f4f7;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    padding: 10px;
+}
+.form__feature-list {
+    list-style: none;
+}
+.form__feature-list li {
+    display: flex;
+}
+.instant-payouts {
+    width: 100%;
+}
+.instant-payouts__section {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+}
+.instant-payouts__text {
+    width: 50%;
+}
+.instant-payouts__images {
+    display: flex;
+}
+.instant-payouts__phone, .instant-payouts__lady {
+    width: 300px;
+    border-radius: 24px;
+    z-index: 999;
+}
+.instant-payouts__lady {
+    position: relative;
+    right: 50px;
+    top: 200px;
+    height: 400px;
+    width: 250px;
+    z-index: 0;
+}
