@@ -558,6 +558,7 @@ button:hover .HoverArrow__tipPath {
   font-weight: 500;
   cursor: pointer;
   padding: 6px 12px 9px 16px;
+  text-decoration: none;
 }
 
 .hero__buttons {

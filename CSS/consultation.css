@@ -18,6 +18,10 @@
 .violet--color {
     color: #635bff;
 }
+.link__violet--color{
+    color: #635bff;
+    text-decoration: none;
+}
 .green--fill {
     fill: #15be53;
 }
@@ -33,11 +37,13 @@
 .button--consultation {
     background-color: #635bff;
     color: #fff;
+    display: inline;
 }
 .button--consultation-transparent {
     color: #635bff;
     background-color: transparent;
     padding: 0;
+    display: inline;
 }
 .button--consultation-card {
     color: #fff;
@@ -101,43 +107,56 @@
 }
 .hero__card--green {
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(0,230,0,0.2), rgba(0,230,0,0.2)),
-    url(../Images/co_card_1.png);
+    background-image: linear-gradient(to top, rgba(19, 163, 19, 0.43), rgba(27, 177, 27, 0.37)), url(../Images/co_card_1.png);
     position: relative;
     top: 20px;
+}
+.hero__card--green:hover {
+    background-image: radial-gradient(circle, rgba(19, 163, 19, 0), rgba(27, 177, 27, 0.97)), url(../Images/co_card_1.png);
 }
 .hero__card--orange {
     background-size: cover;
     background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
     url(../Images/co_card_2.png);
 }
+.hero__card--orange:hover {
+    background-image: radial-gradient(circle, rgba(230, 0, 0, 0.21), rgba(230, 0, 0, 0.57)), url(../Images/co_card_2.png);
+}
 .hero__card--blue{
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
-    url(../Images/co_card_3.png);
+    background-image: linear-gradient(to top, rgba(0, 47, 230, 0.54), rgba(0, 90, 230, 0.2)), url(../Images/co_card_3.png);
     position: relative;
     top: 38px;
 }
+.hero__card--blue:hover {
+    background-image: radial-gradient(circle, rgba(0, 47, 230, 0.26), rgba(0, 90, 230, 0.2)), url(../Images/co_card_3.png);
+}
 .hero__card--lightblue{
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
-    url(../Images/co_card_4.png);
+    background-image: linear-gradient(to top, rgba(0, 230, 208, 0.2), rgba(0, 230, 198, 0.1)), url(../Images/co_card_4.png);
+}
+.hero__card--lightblue:hover {
+    background-image: radial-gradient(circle, rgba(0, 230, 208, 0.09), rgba(0, 230, 198, 0.7)), url(../Images/co_card_4.png);
 }
 .hero__card--bluegray{
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
-    url(../Images/co_card_5.png);
+    background-image: linear-gradient(to top, rgba(22, 128, 241, 0.2), rgba(175, 168, 168, 0.41)), url(../Images/co_card_5.png);
     position: relative;
     top: -20px;
 }
+.hero__card--bluegray:hover {
+    background-image: radial-gradient(circle, rgba(22, 128, 241, 0.2), rgba(175, 168, 168, 0.7)), url(../Images/co_card_5.png);
+}
 .hero__card--gray{
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(230,0,0,0.2), rgba(230,0,0,0.2)),
-    url(../Images/co_card_6.png);
+    background-image: linear-gradient(to top, rgba(182, 182, 182, 0.2), rgba(158, 154, 154, 0.41)), url(../Images/co_card_6.png);
     position: relative;
     top: 20px;
 }
 
+.hero__card--gray:hover {
+    background-image: radial-gradient(circle, rgba(182, 182, 182, 0.2), rgba(158, 154, 154, 0.9)), url(../Images/co_card_6.png);
+}
 .hero__card-header--logo {
     padding: 5px;
 }
@@ -193,6 +212,7 @@ input ::placeholder {
 }
 .form__feature-list {
     list-style: none;
+    margin-bottom: 2em;
 }
 .form__feature-list li {
     display: flex;
@@ -211,17 +231,143 @@ input ::placeholder {
 }
 .instant-payouts__images {
     display: flex;
+    padding: 4em;
+
 }
 .instant-payouts__phone, .instant-payouts__lady {
-    width: 300px;
     border-radius: 24px;
     z-index: 999;
+    height: 550px;
 }
 .instant-payouts__lady {
     position: relative;
     right: 50px;
-    top: 200px;
-    height: 400px;
-    width: 250px;
+    top: 250px;
+    height: 330px;
+    width: 227px;
     z-index: 0;
+}
+
+.testimonials-consultation {
+    width: 100%;
+}
+.testimonials-consultation__section {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 2em;
+}
+.testimonials-consultation__header {
+    display: flex;
+    flex-direction: column;
+}
+.testimonials-consultation__controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+.testimonials-consultation__body {
+    display: flex;
+    gap: 2em;
+    padding: 2em 0;
+}
+.testimonials-consultation__column {
+    padding: 1em 0;
+}
+.testimonials-consultation__column-header {
+}
+.testimonial-consultation__column-description {
+}
+.testimonials-consultation__slider {
+    position: relative;
+    background: #635bff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 408px;
+}
+.tesimonials-consultation__slider-bg {
+    opacity: 0.2;
+    position: absolute;
+    width: 100%;
+    mask-image: radial-gradient(circle, rgba(99,91,255,1) 0%, rgba(152,147,237,1) 100%);;
+    right: 0;
+    height: 100%;
+    border-radius: 0px 10px 0px 0px;
+    transition: all 0.9s ease;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.testimonials-consultation__slider-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    position: relative;
+
+}
+.UserLogo {
+}
+.variant--Flat {
+}
+.CustomersCaseStudyCard__logo {
+}
+.CustomersCaseStudyCard__icon {
+}
+.testimonials-consultation__slider-title {
+    color: #fff;
+    font-size: 26px;
+    line-height: 1.5;
+}
+.testimonial-consultation__slider-text {
+    padding: 2em;
+    position: relative;
+}
+.testimonial-consultation__slider-button {
+}
+
+.button--consultation-transparentSlider {
+    padding: 0;
+    color: #fff;
+    background: transparent;
+}
+.testimonial-consultation__products-list {
+    list-style-type: none;
+    padding: 0;
+}
+.testimonial-consultation__products-list img {
+    width: 30px;
+    transition: all 2s ease-in-out;
+}
+.testimonial-consultation__products-list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.testimonial-consultation__products-label {
+    font-weight: normal;
+    color: #435465;
+}
+@media (max-width:1080px) {
+    .testimonials-consultation__section {
+        width: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    .testimonials-consultation__body {
+
+        flex-direction: column;
+    }
+    .testimonials-consultation__slider {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .hero__section {
+        flex-direction: column;
+    }
 }
