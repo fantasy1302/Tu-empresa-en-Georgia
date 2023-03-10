@@ -79,6 +79,7 @@
 
 .hero__section {
     display: flex;
+    padding: 2em;
 }
 .hero__cards {
 }
@@ -350,8 +351,58 @@ input ::placeholder {
     font-weight: normal;
     color: #435465;
 }
+.countries {
+    width:100%;
+}
+.countries__section {
+    width:1080px;
+    margin:0 auto;
+    padding: 2em;
+}
+.countries__text {
+}
+.countries__header {
+}
+.countries__lists {
+    display: flex;
+    justify-content: start;
+    gap: 10em;
+}
+.countries__lists ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.countries__lists li{
+   padding: 10px;
+   font-weight: normal;
+}
+.countries__lists img{
+   margin-right: .5em;
+}
 @media (max-width:1080px) {
-    .testimonials-consultation__section {
+
+    .hero__section,.testimonials-consultation__section, .form__section, .countries__section, .instant-payouts__section, .testimonials-consultation__section {
+        width: 100%;
+        flex-direction: column;
+    }
+    .hero__info {
+        width: 100%;
+    }
+    .hero__cards {
+        transform: translateX(30%);
+        position: relative;
+    }
+    .instant-payouts__text {
+        width: 100%;
+    }
+    .instant-payouts__images {
+        justify-content: center;
+    }
+    .testimonials-consultation__body {
+        flex-direction: column;
+    }
+    .testimonials-consultation__slider {
         width: 100%;
     }
 }
