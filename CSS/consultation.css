@@ -18,6 +18,9 @@
 .violet--color {
     color: #635bff;
 }
+.violet--background {
+    background-color: #635bff;
+}
 .link__violet--color{
     color: #635bff;
     text-decoration: none;
@@ -175,10 +178,12 @@
     flex-direction: column;
 }
 .form__label {
-    padding: 15px;
+    padding: 6px;
     display: flex;
     justify-content:space-between;
     min-height: 2em;
+    font-size: 15px;
+    font-weight: 450;
 }
 .form__label-button {
     padding: 15px;
@@ -197,6 +202,7 @@ input ::placeholder {
 .form__header {
 }
 .form__description {
+    font-size: 14px;
 }
 .form__body {
     background-color: #fff;
@@ -204,12 +210,17 @@ input ::placeholder {
     border-radius: 8px;
     box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.form__body input {
+    width: 60%;
+}
 .form__body input,select {
     background: #f1f4f7;
     border: none;
     border-radius: 4px;
     width: 60%;
     padding: 10px;
+    color: #80808078;
+    font-weight: 400;
 }
 .form__feature-list {
     list-style: none;
@@ -421,4 +432,8 @@ input ::placeholder {
     .hero__section {
         flex-direction: column;
     }
+    .hero__cards {
+        transform: translateX(10%);
+        position: relative;
+      }
 }

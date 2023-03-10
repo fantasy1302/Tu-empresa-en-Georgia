@@ -845,7 +845,11 @@ button:hover .HoverArrow__tipPath {
   margin-right: 25px;
 }
 
-.why-georgia {}
+.why-georgia {
+  padding: 2em;
+  width: 1080px;
+  margin: 2em auto;
+}
 
 .customers-card-img {
   width: 60px;
@@ -2017,6 +2021,7 @@ h2 {
 
   .hero__info {
     margin-left: 1em;
+    width:100%;
   }
 
   #globe-canvas {
