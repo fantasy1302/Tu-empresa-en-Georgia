@@ -380,7 +380,7 @@
           <img src="Images/consultation.png" alt="" width="50">
           <span class="violet--color">Consultation</span>
         </div>
-        <div class="post-header__links">
+        <div class="post-header__text">
           <a href="#pricing" class="violet--color" aria-label="pricing">Pricing</a>
           <a href="#contact-us" class="violet--color" aria-label="contact us">Contact us</a>
         </div>
@@ -638,8 +638,98 @@
         </div>
       </div>
     </div>
+  
+    <div class="process">
+      <div class="process__section">
+        <span class="process__heading"><h1>Process heading</h1></span>
+        <div class="process__row">
+          <div class="process__img">
+              <div class="process__circle">
+                  1
+              </div>
+          </div>
+          <div class="process__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi illo ipsa culpa vitae repellat consequatur! Nam, esse? Recusandae dolorem laboriosam consectetur quam consequatur optio vel perferendis et voluptas suscipit?</p>
+          </div>
+        </div>
+        <div class="process__row">
+          <div class="process__text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi illo ipsa culpa vitae repellat consequatur! Nam, esse? Recusandae dolorem laboriosam consectetur quam consequatur optio vel perferendis et voluptas suscipit?</p>
+          </div>
+          <div class="process__img">
+            <div class="process__circle">
+                2
+            </div>
+        </div>
+        </div>
+        <div class="process__row">
+          <div class="process__img">
+            <div class="process__circle">
+                3
+            </div>
+        </div>
+        <div class="process__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi illo ipsa culpa vitae repellat consequatur! Nam, esse? Recusandae dolorem laboriosam consectetur quam consequatur optio vel perferendis et voluptas suscipit?</p>
+        </div>
+        </div>
+        <div class="process__buttons">
+          <button class="button button--consultation"> Contact us</button>
+        </div>
+      </div>  
+    </div>
 
 
+    <div class="faq">
+      <div class="faq__wrapper">
+        <div class="faq__block">
+      <div class="faq__section">
+        <button class="faq__question">¿Cuánto cuesta la consultoría online?</button>
+        <div class="faq__answer">
+          <p>La consultoría tiene un coste de 750ლ (aprox. 200€). Al hacer la reserva, por favor, no olvides introducir tus datos y/o los de tu empresa en el formulario para que podamos hacer la factura correctamente.</p>
+        </div>
+      </div>
+      <div class="faq__section">
+        <button class="faq__question">¿Tengo que pagar IVA?</button>
+        <div class="faq__answer">
+          <p>Únicamente si ya resides en Georgia deberemos de incluir el 18% de IVA del país. Si resides fuera de Georgia, no se aplica IVA.</p>
+        </div>
+      </div>
+      <div class="faq__section">
+        <button class="faq__question">¿Qué fechas hay disponibles para mi consultoría online?</button>
+        <div class="faq__answer">
+          <p>En el momento que realices el pago de la consultoría online recibirás una invitación para reservar tu fecha que más te convenga. Podrás escoger entre todas las disponibles que tengamos en ese momento.</p>
+        </div>
+      </div>
+      <div class="faq__section">
+        <button class="faq__question">¿Qué puedo preguntar en la consultoría online?</button>
+        <div class="faq__answer">
+          <p>Durante la sesión de consultoría podrás plantear todo tipo de cuestiones relacionadas con:</p>
+            <ul>
+            <li>Dudas Limited Liability Company vs Individual Entrepreneur y cuál es más adecuado en tu caso específico.</li>
+            <li>Constitución de empresa y redacción de estatutos.</li>
+            <li>Impuestos y fiscalidad.</li>
+            <li>Legislación de Georgia.</li>
+            <li>Estilo y coste de vida en Georgia.</li>
+            <li>Inversión en Georgia.</li>
+          </ul>
+        
+        </div>
+      </div>
+      <div class="faq__section">
+        <button class="faq__question">¿Puedo grabar la sesión?</button>
+        <div class="faq__answer">
+          <p>No, para proteger tu privacidad y la nuestra y respetar la ley de protección de datos GDPR no es posible grabar la sesión. Para más información por favor lee nuestra política de privacidad.</p>
+        </div>
+      </div>
+      <div class="faq__section">
+        <button class="faq__question">¿Y si se me olvida preguntar algo?</button>
+        <div class="faq__answer">
+          <p>No hay de qué precouparse, tras la consultoría siempre tendrás disponible a nuestro equipo para que te resuelva cualquier duda adicional o te ponga en contacto con tu consultor dedicado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
 
     <div class="form" id="form">
       <div class="form__section">
@@ -688,23 +778,23 @@
         <div class="form__body">
           <form action="" class="form__inputs">
             <label class="form__label" for=""> Name
-              <input type="text" name="" placeholder="Elena" id="">
+              <input class="form__label--username" type="text" name="" placeholder="Elena" id="" required>
             </label>
-            <label class="form__label" for="" placeholder="Diaz"> Lastname
-              <input type="text" name="" placeholder="Diaz" id="">
+            <label  class="form__label" for="" placeholder="Diaz"> Lastname
+              <input class="form__label--usersurname" type="text" name="" placeholder="Diaz" id="" required>
             </label>
 
             <label class="form__label" for=""> Email
-              <input type="email" name="" placeholder="elena@mail.com" id="">
+              <input class="form__label--useremail" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" type="email" name="" placeholder="elena@mail.com" id="" required>
             </label>
             <label class="form__label" for=""> Phone number
-              <input type="tel" name="" placeholder="+995 511 279 312" id="">
+              <input class="form__label--userphone" type="tel" name=""  placeholder="+995 511 279 312" id="" max="12" required>
             </label>
             <label class="form__label" for=""> Country
-              <input type="text" name="" placeholder="Spain" id="">
+              <input class="form__label--usercountry" type="text" name="" placeholder="Spain" id="" required>
             </label>
             <label class="form__label" for=""> Adress
-              <input type="text" name="" placeholder="Tbilisi, Georgia" id="">
+              <input class="form__label--useraddress" type="text" name="" placeholder="Tbilisi, Georgia" id="" required>
             </label>
             <label class="form__label" for=""> In which language do  you want to make the consultation
               <select name="" id="">
@@ -714,13 +804,16 @@
                 <option value="">Georgian</option>
               </select>
             </label>
-            <label class="form__label-button" for=""><button class="button button--consultation">Send <svg
-                  class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+            <label class="form__label-button" for="">
+              <button class="button button--consultation" type="submit">Send 
+                <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
                   <g fill-rule="evenodd">
                     <path class="HoverArrow__linePath" d="M0 5h7"></path>
                     <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
                   </g>
-                </svg></button></label>
+                </svg>
+              </button>
+            </label>
           </form>
         </div>
       </div>
@@ -1704,6 +1797,23 @@
       });
     };
   </script>
+  <script>
+    const faqQuestions = document.querySelectorAll('.faq__question');
+    faqQuestions[0].style.borderRadius = "8px 8px 0 0"
+    faqQuestions[5].style.borderRadius = "0 0  8px 8px"
+    faqQuestions.forEach((question) => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (question.classList.contains('active')) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+          answer.style.maxHeight = 0;
+        }
+      });
+    });
+  </script>
+  <script src="JS/form.js"></script>
   <script src="JS/script.js"></script>
   <script src="JS/testimonials_consultation.js"></script>
 </body>

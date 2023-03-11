@@ -11,7 +11,7 @@
 
 .hero__title--co {
     margin-top: 0;
-    font-size: 56px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 68px;
     color: rgb(10, 37, 64);
@@ -19,7 +19,7 @@
     margin-top: 1.2em;
 }
 .hero__title--ba {
-    font-size: 56px;
+    font-size: 34px;
     font-weight: 600;
     margin-top: 1.25em;
     line-height: 68px;
@@ -28,7 +28,7 @@
 }
 .hero__title--re {
     margin-top: 1.25em;
-    font-size: 56px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 68px;
     color: rgb(10, 37, 64);
@@ -36,7 +36,7 @@
 }
 .hero__title--ac {
     margin-top: 0;
-    font-size: 56px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 68px;
     color: rgb(10, 37, 64);
@@ -69,41 +69,11 @@ border-radius: 50%;
     margin-top: 0em;
 }
 
-.ba-post-header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-.ba-post-header-container {
-    width: 1080px;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    margin-top: 1em;
-    color: rgb(10, 37, 64);
-}
-
-.ba-post-header-text {
-    gap: 1em;
-    display: flex;
-
-}
-
-.ba-post-header-container a {
-    text-decoration: none;
-    color: rgb(0, 115, 230);
-    font-weight: 500;
-}
 .sign-in-ba {
     background-color: rgb(0, 115, 230);
 }
-.ba-post-header-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8em;
-}
+
 
 .logo {
     width: 42px;
@@ -838,13 +808,7 @@ table td {
         margin-left: 1em;
     }
 
-    .ba-post-header-text {
-        gap: 0.5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 13px;
-    }
+  
 
     .bg-height-cards {
         height: 100%;
@@ -875,10 +839,7 @@ table td {
         width: 100%;
     }
 
-    .ba-post-header-container {
-        padding-left: 1em;
-        padding-right: 2em;
-    }
+  
 
     body {
         background-color: white;

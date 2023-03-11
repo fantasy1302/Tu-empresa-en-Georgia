@@ -9,6 +9,15 @@
   --fill-color-lightGreen:#1ef5e9;
   --fill-color-Green:#01d925;
   --fill-color-White:#fff;
+  --blue-color:rgb(0, 115, 230);
+  --green-color:rgb(21, 190, 83);
+}
+
+.blue--color {
+  color:var(--blue-color);
+}
+.green--color {
+  color: var(--green-color);
 }
 .fill-lightGreen {
   fill: var(--fill-color-lightGreen);
@@ -290,7 +299,36 @@ body {
   width: 35px;
   opacity: 1;
 }
+.post-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
+.post-header__container {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-top: 1em;
+  color: rgb(10, 37, 64);
+}
+
+.post-header__text {
+  gap: 1em;
+  display: flex;
+
+}
+.post-header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+}
+.post-header__container a {
+  text-decoration: none;
+  font-weight: 500;
+}
 .hero {
   z-index: 2;
   position: relative;
@@ -302,6 +340,7 @@ body {
 .hero__section {
   width: 1080px;
   display: flex;
+  padding: 2em;
 }
 
 .footer__info {
@@ -1403,11 +1442,28 @@ footer li {
   .main-image {
     display: none;
   }
+  .hero__cards-row { 
+    position: absolute;
+  }
+  .hero__cards-row:nth-of-type(2) {
+    display: none;
+  }
+  .post-header__text {
+    gap: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
   .testimonials__section--bg {
     width: 100%;
     height: 50%;
     mask-image: linear-gradient(to top, transparent 1%, black 60%);
   }
+  .post-header__container {
+    padding-left: 1em;
+    padding-right: 2em;
+}
 .footer__info {
   width: 100%;
 }
@@ -1967,9 +2023,8 @@ h2 {
   .hero {
     z-index: 1;
     position: relative;
-    padding-left: 1rem;
     display: flex;
-    padding-right: 1rem;
+
   }
 
   h2 {
@@ -1998,10 +2053,7 @@ h2 {
     line-height: 1.6;
   }
 
-  .hero__title, .hero__title--overlay {
-    font-size: 48px;
-    margin-top: 4em;
-  }
+ 
 
   #gradient-canvas {
     overflow: hidden;
@@ -2020,7 +2072,6 @@ h2 {
   }
 
   .hero__info {
-    margin-left: 1em;
     width:100%;
   }
 
@@ -2147,6 +2198,14 @@ h2 {
   #residency-canvas {
     clip-path: polygon(0 43%, 100% 27%, 100% 57%, 0 73%);
     margin-top: 0;
+  }
+  .hero__section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero__title--primary {
+    font-size: 48px;
+    margin-top: 4em;
   }
 }
 /* ##Device = Desktops

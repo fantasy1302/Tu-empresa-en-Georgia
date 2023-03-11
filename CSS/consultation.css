@@ -52,33 +52,8 @@
     color: #fff;
     background-color: transparent;
 }
-.post-header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.post-header__container {
-    width: 1080px;
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    margin-top: 1em;
-    color: rgb(10, 37, 64);
-}
 
-.post-header__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8em;
-}
-.post-header__links {
-    gap: 1em;
-    display: flex;
-}
-.post-header__links a{
-    text-decoration: none;
-}
+
 
 .hero__section {
     display: flex;
@@ -193,9 +168,14 @@
 .form__label-button button{
    width: 25%;
 }
-input ::placeholder {
-    color: red;
-}
+
+input:required:valid {
+    border-color: green;
+  }
+
+  input:required:valid {
+    border-color: tomato;
+  }
 .form__text {
     max-width: 50%;
 }
@@ -212,6 +192,9 @@ input ::placeholder {
 }
 .form__body input {
     width: 60%;
+}
+input:checked {
+    color: #111;
 }
 .form__body input,select {
     background: #f1f4f7;
@@ -391,6 +374,105 @@ input ::placeholder {
 .countries__lists img{
    margin-right: .5em;
 }
+.faq__question {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.5s ease;
+  }
+
+  .faq__answer {
+    background-color: #fff;
+    color: #333;
+    overflow: hidden;
+    padding: 0px;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+  }
+  .faq {
+    width: 100%;
+  }
+  .faq__wrapper {
+    width: 900px;
+    margin: 0 auto; 
+    padding: 2em;
+  }
+  .faq__block {
+
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+  }
+  .faq__answer p {
+    margin: 0;
+    padding: 18px 0 18px 18px;
+  }
+
+  .faq__question.active, .faq__question:hover {
+    background-color: #635bff;
+    border-radius: 0;
+    color: #fff;
+  }
+  .faq__answer:last-child {
+    border-radius: 0 0  8px 8px;
+  }
+
+  .faq__question.active + .faq__answer {
+    max-height: 500px;
+  }
+  .process {
+    width: 100%;
+}
+.process__text {
+    width: 30vw;
+}
+.process__circle {
+    width: 200px;
+height: 200px;
+border: 2px #635bff solid;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #635bff;
+font-size: 93px;
+}
+.process__section {
+    width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+}
+.process__row:nth-of-type(1) {
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+}
+.process__row:nth-of-type(2) {
+    display: flex;
+    justify-content: end;
+    gap: 2em;
+}
+.process__row:nth-of-type(3) {
+    display: flex;
+    justify-content: start;
+    gap: 2em;
+}
+.process__img {
+}
+.process__buttons{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+.process__heading {
+    text-align: center;
+}
 @media (max-width:1080px) {
 
     .hero__section,.testimonials-consultation__section, .form__section, .countries__section, .instant-payouts__section, .testimonials-consultation__section {
@@ -409,6 +491,8 @@ input ::placeholder {
     }
     .instant-payouts__images {
         justify-content: center;
+        scale: 0.7;
+        padding: 10px;
     }
     .testimonials-consultation__body {
         flex-direction: column;
@@ -435,5 +519,37 @@ input ::placeholder {
     .hero__cards {
         transform: translateX(10%);
         position: relative;
+      }
+      .testimonials-consultation__controls {
+        flex-wrap: wrap;
+      }
+      .process__section {
+        width: 100%;
+      }
+      .process__row {
+        flex-direction: column;
+      }
+      .process__text { 
+        width: 100%;
+      }
+      .faq__wrapper { 
+
+        width:100%;
+      }
+      .form__label-button {
+        justify-content: center;
+      }
+      .form__label-button button {
+        width: 100%;
+        margin: 2em;
+      }
+      .form__text { 
+        max-width: 100%;
+      }
+      .countries__lists {
+        gap: 2em;
+      }
+      .process__text:nth-of-type(1) {
+        order: 2;
       }
 }
