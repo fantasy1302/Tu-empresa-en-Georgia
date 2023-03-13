@@ -11,6 +11,7 @@
   --fill-color-White:#fff;
   --blue-color:rgb(0, 115, 230);
   --green-color:rgb(21, 190, 83);
+  --paragraph-fontSize: 18px;
 }
 
 .blue--color {
@@ -378,11 +379,14 @@ body {
 }
 
 p {
-  color: #435465;
-  font-weight: normal;
+  color: rgb(66, 84, 102);
+  font-weight: 400;
   line-height: 1.55556;
-  font-size: 18px;
+  font-size: var(--paragraph-fontSize);
   margin-bottom: 25px;
+  color-scheme: light only;
+  letter-spacing: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .why-georgia-card-text {
@@ -390,6 +394,7 @@ p {
   font-weight: normal;
   line-height: 1.6;
   font-size: 15px;
+  
 }
 
 /* h1 {
@@ -422,6 +427,7 @@ h2 {
   width: 63%;
   line-height: 68px;
   margin-bottom: 0.25em;
+  margin-top: .5em;
 }
 
 .line {
@@ -575,7 +581,7 @@ button:hover .HoverArrow__tipPath {
 
 .why-georgia-preheader {
   color: rgb(0, 212, 255);
-  font-size: 18px;
+  font-size: var(--paragraph-fontSize);
 }
 
 .why-georgia-card-header {
@@ -663,7 +669,7 @@ button:hover .HoverArrow__tipPath {
   width: 65%;
   padding-bottom: 1em;
   line-height: 1.5555555;
-  font-size: 18px;
+  font-size: var(--paragraph-fontSize);
   color: #435465;
 }
 
@@ -1078,7 +1084,6 @@ footer ul {
   display: flex;
   max-width: 1080px;
   text-align: left;
-  padding: 0 1em;
 }
 
 .products-features-card {
@@ -1107,7 +1112,7 @@ footer ul {
 
 .products-features-body-text {
   color: rgb(66, 84, 102);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
 }
 
@@ -1200,6 +1205,7 @@ animation-timing-function: ease-in-out;
 .started-button {
   color: rgb(99, 91, 255);
   background-color: transparent;
+  padding: 0;
 }
 
 .contact__title-small {
@@ -1230,6 +1236,7 @@ animation-timing-function: ease-in-out;
   gap: 4em;
   position: relative;
   padding: 2em;
+  align-items: center;
 }
 
 .contact {
@@ -2036,7 +2043,9 @@ h2 {
   .hero__info h4 {
     font-size: 20px;
   }
-
+  h4 {
+    font-size: var(--paragraph-fontSize);
+  }
   .hero__info p {
     width: 100%;
   }
@@ -2180,6 +2189,7 @@ h2 {
   
   .products-features-sectiion {
     margin-left: 0;
+    width: 100%;
   }
   .line {
     height: 40px;

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="CSS/residency.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/card-block.css">
-  <link rel="stylesheet" href="CSS/consultation.css">
+ 
   <script src="https://kit.fontawesome.com/976373c9a5.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
     integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
@@ -19,6 +19,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum">
   <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link rel="stylesheet" href="CSS/consultation.css">
+
 </head>
 
 <body>
@@ -649,12 +654,12 @@
               </div>
           </div>
           <div class="process__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi illo ipsa culpa vitae repellat consequatur! Nam, esse? Recusandae dolorem laboriosam consectetur quam consequatur optio vel perferendis et voluptas suscipit?</p>
+            <p>Rellena el formulario de reserva haciendo click en el botón «Reservar sesión online». Luego, te enviaremos un mail de recepción y para hacer efectivo el pago de la sesión online que tiene un coste de 200 €.</p>
           </div>
         </div>
         <div class="process__row">
           <div class="process__text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi illo ipsa culpa vitae repellat consequatur! Nam, esse? Recusandae dolorem laboriosam consectetur quam consequatur optio vel perferendis et voluptas suscipit?</p>
+            <p>Una vez hecho el pago podrás escoger una de las fechas disponibles del calendario online que se abrirá inmediatamente después.</p>
           </div>
           <div class="process__img">
             <div class="process__circle">
@@ -669,11 +674,18 @@
             </div>
         </div>
         <div class="process__text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi illo ipsa culpa vitae repellat consequatur! Nam, esse? Recusandae dolorem laboriosam consectetur quam consequatur optio vel perferendis et voluptas suscipit?</p>
+          <p>Te enviaremos un correo confirmando tu reserva y el enlace para conectarte a la sesión online el día que has escogido. Necesitaremos una breve presentación de tu empresa y las principales preguntas que vas a realizar en la sesión.</p>
         </div>
         </div>
         <div class="process__buttons">
-          <button class="button button--consultation"> Contact us</button>
+          <button class="button button--consultation">Contact us
+            <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+            <g fill-rule="evenodd">
+              <path class="HoverArrow__linePath" d="M0 5h7"></path>
+              <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+            </g>
+          </svg>
+        </button>
         </div>
       </div>  
     </div>
@@ -683,46 +695,46 @@
       <div class="faq__wrapper">
         <div class="faq__block">
       <div class="faq__section">
-        <button class="faq__question">¿Cuánto cuesta la consultoría online?</button>
+       <button class="faq__question">¿Cuánto cuesta la consultoría online? <i id="" data-arrow class="fa-solid fa-angle-left"></i></button>
         <div class="faq__answer">
           <p>La consultoría tiene un coste de 750ლ (aprox. 200€). Al hacer la reserva, por favor, no olvides introducir tus datos y/o los de tu empresa en el formulario para que podamos hacer la factura correctamente.</p>
         </div>
       </div>
       <div class="faq__section">
-        <button class="faq__question">¿Tengo que pagar IVA?</button>
+        <button class="faq__question">¿Tengo que pagar IVA? <i id=""  data-arrow  class="fa-solid fa-angle-left"></i></button>
         <div class="faq__answer">
           <p>Únicamente si ya resides en Georgia deberemos de incluir el 18% de IVA del país. Si resides fuera de Georgia, no se aplica IVA.</p>
         </div>
       </div>
       <div class="faq__section">
-        <button class="faq__question">¿Qué fechas hay disponibles para mi consultoría online?</button>
+        <button class="faq__question">¿Qué fechas hay disponibles para mi consultoría online? <i id="faq__arrow" class="fa-solid fa-angle-left"></i></button>
         <div class="faq__answer">
           <p>En el momento que realices el pago de la consultoría online recibirás una invitación para reservar tu fecha que más te convenga. Podrás escoger entre todas las disponibles que tengamos en ese momento.</p>
         </div>
       </div>
       <div class="faq__section">
-        <button class="faq__question">¿Qué puedo preguntar en la consultoría online?</button>
+        <button class="faq__question">¿Qué puedo preguntar en la consultoría online? <i id="faq__arrow" class="fa-solid fa-angle-left"></i></button>
         <div class="faq__answer">
           <p>Durante la sesión de consultoría podrás plantear todo tipo de cuestiones relacionadas con:</p>
-            <ul>
+            <ol>
             <li>Dudas Limited Liability Company vs Individual Entrepreneur y cuál es más adecuado en tu caso específico.</li>
             <li>Constitución de empresa y redacción de estatutos.</li>
             <li>Impuestos y fiscalidad.</li>
             <li>Legislación de Georgia.</li>
             <li>Estilo y coste de vida en Georgia.</li>
             <li>Inversión en Georgia.</li>
-          </ul>
+          </ol>
         
         </div>
       </div>
       <div class="faq__section">
-        <button class="faq__question">¿Puedo grabar la sesión?</button>
+        <button class="faq__question">¿Puedo grabar la sesión? <i id="faq__arrow" class="fa-solid fa-angle-left"></i></button>
         <div class="faq__answer">
           <p>No, para proteger tu privacidad y la nuestra y respetar la ley de protección de datos GDPR no es posible grabar la sesión. Para más información por favor lee nuestra política de privacidad.</p>
         </div>
       </div>
       <div class="faq__section">
-        <button class="faq__question">¿Y si se me olvida preguntar algo?</button>
+        <button class="faq__question">¿Y si se me olvida preguntar algo? <i id="faq__arrow" class="fa-solid fa-angle-left"></i></button>
         <div class="faq__answer">
           <p>No hay de qué precouparse, tras la consultoría siempre tendrás disponible a nuestro equipo para que te resuelva cualquier duda adicional o te ponga en contacto con tu consultor dedicado.</p>
         </div>
@@ -788,7 +800,11 @@
               <input class="form__label--useremail" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" type="email" name="" placeholder="elena@mail.com" id="" required>
             </label>
             <label class="form__label" for=""> Phone number
-              <input class="form__label--userphone" type="tel" name=""  placeholder="+995 511 279 312" id="" max="12" required>
+ 
+              <div style="width: 64%;">
+              
+              <input class="form__label--userphone" type="tel" name=""  placeholder=""  id="phone" max="" required>
+            </div>
             </label>
             <label class="form__label" for=""> Country
               <input class="form__label--usercountry" type="text" name="" placeholder="Spain" id="" required>
@@ -797,12 +813,19 @@
               <input class="form__label--useraddress" type="text" name="" placeholder="Tbilisi, Georgia" id="" required>
             </label>
             <label class="form__label" for=""> In which language do  you want to make the consultation
-              <select name="" id="">
+              <select name="" class="form__label-lang" id="">
                 <option value="">Spanish</option>
                 <option value="">English</option>
                 <option value="">Russian</option>
                 <option value="">Georgian</option>
               </select>
+            </label>
+            <label class="form__label" for="">Give us extra information for the consultation</label>
+            <textarea name="" id="" cols="30" rows="5">
+
+            </textarea>
+            <label class="form__label"  for="">
+              When you fill this form you will be automatically redirected to the payment process. After the payment you will be able to choose and book the appointment for our consultation.
             </label>
             <label class="form__label-button" for="">
               <button class="button button--consultation" type="submit">Send 
@@ -1798,21 +1821,42 @@
     };
   </script>
   <script>
-    const faqQuestions = document.querySelectorAll('.faq__question');
-    faqQuestions[0].style.borderRadius = "8px 8px 0 0"
-    faqQuestions[5].style.borderRadius = "0 0  8px 8px"
-    faqQuestions.forEach((question) => {
-      question.addEventListener('click', () => {
-        question.classList.toggle('active');
-        const answer = question.nextElementSibling;
-        if (question.classList.contains('active')) {
-          answer.style.maxHeight = answer.scrollHeight + 'px';
-        } else {
-          answer.style.maxHeight = 0;
-        }
-      });
-    });
+const faqQuestions = document.querySelectorAll('.faq__question');
+const arrows = document.querySelectorAll('.fa-solid.fa-angle-left');
+
+faqQuestions[0].style.borderRadius = "8px 8px 0 0";
+faqQuestions[5].style.borderRadius = "0 0 8px 8px";
+
+faqQuestions.forEach((question, index) => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('active');
+    const answer = question.nextElementSibling;
+    if (question.classList.contains('active')) {
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      arrows[index].style.transform = "rotate(-90deg)";
+    } else {
+      answer.style.maxHeight = 0;
+      arrows[index].style.transform = "rotate(0deg)";
+    }
+  });
+});
+
   </script>
+<script>
+  
+  var input = document.querySelector("#phone");
+  var initialCountry = ['ge'];
+
+var iti = window.intlTelInput(input, {
+  separateDialCode:true,
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
+  initialCountry: initialCountry[0],
+});
+
+// store the instance variable so we can access it in the console e.g. window.iti.getNumber()
+window.iti = iti;
+</script>
+
   <script src="JS/form.js"></script>
   <script src="JS/script.js"></script>
   <script src="JS/testimonials_consultation.js"></script>

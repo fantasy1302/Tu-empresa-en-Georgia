@@ -6,14 +6,21 @@
     scale: 1.55;
     margin-top: 0em;
 }
+:root {
+    --paragraph-fontSize: 18px;
+}
 .teal--color {
     color: #1bd9e5;
 }
+
 .fill--teal {
     fill: #1bd9e5;
 }
 .fill--violet {
     fill: #635bff;
+}
+.iti__country-list {
+    max-width: 306px;
 }
 .violet--color {
     color: #635bff;
@@ -74,6 +81,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+input[type="tel"]{
+    width: 100%;
+}
+#phone, .iti {
+    width: 100%;
 }
 .hero__card-header {
     display: flex;
@@ -142,6 +156,17 @@
 .form {
     width: 100%;
 }
+form textarea {
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(230, 232, 234);
+    margin: 6px;
+    resize: none;
+    padding: 10px;
+}
+.form__label:nth-of-type(8) {
+    margin-bottom: 0px;
+}
 .form__section {
     width: 1080px;
     margin: 0 auto;
@@ -157,8 +182,20 @@
     display: flex;
     justify-content:space-between;
     min-height: 2em;
+
+
+    color: #000;
+
+  font-weight: 500;
+  line-height: 1.55556;
+
+  margin-bottom: 5px;
+  color-scheme: light only;
+  letter-spacing: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iti__selected-dial-code {
     font-size: 15px;
-    font-weight: 450;
 }
 .form__label-button {
     padding: 15px;
@@ -182,16 +219,22 @@ input:required:valid {
 .form__header {
 }
 .form__description {
-    font-size: 14px;
+    font-size: var(--paragraph-fontSize);
+    color:rgb(10, 37, 64);
 }
 .form__body {
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 50%;
 }
 .form__body input {
     width: 60%;
+}
+
+h4 {
+    font-size: 18px;
 }
 input:checked {
     color: #111;
@@ -204,10 +247,12 @@ input:checked {
     padding: 10px;
     color: #80808078;
     font-weight: 400;
+    font-size: 15px;
 }
 .form__feature-list {
     list-style: none;
     margin-bottom: 2em;
+    padding: 0;
 }
 .form__feature-list li {
     display: flex;
@@ -385,8 +430,10 @@ input:checked {
     outline: none;
     font-size: 18px;
     transition: background-color 0.5s ease;
+    display: flex;
+    justify-content: space-between;
   }
-
+  
   .faq__answer {
     background-color: #fff;
     color: #333;
@@ -412,6 +459,17 @@ input:checked {
   .faq__answer p {
     margin: 0;
     padding: 18px 0 18px 18px;
+    font-size: var(--paragraph-fontSize);
+  }
+  .faq__answer  li {
+    color: rgb(66, 84, 102);
+    font-weight: 400;
+    line-height: 1.55556;
+    font-size: var(--paragraph-fontSize);
+    margin-bottom: 25px;
+    color-scheme: light only;
+    letter-spacing: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .faq__question.active, .faq__question:hover {
@@ -487,7 +545,7 @@ font-size: 93px;
         position: relative;
     }
     .instant-payouts__text {
-        width: 100%;
+        width: 90vw;
     }
     .instant-payouts__images {
         justify-content: center;
@@ -498,7 +556,19 @@ font-size: 93px;
         flex-direction: column;
     }
     .testimonials-consultation__slider {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .countries__lists {
+        max-width: 90%;
+    }
+    .form__text {
+        max-width: 100%;
+      }
+    .form__body {
+        width: 80%;
+        position: relative;
+        margin: 0 auto;
     }
 }
 
@@ -515,6 +585,12 @@ font-size: 93px;
 @media (max-width:600px) {
     .hero__section {
         flex-direction: column;
+    }
+    .iti {
+        width: 60%;
+    }
+    .iti__country-list {
+        width: 210px;
     }
     .hero__cards {
         transform: translateX(10%);
@@ -539,6 +615,12 @@ font-size: 93px;
       .form__label-button {
         justify-content: center;
       }
+      .form__label { 
+        font-size: 15px;
+      }
+      .form__label select {
+        margin-left: 6px;
+      }
       .form__label-button button {
         width: 100%;
         margin: 2em;
@@ -548,6 +630,9 @@ font-size: 93px;
       }
       .countries__lists {
         gap: 2em;
+      }
+      .form__body {
+        width: 100%;
       }
       .process__text:nth-of-type(1) {
         order: 2;
