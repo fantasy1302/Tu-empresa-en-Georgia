@@ -617,7 +617,12 @@ select {
     gap: 2em;
 }
 
-.process__img {}
+.process__img {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .process__buttons {
     display: flex;
