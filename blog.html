@@ -15,7 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js"
     integrity="sha512-cfeQlKIIaFDUyrmXLF3uv1DSprgNRSSptQF6lyPPmsnXhR2M8qtQ4B6pMQJE3BePiGHRefNCVO4u5/FUSzMkbQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>Consultation</title>
+  <title>Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum">
   <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
@@ -23,7 +23,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
   <link rel="stylesheet" href="CSS/consultation.css">
-  <script src="https://unpkg.com/intl-tel-input-search@1.1.0/dist/intlTelInputSearch.min.js"></script>
 
 </head>
 
@@ -805,8 +804,6 @@
               <div style="width: 64%;">
               
               <input class="form__label--userphone" type="tel" name=""  placeholder=""  id="phone" max="" required>
-     
-            
             </div>
             </label>
             <label class="form__label" for=""> Country
@@ -1616,6 +1613,39 @@
         </div>
       </div>
     </div>
+
+    <div class="follow-channel">
+        <div class="follow-channel__section">
+          <div class="follow-channel__texts">
+            <h3>Follow our youtube channel</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam risus urna, gravida eget euismod ut, ornare
+              nec massa. Suspendisse condimentum velit sit amet placerat euismod. Etiam hendrerit iaculis aliquet. Aenean
+              lobortis erat a neque sagittis, quis egestas nunc dignissim.</p>
+            <button class="button button--followChannel">Watch the video 
+                <svg class="HoverArrow" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                <g fill-rule="evenodd">
+                  <path class="HoverArrow__linePath" d="M0 5h7"></path>
+                  <path class="HoverArrow__tipPath" d="M1 1l4 4-4 4"></path>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="follow-channel__images">
+            <div class="follow-channel__bgImage"></div>
+            <div class="follow-channel__frontImage">
+              <i class="fa-solid fa-expand bi-fulscreen"></i>
+              <div class="follow-channel__play">
+                <svg xmlns="http://www.w3.org/2000/svg" class="follow-channel__playIcon" width="18" height="23" viewBox="0 0 18 23">
+                  <path fill-rule="evenodd" d="M3.4 21.88C1.51 23.05 0 22.2 0 20V3C0 .8 1.52-.05 3.4 1.12l13.2 8.26c1.88 1.17 1.88 3.07 0 4.24L3.4 21.88z">
+                  </path>
+                </svg>
+              </div>
+              <div class="follow-channel__progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="contact">
       <div class="contact__container">
         <div class="contact__text" id="contact-us">
@@ -1852,13 +1882,8 @@ faqQuestions.forEach((question, index) => {
 
 var iti = window.intlTelInput(input, {
   separateDialCode:true,
-  search:true,
-  allowDropdown: true,
-  autoHideDialCode: false,
-  search:true,
   utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/utils.js",
   initialCountry: initialCountry[0],
-  preferredCountries: ['es','fr','de','am','kz','ua','ru'],
 });
 
 // store the instance variable so we can access it in the console e.g. window.iti.getNumber()
